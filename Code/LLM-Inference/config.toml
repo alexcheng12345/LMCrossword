@@ -23,6 +23,9 @@ max_new = 10
 temperature = 0.5
 seq_num = 1
 
+[validation]
+max_retries = 3
+
 [prompt]
 system = "You are an expert crossword solver. Given a clue please provide the best possible answer succinctly. Do not produce extra text.\nThe number of characters in the answer is given in brackets and must be strictly adhered to. e.g. Clue: Daily update (4)// means the answer should have 4 characters."
 counting = "You are an expert at finding lengths of words. Given a word please provide the length succinctly. Do not produce any extra text barring the number indicating the length of the word."

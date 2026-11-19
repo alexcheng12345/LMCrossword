@@ -66,6 +66,10 @@ def get_results(llm_name, input_file, output_file):
         #print(f"LLM ANSWER: {answer}")
         if idx%100 == 0 and idx>0:
             write_json(output_file, results)
+            if hasattr(model, "get_metrics"):
+                metrics_file = os.path.splitext(output_file)[0] + "_metrics.json"
+                write_json(metrics_file, model.get_metrics())
+                print(json.dumps(model.get_metrics(), indent=4))
     write_json(output_file, results)
 
 def write_json(file, dataset):

@@ -22,6 +22,12 @@ python main.py --input [input JSON prompt file] --llm [llm name]
 
 ```
   - Outputs are saved in ```./outputs/{model_name}_{filename}.json```
+  - API inference rejects answers whose alphabetic character count does not match
+  the `(<length>)//` value in the prompt. It retries up to
+  `validation.max_retries` times (3 by default).
+  - Retry metrics are written beside the output as
+  `{model_name}_({prompt_file_name})_metrics.json` and include average retries
+  per turn and turn efficiency.
   - Post-processing can be performed with the file ```./src/postprocess.py```.
   - Post-processing script assumes that the raw LLM outputs are in ```./outputs```
   and the file names are unchanged.
