@@ -10,7 +10,9 @@ config = toml.load("config.toml")
 
 
 def parse_arguments():
-    output_directory, llm_name = "./outputs", "llama3_8Bi"
+    script_directory = os.path.dirname(os.path.abspath(__file__))
+    output_directory, llm_name = os.path.join(script_directory, "outputs"), "llama3_8Bi"
+    input_file = None
     argumentList = sys.argv[1:]
     long_options, options = ["help", "input=", "llm="], "hi:l:"
     arguments, values = getopt.getopt(argumentList, options, long_options)
@@ -21,7 +23,7 @@ def parse_arguments():
                     "saves the output to a json file. \nUsage: \n"\
                     "\tpython main.py --input [input JSON prompt file] --llm [llm name]\n\n"\
                     "Available LLMs are - {phi3_3Bi, mistral_7Bi, llama3_8Bi, mixtral, "\
-                    "llama2_70B, llama3_70B, gpt_3, gpt_4t, claude}.\n"\
+                    "llama2_70B, llama3_70B, gpt_3, gpt_4t, claude, deepseek_flash}.\n"\
             )
             exit(0)
         elif currentArgument in ("-i", "--input"):
@@ -43,7 +45,8 @@ def parse_arguments():
         os.makedirs(output_directory)
     if input_file is None:
         raise ValueError("Input file not provided")
-    output_file = f"{llm_name}_({os.path.splitext(input_file.split('/')[-1])[0]}).json"
+    input_basename = os.path.basename(input_file)
+    output_file = f"{llm_name}_({os.path.splitext(input_basename)[0]}).json"
     output_file = os.path.join(output_directory, output_file)
     return llm_name, input_file, output_file
 

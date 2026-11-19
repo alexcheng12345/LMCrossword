@@ -1,5 +1,11 @@
 name = "Inference"
 
+[api]
+base_url = "https://st4011.loping151.net/v1"
+openai_models = ["gpt_3", "gpt_4t", "deepseek_flash"]
+max_new = 4096
+# api_key = "your-api-key"
+
 [llm]
 phi3_3Bi = "../LLM/phi3"
 mistral_7Bi = "../LLM/mistral_instruct"
@@ -10,6 +16,7 @@ llama3_70B = "../LLM/llama3_70B"
 gpt_3 = "gpt-3.5-turbo"
 gpt_4t = "gpt-4-turbo"
 claude = "claude-3-sonnet-20240229"
+deepseek_flash = "deepseek-flash"
 
 [gen_config]
 max_new = 10

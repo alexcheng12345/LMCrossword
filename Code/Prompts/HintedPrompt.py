@@ -74,16 +74,16 @@ class NYTHinted(HintedPrompt):
     Class that implements few-shot and CoT prompt creation for the semantic
     adherence test using the NYT dataset.
     """
-    def __init__(self, /, hint = 0.5, few_shot:int = 0, chain_of_thought:bool = False):
-        super().__init__(hint, few_shot, chain_of_thought, dataset="NYT")
+    def __init__(self, /, hint = 0.5, few_shot:int = 0):
+        super().__init__(hint, few_shot, dataset="NYT")
 
 class InitHinted(HintedPrompt):
     """
     Class that implements few-shot and CoT prompt creation for the semantic
     adherence test using the Init dataset.
     """
-    def __init__(self, /, hint = 0.5, few_shot:int = 0, chain_of_thought:bool = False):
-        super().__init__(hint, few_shot, chain_of_thought, dataset="Init")
+    def __init__(self, /, hint = 0.5, few_shot:int = 0):
+        super().__init__(hint, few_shot, dataset="Init")
 
 
 def main():
