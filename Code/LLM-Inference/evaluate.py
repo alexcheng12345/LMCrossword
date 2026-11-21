@@ -57,8 +57,15 @@ def evaluate(predictions, ground_truth):
         "missing_predictions": len(ground_truth) - compared_count,
         "exact_matches": exact_count,
         "accuracy": (exact_count / compared_count * 100) if compared_count else 0.0,
+        "exact_match_accuracy": (
+            exact_count / compared_count * 100
+        ) if compared_count else 0.0,
         "character_number_mismatches": mismatch_count,
         "character_number_mismatch_percent": (
+            mismatch_count / compared_count * 100
+        ) if compared_count else 0.0,
+        "length_violation_count": mismatch_count,
+        "length_violation_rate": (
             mismatch_count / compared_count * 100
         ) if compared_count else 0.0,
         "mismatches": mismatches,

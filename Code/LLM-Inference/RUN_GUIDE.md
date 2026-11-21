@@ -64,8 +64,29 @@ The input path should be absolute or relative to `Code\LLM-Inference`.
 
 ```powershell
 cd Code\LLM-Inference
-python main.py --input "..\Prompts\prompts\NYT__fewShot_5.json" --llm deepseek_flash
+python main.py --input "..\Prompts\prompts\NYT__fewShot_5.json" --llm deepseek_flash --with-retry-request
 ```
+
+To run the original behavior without retry requests:
+
+```powershell
+python main.py --input "..\Prompts\prompts\NYT__fewShot_5.json" --llm deepseek_flash --without-retry-request
+```
+
+The output files are distinct:
+
+```text
+outputs\<llm_name>_(<prompt_file_name>)_with_retry_request.json
+outputs\<llm_name>_(<prompt_file_name>)_without_retry_request.json
+```
+
+Each corresponding `_metrics.json` file includes retry metrics plus:
+
+- `exact_match_accuracy` — percentage of predictions that exactly match the ground truth
+- `length_violation_rate` — percentage whose normalized character length differs from the ground truth
+- `exact_match_count`
+- `length_violation_count`
+- `compared_count`
 
 Available API/local names are the keys under `[llm]` in `config.toml`.
 

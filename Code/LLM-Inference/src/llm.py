@@ -3,7 +3,7 @@ import os
 config = toml.load("config.toml")
 
 
-def LMFactory(name: str):
+def LMFactory(name: str, max_retries=None):
     if name not in config['llm']:
         raise ValueError(
                 f"{name} is not a valid LLM name. "
@@ -13,10 +13,10 @@ def LMFactory(name: str):
     openai_models = api_config.get('openai_models', [])
     if name in openai_models or 'gpt' in name:
         from src.api_llm import GPT
-        return GPT(name)
+        return GPT(name, max_retries=max_retries)
     elif 'claude' in name:
         from src.api_llm import Claude
-        return Claude()
+        return Claude(name, max_retries=max_retries)
     else:
         from src.local_llm import Dummy, LLM
         if not os.path.exists(config['llm'][name]):

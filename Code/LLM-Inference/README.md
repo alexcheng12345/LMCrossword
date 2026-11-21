@@ -21,6 +21,11 @@ export ANTHROPIC_API_KEY='your api key'
 python main.py --input [input JSON prompt file] --llm [llm name]
 
 ```
+  - Use `--with-retry-request` for length-check retries (the default).
+  - Use `--without-retry-request` to run the original behavior.
+  - Each mode produces a separate output:
+    `deepseek_flash_(prompt)_with_retry_request.json` or
+    `deepseek_flash_(prompt)_without_retry_request.json`.
   - Outputs are saved in ```./outputs/{model_name}_{filename}.json```
   - API inference rejects answers whose alphabetic character count does not match
   the `(<length>)//` value in the prompt. It retries up to

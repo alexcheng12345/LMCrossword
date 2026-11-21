@@ -7,7 +7,7 @@ config = toml.load("config.toml")
 
 
 class GPT:
-    def __init__(self, name = "gpt_3"):
+    def __init__(self, name = "gpt_3", max_retries=None):
         from openai import OpenAI
         self.name = name
         self.model = config['llm'][name]
@@ -21,6 +21,11 @@ class GPT:
             "total_attempts": 0,
             "total_retries": 0,
         }
+        self.max_retries = (
+            config.get('validation', {}).get('max_retries', 3)
+            if max_retries is None
+            else max_retries
+        )
 
     def get_metrics(self):
         total_turns = self.retry_stats["total_turns"]
@@ -48,7 +53,6 @@ class GPT:
             list[str]: Completions by GPT.
         """
         max_new = config.get('api', {}).get('max_new', config['gen_config']['max_new'])
-        max_retries = config.get('validation', {}).get('max_retries', 3)
         required_length = extract_required_length(prompt)
         retry_prompt = list(prompt)
         retries = 0
@@ -88,15 +92,11 @@ class GPT:
                     extra = getattr(message, "model_extra", None)
                     if isinstance(extra, dict):
                         reasoning_content = extra.get("reasoning_content")
-                raise RuntimeError(
-                    f"The API returned no final answer in message.content "
-                    f"(reasoning_content={'present' if reasoning_content else 'absent'}, "
-                    f"finish_reason={choice.finish_reason})."
-                )
+                results.append("")
 
             if required_length is None or not invalid_answers:
                 return results
-            if retries >= max_retries:
+            if retries >= self.max_retries:
                 return results
 
             retry_prompt = retry_prompt + [
@@ -107,7 +107,7 @@ class GPT:
             self.retry_stats["total_retries"] += 1
 
 class Claude:
-    def __init__(self, name = "claude"):
+    def __init__(self, name = "claude", max_retries=None):
         from anthropic import Anthropic
         self.name = name
         self.model = config['llm'][name]
@@ -117,6 +117,11 @@ class Claude:
             "total_attempts": 0,
             "total_retries": 0,
         }
+        self.max_retries = (
+            config.get('validation', {}).get('max_retries', 3)
+            if max_retries is None
+            else max_retries
+        )
 
     def get_metrics(self):
         total_turns = self.retry_stats["total_turns"]
@@ -143,7 +148,6 @@ class Claude:
         Returns:
             list[str]: Completions by GPT.
         """
-        max_retries = config.get('validation', {}).get('max_retries', 3)
         required_length = extract_required_length(prompt)
         results = []
         for i in range(config['gen_config']['seq_num']):
@@ -164,7 +168,7 @@ class Claude:
                 if required_length is None or is_valid_answer(answer, required_length):
                     results.append(answer)
                     break
-                if retries >= max_retries:
+                if retries >= self.max_retries:
                     results.append(answer)
                     break
 
