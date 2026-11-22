@@ -8,3 +8,5 @@ peft
 tiktoken
 openai
 anthropic
+networkx
+numpy

@@ -48,6 +48,7 @@ class Crossword:
         self.prompter = Prompter(config['model']['few_shot'])
         self.max_depth = 30
         self.current_answers = {}
+        self.output_directory = "./outputs"
 
     @staticmethod
     def _grid_to_array(board):
@@ -112,11 +113,20 @@ class Crossword:
         self.model = LLM
         self.model.reset_cost()
         budget_exceeded = False
+        seen_states = set()
         self._get_init_candidates()
         for self.depth in range(self.max_depth):
             self._length_prune()
             search_next, solved = self._graph_prune()
             acc, cacc, surv, nex = self.write_output()
+            state = frozenset(
+                (key, value)
+                for key, value in sorted(self.current_answers.items())
+            )
+            if state in seen_states:
+                print("Stopped: SweepClip detected a repeated answer state.")
+                break
+            seen_states.add(state)
             print(
                     f"Current Depth: {self.depth}\n"\
                     f"Accuracy : {acc:.2f} | "\
@@ -126,6 +136,9 @@ class Crossword:
                     f"Next Search Over: {nex}\n"\
                     "----------------------------------"
             )
+            if surv == 0:
+                print("Stopped: no answers satisfy the clue character lengths.")
+                break
             if solved or budget_exceeded:
                 break
             budget_exceeded = self.get_candidates(search_next)
@@ -144,9 +157,7 @@ class Crossword:
     def _length_prune(self):
         remove = set()
         for key, ans in self.current_answers.items():
-            if len(ans) > len(self.clues[key]):
-                self.current_answers[key] = ans[:len(self.clues[key])]
-            elif len(ans) < len(self.clues[key]):
+            if len(ans) != len(self.clues[key]):
                 remove.add(key)
         self.current_answers = {key:value for key, value in self.current_answers.items() if key not in remove}
 
@@ -165,18 +176,34 @@ class Crossword:
         try:
             largest_cc = max(nx.connected_components(pg), key = len)
         except ValueError:
-            largest_cc = set(np.random.choice(list(self.current_answers.keys()), 10, replace = False).tolist())
+            candidate_keys = list(self.current_answers.keys())
+            if not candidate_keys:
+                largest_cc = set()
+            else:
+                sample_size = min(10, len(candidate_keys))
+                largest_cc = set(
+                    np.random.choice(
+                        sorted(candidate_keys),
+                        sample_size,
+                        replace=False,
+                    ).tolist()
+                )
         conflict_subgraph = ng.subgraph(largest_cc).copy()
-        while (
-            (vert := max(conflict_subgraph.degree(conflict_subgraph.nodes), key = lambda x:x[1],))[1] > 0
-        ):
+        while conflict_subgraph.number_of_nodes() > 0:
+            degrees = list(conflict_subgraph.degree(conflict_subgraph.nodes))
+            vert = max(degrees, key=lambda degree: degree[1])
+            if vert[1] == 0:
+                break
             conflict_subgraph.remove_node(vert[0])
         survivors = set(conflict_subgraph.nodes)
         self.current_answers = {key:ans for key, ans \
                 in self.current_answers.items() if key in survivors}
         ngbd = set()
-        for key in survivors:
-            ngbd = ngbd.union(set(self.G.neighbors(key)))
+        if not survivors:
+            ngbd = set(self.G.nodes)
+        else:
+            for key in survivors:
+                ngbd = ngbd.union(set(self.G.neighbors(key)))
         ngbd = set(ngbd) - survivors
         self.next_search = len(ngbd)
         return ngbd, len(self.current_answers) == len(self.clues)
@@ -218,7 +245,8 @@ class Crossword:
         char_acc = self.char_acc()
         surviving = len(self.current_answers)
         next_search = self.next_search
-        with open(f"./outputs/Crossword_{str(self.number)}", "a") as f:
+        os.makedirs(self.output_directory, exist_ok=True)
+        with open(os.path.join(self.output_directory, f"Crossword_{str(self.number)}"), "a", encoding="utf-8") as f:
             f.write("-------------------------------\n")
             f.write(f"Current Depth = {self.depth}  \n")
             f.write(f"Acc = {acc:.2f}               \n")

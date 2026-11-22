@@ -8,7 +8,11 @@ test = "./data/test.json"
 support = "./data/support.json"
 
 [prompts]
-system = "You are an expert crossword solver. Given a clue please provide the best possible answer succinctly. Do not produce extra text.\nThe number of characters in the answer is given in brackets and must be strictly adhered to. e.g. Clue: Daily update (4)// means the answer should have 4 characters."
+system = """You are an expert crossword solver.
+Return exactly one crossword answer, with exactly the requested number of alphabetic characters.
+Do not include reasoning, analysis, explanations, labels, the clue, or quoted text.
+Do not say phrases such as 'we need an answer' or 'I need to solve'.
+Examples show the required format: Clue: POND SWIMMER (4)// Answer: DUCK"""
 
 [model]
 max_new = 10
@@ -21,6 +25,27 @@ name = "gpt-4-turbo"
 input_cost = 10
 output_cost = 30
 budget = 0.5
+
+[api]
+# Leave api_key unset and provide OPENAI_API_KEY through the environment.
+base_url = "https://st4011.loping151.net/v1"
+# api_key = "your-api-key"
+max_new = 4096
+
+[api_models]
+gpt = "gpt-4-turbo"
+deepseek = "deepseek-flash"
+deepseekv4pro = "deepseek-v4-pro"
+
+[api_pricing]
+# USD per million input/output tokens. Values of 0 disable cost estimation.
+gpt_input = 10
+gpt_output = 30
+deepseek_input = 0
+deepseek_output = 0
+
+[validation]
+max_retries = 3
 
 [llama3]
 path = "unset"

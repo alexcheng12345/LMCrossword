@@ -2,11 +2,12 @@ import json
 from utils.dataset import Dataset
 import numpy as np
 import os
+import argparse
 import copy
 
 
-def read_file(num):
-    with open(f"./outputs/Crossword_{num}", "r") as f:
+def read_file(num, output_directory="./outputs"):
+    with open(os.path.join(output_directory, f"Crossword_{num}"), "r", encoding="utf-8") as f:
         lines = [i.strip() for i in f.readlines()]
     idx = max(loc for loc, val in enumerate(lines) if val == "------ Current Answers --------")
     depth = int(lines[idx-4].split("=")[-1].strip())
@@ -19,12 +20,12 @@ def read_file(num):
         answers[key] = val
     return answers, depth, acc, cacc
 
-def read_files():
-    ff = [file for file in os.listdir("./outputs") if "Crossword" in file]
+def read_files(output_directory="./outputs"):
+    ff = [file for file in os.listdir(output_directory) if "Crossword" in file]
     results = {}
     for f in ff:
         num = f.split("_")[-1]
-        results[num] = read_file(num)[0]
+        results[num] = read_file(num, output_directory)[0]
     return results
 
 def grid_to_array(board):
@@ -49,8 +50,8 @@ def fill_grid(grid, answers):
     return filled_grid
 
 
-def char_analysis(dataset, threshold):
-    results = read_files()
+def char_analysis(dataset, threshold, output_directory="./outputs"):
+    results = read_files(output_directory)
     counter = 0
     acc = []
     for data in dataset:
@@ -67,18 +68,18 @@ def char_analysis(dataset, threshold):
             counter+=1
     return counter, np.mean(acc), np.std(acc)
 
-def clue_analysis():
-    ff = [file for file in os.listdir("./outputs") if "Crossword" in file]
+def clue_analysis(output_directory="./outputs"):
+    ff = [file for file in os.listdir(output_directory) if "Crossword" in file]
     results = []
     for f in ff:
         num = f.split("_")[-1]
-        results.append(read_file(num)[2])
+        results.append(read_file(num, output_directory)[2])
     return np.mean(results), np.std(results)
 
-def base_clue_analysis(dataset):
+def base_clue_analysis(dataset, output_directory="./outputs"):
     res = []
     for data in dataset:
-        with open(f"./outputs/Crossword_{data.number}", "r") as f:
+        with open(os.path.join(output_directory, f"Crossword_{data.number}"), "r", encoding="utf-8") as f:
             lines = [i.strip() for i in f.readlines()]
         idx = min(loc for loc, val in enumerate(lines) if val == "------ Current Answers --------")
         sidx = min(loc for loc, val in enumerate(lines[idx:]) if val == "-------------------------------")
@@ -95,24 +96,32 @@ def base_clue_analysis(dataset):
         res.append(counter/len(data.clues))
     return np.mean(res), np.std(res)
 
-def cacc():
-    ff = [file for file in os.listdir("./outputs") if "Crossword" in file]
+def cacc(output_directory="./outputs"):
+    ff = [file for file in os.listdir(output_directory) if "Crossword" in file]
     results = []
     for f in ff:
         num = f.split("_")[-1]
-        results.append(read_file(num)[-1])
+        results.append(read_file(num, output_directory)[-1])
     return np.mean(results), np.std(results)
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Analyze SweepClip outputs.")
+    parser.add_argument(
+        "--output-directory",
+        default="outputs/with_retry_request",
+        help="Output mode directory containing Crossword_<number> files.",
+    )
+    args = parser.parse_args()
+    output_directory = args.output_directory
     dataset = Dataset()
-    acc_base, std_base = base_clue_analysis(dataset)
-    acc_sweep, std_sweep = clue_analysis()
-    so50, mean, std = char_analysis(dataset, 0.5)
-    cacc_mean, cacc_std = cacc(dataset)
-    so90, _, _ = char_analysis(dataset, 0.9)
-    so98, _, _ = char_analysis(dataset, 0.98)
-    so1, _, _ = char_analysis(dataset, 1)
+    acc_base, std_base = base_clue_analysis(dataset, output_directory)
+    acc_sweep, std_sweep = clue_analysis(output_directory)
+    so50, mean, std = char_analysis(dataset, 0.5, output_directory)
+    cacc_mean, cacc_std = cacc(output_directory)
+    so90, _, _ = char_analysis(dataset, 0.9, output_directory)
+    so98, _, _ = char_analysis(dataset, 0.98, output_directory)
+    so1, _, _ = char_analysis(dataset, 1, output_directory)
 
     print(
             f"Base clue accuracy {acc_base} ± {std_base}\n"\

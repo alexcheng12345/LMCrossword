@@ -18,10 +18,36 @@ export OPENAI_API_KEY='your api key'
 ```
 python main.py
 ```
+  - Use the API mode options:
+
+```
+python main.py --model gpt --with-retry-request --crosswords 100
+python main.py --model gpt --without-retry-request --crosswords 100
+python main.py --model deepseek --with-retry-request --crosswords 100
+python main.py --api-model "provider-model-name" --with-retry-request --crosswords 100
+```
+
+API aliases and provider model names are configured under `[api_models]`.
+
+The metrics distinguish API response channels:
+
+- `final_content_turn_count` — API calls that returned `message.content`
+- `reasoning_only_turn_count` — calls that exposed reasoning without final content
+- `empty_response_turn_count` — calls with neither usable channel
+
+  - The API base URL, API key environment variable, and retry limit can be configured in `config.toml`.
+  - Results are stored separately in `outputs/with_retry_request/` and `outputs/without_retry_request/`.
+  - Each run writes `sweepclip_metrics.json` with retry, exact-match, length-violation, and cost metrics.
   - The LLM call logs (queries and outputs) are stored in ```logs``` and the
   generated answers are stored in ```outputs```.
 
   - For analysis, i.e. calculation of metrics, etc run - 
 ```
 python analysis.py
+```
+  - Analyze a specific retry mode:
+
+```
+python analysis.py --output-directory "outputs/with_retry_request"
+python analysis.py --output-directory "outputs/without_retry_request"
 ```
