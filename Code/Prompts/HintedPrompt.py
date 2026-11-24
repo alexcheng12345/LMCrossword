@@ -75,7 +75,7 @@ class NYTHinted(HintedPrompt):
     adherence test using the NYT dataset.
     """
     def __init__(self, /, hint = 0.5, few_shot:int = 0, chain_of_thought:bool = False):
-        super().__init__(hint, few_shot, chain_of_thought, dataset="NYT")
+        super().__init__(hint=hint, few_shot=few_shot, dataset="NYT")
 
 class InitHinted(HintedPrompt):
     """
@@ -83,7 +83,7 @@ class InitHinted(HintedPrompt):
     adherence test using the Init dataset.
     """
     def __init__(self, /, hint = 0.5, few_shot:int = 0, chain_of_thought:bool = False):
-        super().__init__(hint, few_shot, chain_of_thought, dataset="Init")
+        super().__init__(hint=hint, few_shot=few_shot, dataset="Init")
 
 
 def main():

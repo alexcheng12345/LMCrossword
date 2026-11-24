@@ -1,16 +1,16 @@
 name = "Prompts"
 
 [files]
-nyt_semantic_test = "./data/NYT/NYT_query.json"
-nyt_semantic_supp = "./data/NYT/NYT_support.json"
-cryp_semantic_test = "./data/Cryptonite/cryptonite_query.json"
-cryp_semantic_supp = "./data/Cryptonite/cryptonite_support.json"
-init_semantic_test = "./data/Init/init_query.json"
-init_semantic_supp = "./data/Init/init_support.json"
-cryp_semantic_cot = "./data/CoT_Solved_Examples.json"
-init_semantic_cot = "./data/CoT_Solved_Examples.json"
-counting_test = "./data/counting/counting_dataset.json"
-counting_supp = "./data/counting/counting_support.json"
+nyt_semantic_test = "../../Data/Datasets/NYT-Clues/NYT_query.json"
+nyt_semantic_supp = "../../Data/Datasets/NYT-Clues/NYT_support.json"
+cryp_semantic_test = "../../Data/Datasets/Cryptonite-Clues/cryptonite_query.json"
+cryp_semantic_supp = "../../Data/Datasets/Cryptonite-Clues/cryptonite_support.json"
+init_semantic_test = "../../Data/Datasets/Init-Clues/init_query.json"
+init_semantic_supp = "../../Data/Datasets/Init-Clues/init_support.json"
+cryp_semantic_cot = "../../Data/Datasets/CoT_Solved_Examples.json"
+init_semantic_cot = "../../Data/Datasets/CoT_Solved_Examples.json"
+counting_test = "../../Data/Datasets/Sub-token Counting/counting_dataset.json"
+counting_supp = "../../Data/Datasets/Sub-token Counting/counting_support.json"
 
 [prompt]
 system = "You are an expert crossword solver. Given a clue please provide the best possible answer succinctly. Do not produce extra text.\nThe number of characters in the answer is given in brackets and must be strictly adhered to. e.g. Clue: Daily update (4)// means the answer should have 4 characters."

@@ -5,7 +5,7 @@ This folder contains code to generate few-shot and Chain-of-thought prompts w/o 
 ## Instructions.
 
   - Make sure requirements are installed. Please see ```../README.md```
-  - Make a directory called ```prompts``` at the current location.
+  - The prompt scripts automatically create the ```prompts``` output directory.
   - Edit the ```config.toml``` file to point to the correct file locations.
     All the requisite files are provided in the ```Data``` directory.
 

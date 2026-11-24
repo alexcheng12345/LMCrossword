@@ -2,6 +2,7 @@ import re
 import toml
 import json
 import numpy as np
+import os
 from tqdm import tqdm
 
 config = toml.load("config.toml")
@@ -76,6 +77,8 @@ class BasePrompt:
 
     @staticmethod
     def write_json(file, dataset):
+        parent = os.path.dirname(os.path.abspath(file))
+        os.makedirs(parent, exist_ok=True)
         with open(file, 'w') as f:
             json.dump(dataset, f, indent = 4)
 
