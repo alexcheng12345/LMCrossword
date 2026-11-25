@@ -8,3 +8,6 @@ peft
 tiktoken
 openai
 anthropic
+nltk
+gensim>=4.4,<5
+wordninja>=2.0

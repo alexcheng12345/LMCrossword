@@ -10,6 +10,17 @@ llama3_70B = "../LLM/llama3_70B"
 gpt_3 = "gpt-3.5-turbo"
 gpt_4t = "gpt-4-turbo"
 claude = "claude-3-sonnet-20240229"
+omnirouters_gpt = "gpt-6-luna"
+
+[omnirouters]
+base_url = "https://omnirouters.com/v1"
+api_key_env = "OMNIROUTERS_API_KEY"
+model = "gpt-6-luna"
+
+[omnirouters.cost]
+# Set actual account prices. Values <= 0 mean that estimated cost is unavailable.
+input_usd_per_million = 0.015
+output_usd_per_million = 0.075
 
 [gen_config]
 max_new = 10
