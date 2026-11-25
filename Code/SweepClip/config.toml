@@ -36,6 +36,10 @@ max_new = 4096
 gpt = "gpt-4-turbo"
 deepseek = "deepseek-flash"
 deepseekv4pro = "deepseek-v4-pro"
+ollama_llama3_70b = "llama3:70b"
+
+[api_model_base_urls]
+ollama_llama3_70b = "http://localhost:11434/v1"
 
 [api_pricing]
 # USD per million input/output tokens. Values of 0 disable cost estimation.

@@ -1,6 +1,7 @@
 import unittest
+from unittest.mock import patch
 
-from utils.model import APIModel
+from utils.model import APIModel, config
 
 
 class StubTextPart:
@@ -39,6 +40,21 @@ class APIModelResponseTest(unittest.TestCase):
     def test_empty_final_content_is_rejected_as_empty_answer(self):
         message = StubMessage(content=None, reasoning_content="I reasoned about this")
         self.assertEqual(APIModel._message_content(message), "")
+
+    def test_api_alias_uses_its_configured_base_url(self):
+        ollama_url = "http://localhost:11434/v1"
+        with patch("utils.model.OpenAI") as openai_client:
+            with patch.dict(
+                config,
+                {"api_model_base_urls": {"ollama_llama3_70b": ollama_url}},
+            ):
+                with patch.dict("os.environ", {"OPENAI_API_KEY": "ollama"}):
+                    APIModel(model_name="ollama_llama3_70b")
+
+        self.assertEqual(
+            openai_client.call_args.kwargs["base_url"],
+            ollama_url,
+        )
 
 
 if __name__ == "__main__":

@@ -3,6 +3,7 @@ import warnings
 import torch
 import json
 import os
+import re
 import accelerate
 import transformers
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -79,8 +80,12 @@ class APIModel(LLM):
             self.model_name = model_name
             self.model = model_name
         api_config = config.get('api', {})
+        model_base_urls = config.get('api_model_base_urls', {})
         self.client = OpenAI(
-            base_url=api_config.get('base_url'),
+            base_url=model_base_urls.get(
+                self.model_name,
+                api_config.get('base_url'),
+            ),
             api_key=api_config.get('api_key') or os.getenv('OPENAI_API_KEY'),
         )
         pricing = config.get('api_pricing', {})
@@ -268,12 +273,58 @@ class GPT(APIModel):
 
 class LLaMA(LLM):
     """ Base LLM class implements inference """
-    def __init__(self):
+    def __init__(self, max_retries=None):
         super().__init__('llama3')
         self.llm_path = config['llama3']['path']
+        self.max_retries = (
+            config.get('validation', {}).get('max_retries', 3)
+            if max_retries is None
+            else max_retries
+        )
         self.loaded = False
+        self.retry_stats = {
+            "total_turns": 0,
+            "total_attempts": 0,
+            "total_retries": 0,
+        }
+        self.length_violation_stats = {
+            "raw_length_violation_count": 0,
+            "raw_length_violation_turns": 0,
+        }
         self.load_tokenizer()
         self._init_config()
+
+    def get_metrics(self):
+        total_turns = self.retry_stats["total_turns"]
+        total_attempts = self.retry_stats["total_attempts"]
+        total_retries = self.retry_stats["total_retries"]
+        raw_violation_count = self.length_violation_stats["raw_length_violation_count"]
+        return {
+            **self.retry_stats,
+            **self.length_violation_stats,
+            "average_retries_per_turn": (
+                total_retries / total_turns if total_turns else 0.0
+            ),
+            "average_attempts_per_turn": (
+                total_attempts / total_turns if total_turns else 0.0
+            ),
+            "turn_efficiency": (
+                total_turns / total_attempts if total_attempts else 0.0
+            ),
+            "raw_length_violation_rate": (
+                raw_violation_count / total_attempts * 100
+                if total_attempts else 0.0
+            ),
+            "estimated_cost_usd": 0.0,
+        }
+
+    @staticmethod
+    def _required_length(prompt):
+        for message in reversed(prompt):
+            matches = re.findall(r"\((\d+)\)//", str(message.get("content", "")))
+            if matches:
+                return int(matches[-1])
+        return None
 
     def load_tokenizer(self):
         self.tokenizer = AutoTokenizer.from_pretrained(self.llm_path, trust_remote_code = True)
@@ -308,18 +359,63 @@ class LLaMA(LLM):
         )
 
 
-    def infer(self, prompt):
+    def _generate_once(self, prompt):
         self.load_model()
         torch.cuda.empty_cache()
         self.model.eval()
         inputs = self.tokenizer.apply_chat_template(prompt, tokenize=True, return_tensors="pt")
-        prompt_length = len(self.tokenizer.decode(inputs[0], skip_special_tokens=False))
+        prompt_length = inputs.shape[-1]
         with torch.inference_mode():
             results = self.model.generate(
                     input_ids = inputs.to("cuda"),
                     generation_config = self.generation_config,
             )
-        results = [self.tokenizer.decode(result, skip_special_tokens=False) for result in results]
-        results = [result[prompt_length:] for result in results]
-        self.cost += 1
-        return [self.process(result) for result in results]
+        return [
+            self.tokenizer.decode(
+                result[prompt_length:],
+                skip_special_tokens=True,
+            )
+            for result in results
+        ]
+
+    def infer(self, prompt):
+        required_length = self._required_length(prompt)
+        retry_prompt = list(prompt)
+        retries = 0
+        had_length_violation = False
+        self.retry_stats["total_turns"] += 1
+
+        while True:
+            self.retry_stats["total_attempts"] += 1
+            raw_results = self._generate_once(retry_prompt)
+            self.cost += 1
+            results = [self.process(result) for result in raw_results]
+            if not results:
+                results = [""]
+
+            if required_length is None or len(results[0]) == required_length:
+                if had_length_violation:
+                    self.length_violation_stats["raw_length_violation_turns"] += 1
+                return results
+
+            had_length_violation = True
+            self.length_violation_stats["raw_length_violation_count"] += 1
+            if retries >= self.max_retries:
+                self.length_violation_stats["raw_length_violation_turns"] += 1
+                return results
+
+            previous_answer = raw_results[0] if raw_results else ""
+            retry_prompt = retry_prompt + [
+                {
+                    "role": "user",
+                    "content": (
+                        f"\nYour previous answer was {previous_answer!r}, which has "
+                        f"{len(results[0])} alphabetic characters. It is not valid. "
+                        f"Answer the original clue again with exactly "
+                        f"{required_length} alphabetic characters. Output only "
+                        f"the answer word."
+                    ),
+                },
+            ]
+            retries += 1
+            self.retry_stats["total_retries"] += 1

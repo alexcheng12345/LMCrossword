@@ -25,7 +25,49 @@ python main.py --model gpt --with-retry-request --crosswords 100
 python main.py --model gpt --without-retry-request --crosswords 100
 python main.py --model deepseek --with-retry-request --crosswords 100
 python main.py --api-model "provider-model-name" --with-retry-request --crosswords 100
+python main.py --model llama --with-retry-request --crosswords 100
+python main.py --model llama --without-retry-request --crosswords 100
 ```
+
+For local LLaMA runs, `--with-retry-request` retries answers that do not match
+the clue's character length. The retry limit is set by `[validation].max_retries`
+in `config.toml`. `--without-retry-request` disables those extra generation
+attempts; SweepClip's normal length pruning still applies.
+
+### Run LLaMA 3 70B with Ollama on Windows
+
+Install Ollama, then download the model and set the API key expected by the
+OpenAI-compatible client (Ollama does not validate this placeholder):
+
+```powershell
+ollama pull llama3:70b
+$env:OPENAI_API_KEY = "ollama"
+```
+
+Run these commands from the `Code\SweepClip` directory while Ollama is running:
+
+```powershell
+python main.py --api-model ollama_llama3_70b --with-retry-request --crosswords 100
+python main.py --api-model ollama_llama3_70b --without-retry-request --crosswords 100
+```
+
+The `ollama_llama3_70b` alias and its local endpoint are configured in
+`config.toml`. `--with-retry-request` retries answers that violate the clue
+length, up to `[validation].max_retries`; without it, SweepClip still applies
+its normal length pruning. Ollama runs use separate output folders for the two
+modes. The existing `[api].base_url` remains unchanged for other API providers.
+
+Use ranges and resume instead of rerunning the full dataset:
+
+```
+python main.py --api-model deepseekv4pro --without-retry-request --start 0 --end 20 --overwrite
+python main.py --api-model deepseekv4pro --without-retry-request --start 20 --end 40 --resume
+python main.py --api-model deepseekv4pro --without-retry-request --start 40 --end 60 --resume
+```
+
+`--start` and `--end` are zero-based dataset indices. `--end` is exclusive.
+`--resume` skips crosswords that already have a `Crossword_<number>` file.
+`--overwrite` reruns selected crosswords and removes their existing output files.
 
 API aliases and provider model names are configured under `[api_models]`.
 
