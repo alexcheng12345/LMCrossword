@@ -56,15 +56,105 @@ changed with `--embedding-model`. Since crossword answers are stored as
 concatenated letters, `wordninja` segments answer strings before their word
 vectors are averaged.
 
-For each answer pair, cosine similarity is mapped linearly to a 0-100 score:
+For each covered answer pair, cosine similarity is recorded in its plain range
+of `[-1, 1]`. The **unnormalized score** is the sum of those cosine values.
+The **normalized semantic accuracy** maps their mean to `0-100`:
 
 ```text
-pair score = (cosine similarity + 1) * 50
-semantic score = sum(pair scores) / number of pairs with both vectors
+unnormalized score = sum(pair cosine similarities)
+normalized semantic accuracy =
+    ((unnormalized score / number of scored pairs) + 1) * 50
 ```
 
-The reported `semantic_cosine_score_0_100` is the mean across covered pairs;
-`semantic_embedding_coverage_pct` reports the percentage of evaluated clues
-for which both answers have vectors. Out-of-vocabulary pairs are excluded from
-the mean rather than treated as dissimilar. This is a continuous embedding
-similarity score, not a thresholded accuracy or human judgment.
+The evaluator reports these separately as `semantic_cosine_sum` and
+`semantic_accuracy_0_100`. The normalized value is the mean cosine shifted
+and scaled into `0-100`; it is not the raw sum. `semantic_embedding_coverage_pct`
+reports the percentage of evaluated clues for which both answers have vectors.
+Out-of-vocabulary pairs are excluded from the sum and normalization rather than
+treated as dissimilar. A normalized score of 50 corresponds to mean cosine
+zero, not 50% correctness. This remains a continuous embedding similarity
+measure, not human judgment.
+
+## API call failure classification
+
+When a matching raw call log exists, the evaluator reads its entries and
+reports successful calls, HTTP 429 rate limits, HTTP 401/authentication
+failures, and other API failures separately. The categories are mutually
+exclusive, and `failed_api_calls` remains the total of all failed requests.
+These are request outcomes, not model-answer failures; answer quality is
+measured separately by exact match and semantic metrics. Existing raw JSONL
+logs are only read and are never rewritten.
+
+Generate a CSV breakdown for existing B0-B2 five-shot logs with:
+
+```powershell
+python Code\Evaluate\summarize_call_failures.py
+```
+
+The default output is `Result/inference_api_call_failure_breakdown.csv`.
+401/authentication failures can be consistent with an intentionally disabled
+or revoked API key, but the error log alone cannot prove why the key became
+invalid.
+
+## B3 dictionary candidate recall
+
+Measure how often B3's logged WordNet shortlist contains the exact normalized
+NYT answer:
+
+```powershell
+python Code\Evaluate\analyze_b3_candidate_recall.py
+```
+
+By default, this reads the NYT query and B3 five-shot call log, then writes a
+summary JSON/CSV and an auditable per-clue CSV under `Result/`. Overall
+Recall@30 counts a missing candidate list as a miss (`hits / all NYT clues`).
+The report also gives recall conditional on a non-empty candidate list,
+candidate rank buckets, and fallback reasons. Since resumed B3 logs may contain
+multiple runs per clue, the analysis uses each clue's latest logged B3 attempt.
+Use `--call-log`, `--query`, or `--output-dir` to analyze other files.
+
+## Sub-token counting experiment
+
+`run_subtoken_experiment.py` runs the prepared Section 3.4 character-counting
+prompts and reports exact count accuracy by word-frequency category, vocabulary
+versus gibberish control, and answer length. It writes a JSONL call log,
+per-word CSV, summary CSV, and raw predictions under
+`Result/Sub-token Counting/` by default. Requests run concurrently with four
+workers by default; use `--workers 1` for sequential calls or lower the worker
+count if the provider rate-limits requests. The JSONL log is checkpointed after
+each response; use `--resume` to skip non-empty successful responses and retry
+failed or empty ones.
+
+The runner overrides the prompt's system message to require only a numeric
+count. It allows up to 128 completion tokens by default, since reasoning models
+may use output tokens before returning visible text. Override that limit with
+`--max-tokens`.
+
+The default provider is OmniRouters, using the model and URL in
+`Code/LLM-Inference/config.toml`:
+
+```powershell
+$env:OMNIROUTERS_API_KEY="your-key"
+python Code\Evaluate\run_subtoken_experiment.py --limit 20 --workers 4
+```
+
+The runner uses temperature `1`, the default supported by the configured
+GPT Luna model.
+
+To use the OpenAI-compatible `https://st4011.loping151.net/v1` API with the
+`deepseek-flash` model, set its key in `ST4011_API_KEY`:
+
+```powershell
+$env:ST4011_API_KEY="your-key"
+python Code\Evaluate\run_subtoken_experiment.py --provider st4011 --limit 20 --workers 4
+```
+
+Remove `--limit 20` to run the full prepared prompt set. Use `--model` to
+override a provider's default model. API keys are read only from environment
+variables and are not written to the logs or result files.
+
+The checked-in prepared set currently has 998 items in each of its five
+categories (`common`, `mid`, `rare`, `vocab`, and `gibberish`). Its vocabulary
+and gibberish controls also do not have matching word-length distributions.
+The full run warns about these deviations, so control-group comparisons should
+not be described as length-matched without regenerating the input data.

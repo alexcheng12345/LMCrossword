@@ -75,13 +75,18 @@ def answer_embedding(answer, embeddings):
     return np.mean(vectors, axis=0)
 
 
-def normalized_cosine_score(left, right):
+def cosine_similarity(left, right):
     denominator = np.linalg.norm(left) * np.linalg.norm(right)
     if denominator == 0:
         return None
     cosine = float(np.dot(left, right) / denominator)
-    cosine = max(-1.0, min(1.0, cosine))
-    return (cosine + 1.0) * 50.0
+    return max(-1.0, min(1.0, cosine))
+
+
+def normalized_semantic_accuracy(cosine_sum, scored_pairs):
+    if not scored_pairs:
+        return None
+    return ((cosine_sum / scored_pairs) + 1.0) * 50.0
 
 
 def normalize_dataset_name(name):
@@ -100,6 +105,43 @@ def dataset_from_name(name):
     return normalize_dataset_name(match.group(1)) if match else None
 
 
+def classify_api_call_error(error):
+    """Classify one raw call-log error without inferring its cause."""
+    if not error:
+        return "success"
+
+    error_text = str(error).lower()
+    if (
+        re.search(r"\b429\b", error_text)
+        or "ratelimit" in error_text
+        or "rate limit" in error_text
+    ):
+        return "rate_limit_429"
+    if (
+        re.search(r"\b401\b", error_text)
+        or "authenticationerror" in error_text
+        or "invalid token" in error_text
+        or "invalid api key" in error_text
+        or "incorrect api key" in error_text
+    ):
+        return "authentication_401"
+    return "other_failure"
+
+
+def summarize_api_call_outcomes(call_entries):
+    """Return mutually exclusive outcome counts for raw API call entries."""
+    counts = Counter(
+        classify_api_call_error(entry.get("error")) for entry in call_entries
+    )
+    return {
+        "successful_calls": counts["success"],
+        "failed_calls": len(call_entries) - counts["success"],
+        "rate_limit_calls_429": counts["rate_limit_429"],
+        "authentication_failures_401": counts["authentication_401"],
+        "other_api_failures": counts["other_failure"],
+    }
+
+
 def load_call_metadata(output_path, log_dir):
     stem = output_path.stem
     summary_path = log_dir / f"{stem}_summary.json"
@@ -107,11 +149,15 @@ def load_call_metadata(output_path, log_dir):
 
     summary = load_json(summary_path) if summary_path.is_file() else {}
     call_entries = []
-    if call_log_path.is_file():
+    has_call_log = call_log_path.is_file()
+    if has_call_log:
         with call_log_path.open("r", encoding="utf-8") as handle:
             for line in handle:
                 if line.strip():
                     call_entries.append(json.loads(line))
+    call_outcomes = (
+        summarize_api_call_outcomes(call_entries) if has_call_log else None
+    )
     calls_by_clue = Counter(
         entry.get("clue_id")
         for entry in call_entries
@@ -119,7 +165,7 @@ def load_call_metadata(output_path, log_dir):
     )
     retry_calls = sum(max(0, count - 1) for count in calls_by_clue.values())
 
-    if not summary and not call_entries:
+    if not summary and not has_call_log:
         return None
 
     input_tokens = sum(entry.get("input_tokens") or 0 for entry in call_entries)
@@ -136,16 +182,41 @@ def load_call_metadata(output_path, log_dir):
         cost = summary.get("estimated_api_cost_usd", cost)
 
     return {
-        "number_of_calls": summary.get(
-            "number_of_calls", len(call_entries) if call_entries else None
+        "number_of_calls": (
+            len(call_entries)
+            if has_call_log
+            else summary.get("number_of_calls")
         ),
-        "retry_calls_estimate": retry_calls if call_entries else None,
-        "successful_calls": summary.get("successful_calls"),
-        "failed_calls": summary.get("failed_calls"),
-        "input_tokens": input_tokens if call_entries or summary else None,
-        "output_tokens": output_tokens if call_entries or summary else None,
+        "retry_calls_estimate": retry_calls if has_call_log else None,
+        "successful_calls": (
+            call_outcomes["successful_calls"]
+            if call_outcomes is not None
+            else summary.get("successful_calls")
+        ),
+        "failed_calls": (
+            call_outcomes["failed_calls"]
+            if call_outcomes is not None
+            else summary.get("failed_calls")
+        ),
+        "rate_limit_calls_429": (
+            call_outcomes["rate_limit_calls_429"]
+            if call_outcomes is not None
+            else None
+        ),
+        "authentication_failures_401": (
+            call_outcomes["authentication_failures_401"]
+            if call_outcomes is not None
+            else None
+        ),
+        "other_api_failures": (
+            call_outcomes["other_api_failures"]
+            if call_outcomes is not None
+            else None
+        ),
+        "input_tokens": input_tokens if has_call_log or summary else None,
+        "output_tokens": output_tokens if has_call_log or summary else None,
         "total_tokens": (
-            input_tokens + output_tokens if call_entries or summary else None
+            input_tokens + output_tokens if has_call_log or summary else None
         ),
         "api_cost_usd": cost,
         "api_cost_status": summary.get(
@@ -170,7 +241,7 @@ def score_output(
     evaluated = 0
     matches = 0
     length_violations = 0
-    semantic_scores = []
+    cosine_scores = []
     missing_output = 0
 
     for clue_id, record in query.items():
@@ -189,12 +260,12 @@ def score_output(
         prediction_vector = answer_embedding(prediction, embeddings)
         ground_truth_vector = answer_embedding(record["answer"], embeddings)
         if prediction_vector is not None and ground_truth_vector is not None:
-            score = normalized_cosine_score(
+            cosine = cosine_similarity(
                 prediction_vector,
                 ground_truth_vector,
             )
-            if score is not None:
-                semantic_scores.append(score)
+            if cosine is not None:
+                cosine_scores.append(cosine)
 
     metadata = load_call_metadata(output_path, log_dir) if source == "user" else None
     calls = None
@@ -240,26 +311,37 @@ def score_output(
         )
         if evaluated
         else 0.0,
-        "semantic_cosine_score_sum_0_100": round(sum(semantic_scores), 2),
-        "semantic_cosine_score_0_100": round(
-            sum(semantic_scores) / len(semantic_scores), 2
+        "semantic_cosine_sum": round(sum(cosine_scores), 4),
+        "semantic_accuracy_0_100": round(
+            normalized_semantic_accuracy(sum(cosine_scores), len(cosine_scores)),
+            2,
         )
-        if semantic_scores
+        if cosine_scores
         else None,
-        "semantic_embedding_scored_pairs": len(semantic_scores),
+        "semantic_embedding_scored_pairs": len(cosine_scores),
         "semantic_embedding_coverage_pct": round(
-            len(semantic_scores) / evaluated * 100, 2
+            len(cosine_scores) / evaluated * 100, 2
         )
         if evaluated
         else 0.0,
         "semantic_embedding_model": embedding_model_name,
         "semantic_method": (
-            "Mean pre-trained word vectors; cosine mapped from [-1, 1] to [0, 100]; "
-            "answer words segmented with wordninja"
+            "Sum of plain cosine similarities; normalized accuracy is "
+            "((cosine sum / scored pairs) + 1) * 50; answer words segmented "
+            "with wordninja"
         ),
         "number_of_calls": calls,
         "successful_api_calls": metadata["successful_calls"] if metadata else None,
         "failed_api_calls": metadata["failed_calls"] if metadata else None,
+        "rate_limit_api_calls_429": (
+            metadata["rate_limit_calls_429"] if metadata else None
+        ),
+        "authentication_failures_401": (
+            metadata["authentication_failures_401"] if metadata else None
+        ),
+        "other_failed_api_calls": (
+            metadata["other_api_failures"] if metadata else None
+        ),
         "retry_calls_estimate": retries,
         "mean_calls_per_evaluated_clue": round(calls / evaluated, 4)
         if calls is not None and evaluated
@@ -406,7 +488,8 @@ def main():
             f"{row['source']} | {row['dataset']} | {row['model']} | "
             f"{row['shots']}-shot | exact={row['exact_match_accuracy_pct']:.2f}% | "
             f"length violations={row['length_violation_rate_pct']:.2f}% | "
-            f"semantic cosine={row['semantic_cosine_score_0_100']} "
+            f"semantic sum={row['semantic_cosine_sum']} "
+            f"semantic accuracy={row['semantic_accuracy_0_100']} "
             f"(coverage={row['semantic_embedding_coverage_pct']:.2f}%) | "
             f"calls={row['number_of_calls']} | cost={row['api_cost_usd']}"
         )
