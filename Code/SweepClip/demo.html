@@ -151,6 +151,7 @@
     }
     .square.focus { background: #b7f2df; }
     .square.crossing { background: #f8dca8; }
+    .square.changed { background: #d3c3ff; }
     .square.conflict { background: #f2b2b2; }
 
     .legend {
@@ -166,9 +167,11 @@
     .swatch { width: 10px; height: 10px; border-radius: 2px; background: var(--cell); }
     .swatch.focus { background: #b7f2df; }
     .swatch.crossing { background: #f8dca8; }
+    .swatch.changed { background: #d3c3ff; }
     .board-caption {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      flex-wrap: wrap;
       gap: 10px;
       padding: 0 4px;
       margin-top: 12px;
@@ -176,6 +179,7 @@
       font-size: 12px;
     }
     .board-caption strong { color: var(--text); font-weight: 650; }
+    .board-caption .changed-count { color: #d3c3ff; font-weight: 700; }
 
     .steps { padding: 17px 19px 19px; }
     .step-track {
@@ -302,6 +306,7 @@
     .clue-text { color: #d8dedf; }
     .clue-answer { color: var(--amber); font-weight: 750; letter-spacing: .06em; }
     .clue-answer.missing { color: #87949b; }
+    .clue-answer.changed { color: #d3c3ff; }
     .empty-state, .error-state { padding: 28px; color: var(--muted); text-align: center; }
     .error-state { color: #f2b2b2; }
 
@@ -442,7 +447,7 @@
       );
     }
 
-    function renderBoard(snapshot) {
+    function renderBoard(snapshot, changedCells) {
       const board = document.querySelector("#board");
       const { filled, answerCells } = buildBoardState(snapshot.answers);
       const totalOpen = puzzle.board.flatMap((row) => row.split("|"))
@@ -467,6 +472,8 @@
             if (cell && cell.letters.size > 1) {
               square.classList.add("conflict");
               conflicts += 1;
+            } else if (changedCells.has(`${rowIndex},${columnIndex}`)) {
+              square.classList.add("changed");
             } else if (isSelected) {
               square.classList.add(cell && cell.owners.size > 1 ? "crossing" : "focus");
             }
@@ -491,6 +498,8 @@
 
       document.querySelector("#board-progress").textContent =
         `${filledCells} / ${totalOpen} squares filled`;
+      document.querySelector("#changed-progress").textContent =
+        `${changedCells.size} cells changed this depth`;
       document.querySelector("#consistency-status").textContent = conflicts
         ? `${conflicts} crossing conflict${conflicts === 1 ? "" : "s"} visible`
         : "Crossings are consistent";
@@ -520,9 +529,8 @@
       });
     }
 
-    function renderClues(snapshot) {
+    function renderClues(snapshot, changedKeys) {
       const container = document.querySelector("#clue-columns");
-      const previousAnswers = stepIndex > 0 ? snapshots[stepIndex - 1].answers : {};
       const groups = [
         { direction: "across" },
         { direction: "down" },
@@ -558,9 +566,13 @@
           text.className = "clue-text";
           text.textContent = `${clue[2]} (${clue[3]})`;
           const value = document.createElement("span");
-          value.className = `clue-answer${answer ? "" : " missing"}`;
-          value.textContent = answer ? answer.toUpperCase() : "—";
-          if (answer && !previousAnswers[key]) value.title = "Added in this iteration";
+          value.className = `clue-answer${answer ? "" : " missing"}${changedKeys.has(key) ? " changed" : ""}`;
+          value.textContent = answer ? answer.toUpperCase() : (changedKeys.has(key) ? "REMOVED" : "—");
+          if (changedKeys.has(key)) {
+            value.title = answer
+              ? "Added or changed at this depth"
+              : "Removed by pruning at this depth";
+          }
           button.append(number, text, value);
           section.append(button);
         }
@@ -583,6 +595,19 @@
     function render() {
       const snapshot = snapshots[stepIndex];
       const previous = stepIndex > 0 ? snapshots[stepIndex - 1].answers : {};
+      const changedKeys = new Set(
+        [...new Set([...Object.keys(previous), ...Object.keys(snapshot.answers)])]
+          .filter((key) => previous[key] !== snapshot.answers[key]),
+      );
+      const changedCells = new Set();
+      for (const key of changedKeys) {
+        for (const answer of [previous[key], snapshot.answers[key]]) {
+          if (!answer) continue;
+          for (const cell of getAnswerCells(key, answer)) {
+            changedCells.add(`${cell.row},${cell.column}`);
+          }
+        }
+      }
       const added = Object.keys(snapshot.answers).filter((key) => !(key in previous)).length;
       const removed = Object.keys(previous).filter((key) => !(key in snapshot.answers)).length;
       const percent = (value) => value === null ? "—" : `${Math.round(value * 100)}%`;
@@ -604,11 +629,13 @@
               <div id="board" class="board" role="grid" aria-label="Crossword grid"></div>
               <div class="legend">
                 <span><i class="swatch"></i> Filled cell</span>
+                <span><i class="swatch changed"></i> Changed answer</span>
                 <span><i class="swatch focus"></i> Selected answer</span>
                 <span><i class="swatch crossing"></i> Crossing letter</span>
               </div>
               <div class="board-caption">
                 <strong id="board-progress"></strong>
+                <span id="changed-progress" class="changed-count"></span>
                 <span id="consistency-status"></span>
               </div>
             </div>
@@ -658,7 +685,7 @@
           <div class="panel-head">
             <div>
               <h2>Clues and retained answers</h2>
-              <p>Select a clue to highlight its cells and crossings on the grid.</p>
+              <p>Changed answers are highlighted on the grid; select a clue to inspect its cells.</p>
             </div>
             <div class="clue-tools">
               <div class="tabs" aria-label="Filter clue direction">
@@ -673,9 +700,9 @@
         </section>
       `;
 
-      renderBoard(snapshot);
+      renderBoard(snapshot, changedCells);
       renderTimeline();
-      renderClues(snapshot);
+      renderClues(snapshot, changedKeys);
       wireControls();
     }
 

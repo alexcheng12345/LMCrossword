@@ -79,7 +79,9 @@ python main.py --api-model deepseekv4pro --without-retry-request --start 40 --en
 Open `demo.html` directly in a browser. It is self-contained: the saved
 DeepSeek traces for crossword #7286 are embedded in the file, and it makes no
 API calls or requests to a local server. Use the timeline, Back/Next, or Play
-controls to walk through the runs with and without retry requests.
+controls to walk through the runs with and without retry requests. Purple grid
+cells and clue answers mark entries added, changed, or removed at the selected
+depth.
 
 API aliases and provider model names are configured under `[api_models]`.
 
