@@ -74,6 +74,13 @@ python main.py --api-model deepseekv4pro --without-retry-request --start 40 --en
 `--resume` skips crosswords that already have a `Crossword_<number>` file.
 `--overwrite` reruns selected crosswords and removes their existing output files.
 
+### Presentation demo
+
+Open `demo.html` directly in a browser. It is self-contained: the saved
+DeepSeek traces for crossword #7286 are embedded in the file, and it makes no
+API calls or requests to a local server. Use the timeline, Back/Next, or Play
+controls to walk through the runs with and without retry requests.
+
 API aliases and provider model names are configured under `[api_models]`.
 
 The metrics distinguish API response channels:

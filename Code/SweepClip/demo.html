@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101820">
+  <title>SweepClip | Crossword walkthrough</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101820;
+      --panel: #18232d;
+      --panel-raised: #202e39;
+      --line: #33434f;
+      --text: #f3f5f2;
+      --muted: #9cabb4;
+      --teal: #74e0c1;
+      --amber: #f4c477;
+      --red: #f08484;
+      --cell: #f0eee7;
+      --ink: #17212a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      min-width: 320px;
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 10% 0%, #233d47 0, transparent 34rem),
+        var(--bg);
+      color: var(--text);
+      font: 15px/1.45 "Segoe UI", Inter, system-ui, sans-serif;
+    }
+
+    button, select, input { font: inherit; }
+    button, select {
+      color: var(--text);
+      background: var(--panel-raised);
+      border: 1px solid var(--line);
+      border-radius: 9px;
+    }
+    button { cursor: pointer; }
+    button:focus-visible, select:focus-visible, input:focus-visible {
+      outline: 2px solid var(--teal);
+      outline-offset: 2px;
+    }
+
+    .shell { max-width: 1440px; margin: auto; padding: 28px clamp(16px, 3vw, 42px) 36px; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    .eyebrow, .kicker {
+      color: var(--teal);
+      font-size: 11px;
+      font-weight: 750;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    h1 { margin: 5px 0 4px; font-size: clamp(26px, 4vw, 40px); letter-spacing: -.04em; }
+    .subtitle { margin: 0; color: var(--muted); }
+    .top-controls { display: flex; align-items: center; gap: 9px; }
+    .top-controls label { color: var(--muted); font-size: 13px; }
+    select { padding: 9px 34px 9px 12px; }
+
+    .run-note {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 11px 14px;
+      margin-bottom: 18px;
+      border: 1px solid #416357;
+      border-radius: 10px;
+      background: #19332f;
+      color: #c4e7dc;
+      font-size: 13px;
+    }
+    .run-note strong { color: var(--teal); white-space: nowrap; }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(390px, .95fr) minmax(440px, 1.05fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+    .panel {
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: color-mix(in srgb, var(--panel) 94%, transparent);
+      box-shadow: 0 16px 40px #0000001c;
+    }
+    .panel-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 17px 19px 14px;
+      border-bottom: 1px solid var(--line);
+    }
+    .panel-head h2 { margin: 0; font-size: 16px; }
+    .panel-head p { margin: 3px 0 0; color: var(--muted); font-size: 12px; }
+    .iteration-pill {
+      flex: 0 0 auto;
+      padding: 6px 9px;
+      border: 1px solid #3c7263;
+      border-radius: 999px;
+      color: var(--teal);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .board-wrap { padding: clamp(12px, 2.2vw, 24px); }
+    .board {
+      display: grid;
+      grid-template-columns: repeat(15, minmax(0, 1fr));
+      width: min(100%, 620px);
+      margin: auto;
+      gap: 2px;
+      padding: 7px;
+      border: 1px solid #41515b;
+      border-radius: 8px;
+      background: #303e47;
+      aspect-ratio: 1;
+    }
+    .square {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 0;
+      background: var(--cell);
+      color: var(--ink);
+      font-size: clamp(9px, 1.25vw, 17px);
+      font-weight: 750;
+      transition: background .2s, color .2s;
+    }
+    .square.black { background: #17212a; }
+    .square .number {
+      position: absolute;
+      top: 1px;
+      left: 2px;
+      color: #48535a;
+      font-size: clamp(5px, .52vw, 8px);
+      font-weight: 500;
+    }
+    .square.focus { background: #b7f2df; }
+    .square.crossing { background: #f8dca8; }
+    .square.conflict { background: #f2b2b2; }
+
+    .legend {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding-top: 12px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+    .legend span { display: inline-flex; align-items: center; gap: 6px; }
+    .swatch { width: 10px; height: 10px; border-radius: 2px; background: var(--cell); }
+    .swatch.focus { background: #b7f2df; }
+    .swatch.crossing { background: #f8dca8; }
+    .board-caption {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 0 4px;
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .board-caption strong { color: var(--text); font-weight: 650; }
+
+    .steps { padding: 17px 19px 19px; }
+    .step-track {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 17px;
+    }
+    .step-point {
+      display: grid;
+      justify-items: center;
+      gap: 6px;
+      min-width: 35px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font-size: 10px;
+    }
+    .step-dot {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: var(--panel);
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .step-point.active { color: var(--teal); }
+    .step-point.active .step-dot { border-color: var(--teal); background: #21483e; color: var(--teal); }
+    .step-point.complete .step-dot { border-color: #426c60; color: var(--teal); }
+    .step-line { height: 1px; flex: 1; margin: 0 4px 16px; background: var(--line); }
+
+    .step-title { margin: 0; font-size: 19px; letter-spacing: -.02em; }
+    .step-description { min-height: 42px; margin: 5px 0 15px; color: var(--muted); font-size: 13px; }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .metric {
+      padding: 10px 11px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #141f28;
+    }
+    .metric-value { display: block; font-size: 19px; font-weight: 750; letter-spacing: -.03em; }
+    .metric-label { display: block; margin-top: 3px; color: var(--muted); font-size: 10px; line-height: 1.25; }
+    .callout {
+      padding: 11px 12px;
+      border-left: 3px solid var(--amber);
+      border-radius: 0 8px 8px 0;
+      background: #332d22;
+      color: #e8d6b7;
+      font-size: 12px;
+    }
+    .callout strong { color: var(--amber); }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding-top: 14px;
+      margin-top: 15px;
+      border-top: 1px solid var(--line);
+    }
+    .controls button { min-height: 37px; padding: 7px 12px; }
+    .controls button:disabled { cursor: not-allowed; opacity: .4; }
+    .controls .play { border-color: #3c7263; background: #21483e; color: var(--teal); font-weight: 700; }
+    .controls .spacer { flex: 1; }
+    .controls .counter { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+
+    .clue-panel { margin-top: 18px; }
+    .clue-tools { display: flex; align-items: center; gap: 8px; }
+    .clue-tools input {
+      width: min(190px, 40vw);
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #111b23;
+      color: var(--text);
+    }
+    .tabs { display: flex; gap: 4px; }
+    .tabs button { padding: 7px 9px; color: var(--muted); font-size: 11px; }
+    .tabs button.active { border-color: #3c7263; color: var(--teal); }
+    .clue-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-height: 300px;
+      overflow: auto;
+    }
+    .clue-group { min-width: 0; padding: 12px 15px 15px; }
+    .clue-group + .clue-group { border-left: 1px solid var(--line); }
+    .clue-group h3 {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      margin: 0 0 7px;
+      padding: 4px 0 8px;
+      background: var(--panel);
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .clue-row {
+      display: grid;
+      grid-template-columns: 37px 1fr auto;
+      align-items: start;
+      width: 100%;
+      gap: 6px;
+      padding: 7px 5px;
+      border: 0;
+      border-radius: 6px;
+      background: transparent;
+      text-align: left;
+      font-size: 11px;
+    }
+    .clue-row:hover, .clue-row.selected { background: var(--panel-raised); }
+    .clue-id { color: var(--teal); font-weight: 750; }
+    .clue-text { color: #d8dedf; }
+    .clue-answer { color: var(--amber); font-weight: 750; letter-spacing: .06em; }
+    .clue-answer.missing { color: #87949b; }
+    .empty-state, .error-state { padding: 28px; color: var(--muted); text-align: center; }
+    .error-state { color: #f2b2b2; }
+
+    @media (max-width: 930px) {
+      .layout { grid-template-columns: minmax(0, 1fr); }
+      .board { width: min(100%, 560px); }
+      .square { font-size: clamp(10px, 2vw, 17px); }
+      .square .number { font-size: clamp(6px, .9vw, 9px); }
+    }
+    @media (max-width: 560px) {
+      .shell { padding: 18px 12px 26px; }
+      header { flex-direction: column; }
+      .top-controls { width: 100%; justify-content: space-between; }
+      .run-note { align-items: flex-start; }
+      .panel-head { padding: 14px; }
+      .steps { padding: 15px; }
+      .metrics { gap: 5px; }
+      .metric { padding: 8px; }
+      .metric-value { font-size: 16px; }
+      .clue-tools { flex-wrap: wrap; }
+      .clue-tools input { flex: 1; width: auto; }
+      .clue-columns { grid-template-columns: 1fr; }
+      .clue-group + .clue-group { border-top: 1px solid var(--line); border-left: 0; }
+      .square .number { font-size: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div>
+        <div class="eyebrow">Algorithm walkthrough · one crossword</div>
+        <h1>From guesses to a consistent grid.</h1>
+        <p class="subtitle">Watch SweepClip prune candidates, use crossings, and fill the board.</p>
+      </div>
+      <div class="top-controls">
+        <label for="run-select">Recorded run</label>
+        <select id="run-select" aria-label="Select recorded run">
+          <option value="with_retry_request">With retry requests</option>
+          <option value="without_retry_request">Without retry requests</option>
+        </select>
+      </div>
+    </header>
+
+    <div class="run-note">
+      <strong>RECORDED RUN</strong>
+      <span>This is a saved DeepSeek trace for crossword #7286, not a live API call. Accuracy is shown for reporting; ground truth does not guide SweepClip's choices.</span>
+    </div>
+
+    <div id="app">
+      <div class="empty-state">Loading crossword trace…</div>
+    </div>
+  </main>
+  <script type="module">
+    const EMBEDDED_DATA = "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";
+    const compressedBytes = Uint8Array.from(atob(EMBEDDED_DATA), (character) => character.charCodeAt(0));
+    const compressedStream = new Blob([compressedBytes])
+      .stream()
+      .pipeThrough(new DecompressionStream("deflate"));
+    const DEMO_DATA = JSON.parse(await new Response(compressedStream).text());
+    const PUZZLE_NUMBER = DEMO_DATA.puzzle.number;
+    const puzzle = DEMO_DATA.puzzle;
+    const app = document.querySelector("#app");
+    const runSelect = document.querySelector("#run-select");
+
+    let snapshots = [];
+    let stepIndex = 0;
+    let selectedClue = null;
+    let clueFilter = "all";
+    let clueQuery = "";
+    let playback;
+
+    function showMessage(message, className) {
+      const element = document.createElement("div");
+      element.className = className;
+      element.textContent = message;
+      app.replaceChildren(element);
+    }
+
+    function loadTrace(mode) {
+      stopPlayback();
+      snapshots = DEMO_DATA.traces[mode];
+      stepIndex = 0;
+      selectedClue = null;
+      clueFilter = "all";
+      clueQuery = "";
+      if (!snapshots || !snapshots.length) {
+        showMessage(`No embedded ${mode.replaceAll("_", " ")} trace found.`, "error-state");
+        return;
+      }
+      render();
+    }
+
+    function getAnswerCells(key, answer) {
+      const [number, direction] = key.split("_");
+      let startRow = -1;
+      let startColumn = -1;
+
+      for (let row = 0; row < puzzle.board.length; row += 1) {
+        const column = puzzle.board[row].split("|").findIndex(
+          (cell) => Number(cell.trim()) === Number(number),
+        );
+        if (column >= 0) {
+          startRow = row;
+          startColumn = column;
+          break;
+        }
+      }
+      if (startRow < 0) return [];
+
+      return [...answer].map((letter, index) => ({
+        row: startRow + (direction === "d" ? index : 0),
+        column: startColumn + (direction === "a" ? index : 0),
+        letter,
+      }));
+    }
+
+    function buildBoardState(answers) {
+      const filled = new Map();
+      const answerCells = new Map();
+      for (const [key, answer] of Object.entries(answers)) {
+        const cells = getAnswerCells(key, answer);
+        answerCells.set(key, cells);
+        for (const cell of cells) {
+          const id = `${cell.row},${cell.column}`;
+          const entry = filled.get(id) || { letters: new Set(), owners: new Set() };
+          entry.letters.add(cell.letter);
+          entry.owners.add(key);
+          filled.set(id, entry);
+        }
+      }
+      return { filled, answerCells };
+    }
+
+    function cellIsInSelectedAnswer(row, column, answerCells) {
+      return (answerCells.get(selectedClue) || []).some(
+        (cell) => cell.row === row && cell.column === column,
+      );
+    }
+
+    function renderBoard(snapshot) {
+      const board = document.querySelector("#board");
+      const { filled, answerCells } = buildBoardState(snapshot.answers);
+      const totalOpen = puzzle.board.flatMap((row) => row.split("|"))
+        .filter((cell) => cell.trim() !== "X").length;
+      const filledCells = [...filled.values()].filter((cell) => cell.letters.size === 1).length;
+      let conflicts = 0;
+
+      puzzle.board.forEach((row, rowIndex) => {
+        row.split("|").forEach((rawCell, columnIndex) => {
+          const label = rawCell.trim();
+          const square = document.createElement("div");
+          square.className = "square";
+          square.setAttribute("role", "gridcell");
+
+          if (label === "X") {
+            square.classList.add("black");
+            square.setAttribute("aria-label", "Black square");
+          } else {
+            const cell = filled.get(`${rowIndex},${columnIndex}`);
+            const isSelected = selectedClue
+              && cellIsInSelectedAnswer(rowIndex, columnIndex, answerCells);
+            if (cell && cell.letters.size > 1) {
+              square.classList.add("conflict");
+              conflicts += 1;
+            } else if (isSelected) {
+              square.classList.add(cell && cell.owners.size > 1 ? "crossing" : "focus");
+            }
+
+            if (/^\d+$/.test(label)) {
+              const number = document.createElement("span");
+              number.className = "number";
+              number.textContent = label;
+              square.append(number);
+            }
+            if (cell && cell.letters.size === 1) {
+              square.append(document.createTextNode([...cell.letters][0].toUpperCase()));
+            }
+            square.setAttribute(
+              "aria-label",
+              `${label && /^\d+$/.test(label) ? `Clue ${label}, ` : ""}${cell ? [...cell.letters][0].toUpperCase() : "blank"}`,
+            );
+          }
+          board.append(square);
+        });
+      });
+
+      document.querySelector("#board-progress").textContent =
+        `${filledCells} / ${totalOpen} squares filled`;
+      document.querySelector("#consistency-status").textContent = conflicts
+        ? `${conflicts} crossing conflict${conflicts === 1 ? "" : "s"} visible`
+        : "Crossings are consistent";
+    }
+
+    function renderTimeline() {
+      const track = document.querySelector("#step-track");
+      snapshots.forEach((snapshot, index) => {
+        if (index > 0) {
+          const line = document.createElement("div");
+          line.className = "step-line";
+          track.append(line);
+        }
+        const button = document.createElement("button");
+        button.className = `step-point${index === stepIndex ? " active" : ""}${index < stepIndex ? " complete" : ""}`;
+        button.type = "button";
+        button.dataset.step = String(index);
+        button.setAttribute("aria-label", `Show depth ${snapshot.depth}`);
+
+        const dot = document.createElement("span");
+        dot.className = "step-dot";
+        dot.textContent = String(index + 1);
+        const label = document.createElement("span");
+        label.textContent = `Depth ${snapshot.depth}`;
+        button.append(dot, label);
+        track.append(button);
+      });
+    }
+
+    function renderClues(snapshot) {
+      const container = document.querySelector("#clue-columns");
+      const previousAnswers = stepIndex > 0 ? snapshots[stepIndex - 1].answers : {};
+      const groups = [
+        { direction: "across" },
+        { direction: "down" },
+      ];
+
+      for (const group of groups) {
+        const section = document.createElement("section");
+        section.className = "clue-group";
+        section.dataset.direction = group.direction[0];
+        const heading = document.createElement("h3");
+        heading.textContent = group.direction;
+        section.append(heading);
+
+        const clues = puzzle.clues.filter((clue) => {
+          if (clue[1] !== group.direction[0]) return false;
+          if (clueFilter !== "all" && clueFilter !== clue[1]) return false;
+          const answer = snapshot.answers[`${clue[0]}_${clue[1]}`] || "";
+          const query = clueQuery.toLowerCase();
+          return !query || `${clue[0]} ${clue[2]} ${answer}`.toLowerCase().includes(query);
+        });
+
+        for (const clue of clues) {
+          const key = `${clue[0]}_${clue[1]}`;
+          const answer = snapshot.answers[key];
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = `clue-row${selectedClue === key ? " selected" : ""}`;
+          button.dataset.clue = key;
+          const number = document.createElement("span");
+          number.className = "clue-id";
+          number.textContent = `${clue[0]}${clue[1]}`;
+          const text = document.createElement("span");
+          text.className = "clue-text";
+          text.textContent = `${clue[2]} (${clue[3]})`;
+          const value = document.createElement("span");
+          value.className = `clue-answer${answer ? "" : " missing"}`;
+          value.textContent = answer ? answer.toUpperCase() : "—";
+          if (answer && !previousAnswers[key]) value.title = "Added in this iteration";
+          button.append(number, text, value);
+          section.append(button);
+        }
+
+        if (!clues.length) {
+          const empty = document.createElement("p");
+          empty.className = "empty-state";
+          empty.textContent = "No matching clues.";
+          section.append(empty);
+        }
+        container.append(section);
+      }
+    }
+
+    function escapeAttribute(value) {
+      return value.replaceAll("&", "&amp;").replaceAll('"', "&quot;")
+        .replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+    }
+
+    function render() {
+      const snapshot = snapshots[stepIndex];
+      const previous = stepIndex > 0 ? snapshots[stepIndex - 1].answers : {};
+      const added = Object.keys(snapshot.answers).filter((key) => !(key in previous)).length;
+      const removed = Object.keys(previous).filter((key) => !(key in snapshot.answers)).length;
+      const percent = (value) => value === null ? "—" : `${Math.round(value * 100)}%`;
+      const stageText = stepIndex === 0
+        ? "SweepClip begins with candidates for all clues, removes answers with the wrong length, then uses crossing-letter consistency to keep a compatible set."
+        : "Using surviving crossing letters as hints, SweepClip searches neighboring clues. It then applies length and crossing-consistency pruning again.";
+
+      app.innerHTML = `
+        <div class="layout">
+          <section class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>Crossword #${PUZZLE_NUMBER}</h2>
+                <p>15 × 15 · NYT · 21 November 2011</p>
+              </div>
+              <span class="iteration-pill">DEPTH ${snapshot.depth}</span>
+            </div>
+            <div class="board-wrap">
+              <div id="board" class="board" role="grid" aria-label="Crossword grid"></div>
+              <div class="legend">
+                <span><i class="swatch"></i> Filled cell</span>
+                <span><i class="swatch focus"></i> Selected answer</span>
+                <span><i class="swatch crossing"></i> Crossing letter</span>
+              </div>
+              <div class="board-caption">
+                <strong id="board-progress"></strong>
+                <span id="consistency-status"></span>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>How the solve evolves</h2>
+                <p>Each snapshot is after candidate pruning.</p>
+              </div>
+              <span class="iteration-pill">${Object.keys(snapshot.answers).length} / ${puzzle.clues.length} CLUES</span>
+            </div>
+            <div class="steps">
+              <div id="step-track" class="step-track" aria-label="Iteration timeline"></div>
+              <h3 class="step-title">${stepIndex === 0 ? "Initial candidates, then prune" : `Search and prune · depth ${snapshot.depth}`}</h3>
+              <p class="step-description">${stageText}</p>
+              <div class="metrics">
+                <div class="metric">
+                  <span class="metric-value">${Object.keys(snapshot.answers).length}/${puzzle.clues.length}</span>
+                  <span class="metric-label">Candidates retained</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">+${added}${removed ? ` / −${removed}` : ""}</span>
+                  <span class="metric-label">Added / removed this depth</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">${percent(snapshot.accuracy)}</span>
+                  <span class="metric-label">Exact-answer accuracy · report-only</span>
+                </div>
+              </div>
+              <div class="callout">
+                <strong>Key idea:</strong> ground-truth accuracy is measured for reporting only. Search decisions use answer lengths and crossing letters.
+              </div>
+              <div class="controls">
+                <button type="button" id="previous-step" ${stepIndex === 0 ? "disabled" : ""}>← Back</button>
+                <button type="button" class="play" id="play-step">${playback ? "Pause" : "▶ Play"}</button>
+                <button type="button" id="next-step" ${stepIndex === snapshots.length - 1 ? "disabled" : ""}>Next →</button>
+                <span class="spacer"></span>
+                <span class="counter">${stepIndex + 1} / ${snapshots.length}</span>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="panel clue-panel">
+          <div class="panel-head">
+            <div>
+              <h2>Clues and retained answers</h2>
+              <p>Select a clue to highlight its cells and crossings on the grid.</p>
+            </div>
+            <div class="clue-tools">
+              <div class="tabs" aria-label="Filter clue direction">
+                <button type="button" data-filter="all" class="${clueFilter === "all" ? "active" : ""}">All</button>
+                <button type="button" data-filter="a" class="${clueFilter === "a" ? "active" : ""}">Across</button>
+                <button type="button" data-filter="d" class="${clueFilter === "d" ? "active" : ""}">Down</button>
+              </div>
+              <input id="clue-search" type="search" placeholder="Find a clue…" value="${escapeAttribute(clueQuery)}" aria-label="Search clues">
+            </div>
+          </div>
+          <div id="clue-columns" class="clue-columns"></div>
+        </section>
+      `;
+
+      renderBoard(snapshot);
+      renderTimeline();
+      renderClues(snapshot);
+      wireControls();
+    }
+
+    function wireControls() {
+      document.querySelector("#step-track").addEventListener("click", (event) => {
+        const button = event.target.closest("[data-step]");
+        if (!button) return;
+        stepIndex = Number(button.dataset.step);
+        render();
+      });
+      document.querySelector("#previous-step").addEventListener("click", () => moveStep(-1));
+      document.querySelector("#next-step").addEventListener("click", () => moveStep(1));
+      document.querySelector("#play-step").addEventListener("click", togglePlayback);
+      document.querySelector("#clue-columns").addEventListener("click", (event) => {
+        const button = event.target.closest("[data-clue]");
+        if (!button) return;
+        selectedClue = selectedClue === button.dataset.clue ? null : button.dataset.clue;
+        render();
+      });
+      document.querySelectorAll("[data-filter]").forEach((button) => {
+        button.addEventListener("click", () => {
+          clueFilter = button.dataset.filter;
+          render();
+        });
+      });
+      document.querySelector("#clue-search").addEventListener("input", (event) => {
+        clueQuery = event.target.value;
+        const cursorPosition = event.target.selectionStart;
+        render();
+        const search = document.querySelector("#clue-search");
+        search.focus();
+        search.setSelectionRange(cursorPosition, cursorPosition);
+      });
+    }
+
+    function moveStep(amount) {
+      stepIndex = Math.max(0, Math.min(snapshots.length - 1, stepIndex + amount));
+      render();
+    }
+
+    function togglePlayback() {
+      if (playback) {
+        stopPlayback();
+        render();
+        return;
+      }
+      if (stepIndex === snapshots.length - 1) stepIndex = 0;
+      playback = setInterval(() => {
+        if (stepIndex >= snapshots.length - 1) {
+          stopPlayback();
+        } else {
+          stepIndex += 1;
+        }
+        render();
+      }, 1800);
+      render();
+    }
+
+    function stopPlayback() {
+      if (playback) clearInterval(playback);
+      playback = null;
+    }
+
+    runSelect.addEventListener("change", () => loadTrace(runSelect.value));
+    loadTrace(runSelect.value);
+  </script>
+</body>
+</html>
