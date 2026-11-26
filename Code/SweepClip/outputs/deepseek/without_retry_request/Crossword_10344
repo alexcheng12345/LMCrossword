@@ -1,0 +1,515 @@
+-------------------------------
+Current Depth = 0  
+Acc = 0.28               
+Char Acc = 0.36     
+-------------------------------
+------ Current Answers --------
+1_d: ships
+2_d: carat
+3_d: arose
+4_d: tenses
+14_a: hare
+17_a: iron
+21_d: frey
+23_a: steer
+28_a: sepia
+29_d: pets
+30_d: isaw
+38_d: oath
+39_d: arco
+42_a: tatar
+46_d: hire
+49_a: choir
+50_d: rotate
+55_a: roles
+57_d: essen
+67_a: apso
+70_a: teen
+73_a: erne
+-------------------------------
+-------------------------------
+Current Depth = 1  
+Acc = 0.35               
+Char Acc = 0.43     
+-------------------------------
+------ Current Answers --------
+1_d: ships
+2_d: carat
+3_d: arose
+4_d: tenses
+14_a: hare
+17_a: iron
+21_d: frey
+23_a: steer
+28_a: sepia
+29_d: pets
+30_d: isaw
+38_d: oath
+39_d: arco
+42_a: tatar
+46_d: hire
+49_a: choir
+50_d: rotate
+55_a: roles
+57_d: essen
+67_a: apso
+70_a: teen
+73_a: erne
+58_d: stone
+44_a: lightswitch
+37_a: yesnoanswer
+20_a: passfailgrade
+1_a: scat
+56_d: leper
+31_d: antic
+-------------------------------
+-------------------------------
+Current Depth = 2  
+Acc = 0.44               
+Char Acc = 0.56     
+-------------------------------
+------ Current Answers --------
+1_d: ships
+2_d: carat
+3_d: arose
+4_d: tenses
+14_a: hare
+17_a: iron
+21_d: frey
+23_a: steer
+28_a: sepia
+29_d: pets
+30_d: isaw
+38_d: oath
+39_d: arco
+42_a: tatar
+46_d: hire
+49_a: choir
+50_d: rotate
+55_a: roles
+57_d: essen
+67_a: apso
+70_a: teen
+73_a: erne
+58_d: stone
+44_a: lightswitch
+37_a: yesnoanswer
+20_a: passfailgrade
+1_a: scat
+56_d: leper
+31_d: antic
+11_d: wavedaway
+33_d: wsw
+7_d: abel
+6_d: deli
+27_d: shrew
+26_d: steve
+5_d: area
+9_d: retro
+22_d: assn
+8_d: weigh
+-------------------------------
+-------------------------------
+Current Depth = 3  
+Acc = 0.53               
+Char Acc = 0.60     
+-------------------------------
+------ Current Answers --------
+1_d: ships
+2_d: carat
+3_d: arose
+4_d: tenses
+14_a: hare
+17_a: iron
+21_d: frey
+23_a: steer
+28_a: sepia
+29_d: pets
+30_d: isaw
+38_d: oath
+39_d: arco
+42_a: tatar
+46_d: hire
+49_a: choir
+50_d: rotate
+55_a: roles
+57_d: essen
+67_a: apso
+70_a: teen
+73_a: erne
+58_d: stone
+44_a: lightswitch
+37_a: yesnoanswer
+20_a: passfailgrade
+1_a: scat
+56_d: leper
+31_d: antic
+33_d: wsw
+7_d: abel
+6_d: deli
+27_d: shrew
+26_d: steve
+5_d: area
+22_d: assn
+34_d: balls
+43_a: wave
+32_a: swath
+24_a: hes
+47_a: yew
+5_a: adams
+18_a: elena
+25_a: ess
+-------------------------------
+-------------------------------
+Current Depth = 4  
+Acc = 0.56               
+Char Acc = 0.66     
+-------------------------------
+------ Current Answers --------
+1_d: ships
+2_d: carat
+3_d: arose
+4_d: tenses
+14_a: hare
+17_a: iron
+21_d: frey
+23_a: steer
+28_a: sepia
+29_d: pets
+30_d: isaw
+38_d: oath
+39_d: arco
+42_a: tatar
+46_d: hire
+49_a: choir
+50_d: rotate
+55_a: roles
+57_d: essen
+67_a: apso
+70_a: teen
+73_a: erne
+58_d: stone
+44_a: lightswitch
+37_a: yesnoanswer
+1_a: scat
+56_d: leper
+31_d: antic
+33_d: wsw
+7_d: abel
+6_d: deli
+27_d: shrew
+26_d: steve
+5_d: area
+22_d: assn
+34_d: balls
+43_a: wave
+32_a: swath
+24_a: hes
+47_a: yew
+5_a: adams
+18_a: elena
+25_a: ess
+59_a: truefalsetest
+35_d: drive
+15_a: rebut
+8_d: munch
+-------------------------------
+-------------------------------
+Current Depth = 5  
+Acc = 0.67               
+Char Acc = 0.78     
+-------------------------------
+------ Current Answers --------
+1_d: ships
+2_d: carat
+3_d: arose
+4_d: tenses
+14_a: hare
+17_a: iron
+21_d: frey
+23_a: steer
+28_a: sepia
+29_d: pets
+30_d: isaw
+38_d: oath
+39_d: arco
+42_a: tatar
+46_d: hire
+49_a: choir
+50_d: rotate
+55_a: roles
+57_d: essen
+67_a: apso
+70_a: teen
+73_a: erne
+58_d: stone
+44_a: lightswitch
+37_a: yesnoanswer
+1_a: scat
+56_d: leper
+31_d: antic
+33_d: wsw
+7_d: abel
+6_d: deli
+27_d: shrew
+26_d: steve
+5_d: area
+22_d: assn
+34_d: balls
+43_a: wave
+32_a: swath
+24_a: hes
+47_a: yew
+5_a: adams
+18_a: elena
+25_a: ess
+59_a: truefalsetest
+15_a: rebut
+8_d: munch
+61_d: alta
+51_a: ste
+62_d: last
+53_d: reads
+63_d: shoe
+9_d: stale
+54_d: eflat
+60_d: ross
+20_a: passfailclass
+-------------------------------
+-------------------------------
+Current Depth = 6  
+Acc = 0.81               
+Char Acc = 0.91     
+-------------------------------
+------ Current Answers --------
+1_d: ships
+2_d: carat
+3_d: arose
+4_d: tenses
+14_a: hare
+17_a: iron
+21_d: frey
+23_a: steer
+28_a: sepia
+29_d: pets
+30_d: isaw
+38_d: oath
+39_d: arco
+42_a: tatar
+46_d: hire
+49_a: choir
+50_d: rotate
+55_a: roles
+57_d: essen
+67_a: apso
+70_a: teen
+73_a: erne
+58_d: stone
+37_a: yesnoanswer
+1_a: scat
+56_d: leper
+31_d: antic
+33_d: wsw
+7_d: abel
+6_d: deli
+27_d: shrew
+26_d: steve
+5_d: area
+22_d: assn
+43_a: wave
+32_a: swath
+24_a: hes
+47_a: yew
+5_a: adams
+18_a: elena
+25_a: ess
+59_a: truefalsetest
+15_a: rebut
+8_d: munch
+61_d: alta
+51_a: ste
+62_d: last
+63_d: shoe
+9_d: stale
+54_d: eflat
+60_d: ross
+20_a: passfailclass
+52_a: ale
+11_d: chaseaway
+66_a: allah
+71_a: eyes
+68_a: hams
+10_d: asps
+64_a: clio
+69_a: fatso
+40_a: tutu
+72_a: state
+35_d: gunit
+-------------------------------
+-------------------------------
+Current Depth = 7  
+Acc = 0.96               
+Char Acc = 1.00     
+-------------------------------
+------ Current Answers --------
+1_d: ships
+2_d: carat
+3_d: arose
+4_d: tenses
+14_a: hare
+17_a: iron
+21_d: frey
+23_a: steer
+28_a: sepia
+29_d: pets
+30_d: isaw
+38_d: oath
+39_d: arco
+42_a: tatar
+46_d: hire
+49_a: choir
+50_d: rotate
+55_a: roles
+57_d: essen
+67_a: apso
+70_a: teen
+73_a: erne
+58_d: stone
+37_a: yesnoanswer
+1_a: scat
+56_d: leper
+31_d: antic
+33_d: wsw
+7_d: abel
+6_d: deli
+27_d: shrew
+26_d: steve
+5_d: area
+22_d: assn
+43_a: wave
+32_a: swath
+24_a: hes
+47_a: yew
+5_a: adams
+18_a: elena
+25_a: ess
+59_a: truefalsetest
+15_a: rebut
+8_d: munch
+61_d: alta
+51_a: ste
+62_d: last
+63_d: shoe
+9_d: stale
+54_d: eflat
+60_d: ross
+20_a: passfailclass
+52_a: ale
+11_d: chaseaway
+66_a: allah
+71_a: eyes
+68_a: hams
+10_d: asps
+64_a: clio
+69_a: fatso
+40_a: tutu
+72_a: state
+35_d: gunit
+34_d: atoms
+65_d: lay
+64_d: che
+16_a: shot
+53_d: leafs
+44_a: onoffswitch
+48_a: minor
+19_a: pats
+36_d: atonetime
+10_a: ache
+34_a: aga
+45_d: frau
+-------------------------------
+-------------------------------
+Current Depth = 8  
+Acc = 1.00               
+Char Acc = 1.00     
+-------------------------------
+------ Current Answers --------
+1_d: ships
+2_d: carat
+3_d: arose
+4_d: tenses
+14_a: hare
+17_a: iron
+21_d: frey
+23_a: steer
+28_a: sepia
+29_d: pets
+30_d: isaw
+38_d: oath
+39_d: arco
+42_a: tatar
+46_d: hire
+49_a: choir
+50_d: rotate
+55_a: roles
+57_d: essen
+67_a: apso
+70_a: teen
+73_a: erne
+58_d: stone
+37_a: yesnoanswer
+1_a: scat
+56_d: leper
+31_d: antic
+33_d: wsw
+7_d: abel
+6_d: deli
+27_d: shrew
+26_d: steve
+5_d: area
+22_d: assn
+43_a: wave
+32_a: swath
+24_a: hes
+47_a: yew
+5_a: adams
+18_a: elena
+25_a: ess
+59_a: truefalsetest
+15_a: rebut
+8_d: munch
+61_d: alta
+51_a: ste
+62_d: last
+63_d: shoe
+9_d: stale
+54_d: eflat
+60_d: ross
+20_a: passfailclass
+52_a: ale
+11_d: chaseaway
+66_a: allah
+71_a: eyes
+68_a: hams
+10_d: asps
+64_a: clio
+69_a: fatso
+40_a: tutu
+72_a: state
+35_d: gunit
+34_d: atoms
+65_d: lay
+64_d: che
+16_a: shot
+53_d: leafs
+44_a: onoffswitch
+48_a: minor
+19_a: pats
+36_d: atonetime
+10_a: ache
+34_a: aga
+45_d: frau
+41_d: ufo
+13_d: ets
+12_d: hot
+-------------------------------

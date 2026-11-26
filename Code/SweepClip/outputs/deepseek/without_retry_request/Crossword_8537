@@ -1,0 +1,420 @@
+-------------------------------
+Current Depth = 0  
+Acc = 0.51               
+Char Acc = 0.70     
+-------------------------------
+------ Current Answers --------
+1_d: dabs
+2_d: oval
+3_d: gila
+4_d: mastiffs
+5_d: anaemia
+6_d: hay
+7_d: aged
+8_d: rigor
+9_d: doggedly
+10_a: dads
+10_d: dogear
+11_d: abort
+13_d: seels
+14_a: avian
+15_a: agio
+16_a: oboe
+17_a: balsa
+18_a: yegg
+20_a: slater
+22_a: doggerel
+23_d: gris
+24_a: imus
+25_d: sharp
+27_a: dogfight
+27_d: dhow
+29_d: glee
+30_d: tryst
+32_a: halfa
+33_a: arils
+34_d: ileal
+35_a: mom
+35_d: mule
+36_d: odor
+40_a: dude
+40_d: doghouse
+42_a: copse
+45_a: tanagers
+46_d: nat
+56_d: alma
+57_d: stat
+61_a: built
+64_a: asama
+-------------------------------
+-------------------------------
+Current Depth = 1  
+Acc = 0.72               
+Char Acc = 0.78     
+-------------------------------
+------ Current Answers --------
+1_d: dabs
+2_d: oval
+3_d: gila
+4_d: mastiffs
+5_d: anaemia
+6_d: hay
+7_d: aged
+8_d: rigor
+9_d: doggedly
+10_a: dads
+10_d: dogear
+11_d: abort
+13_d: seels
+14_a: avian
+15_a: agio
+16_a: oboe
+17_a: balsa
+18_a: yegg
+20_a: slater
+22_a: doggerel
+23_d: gris
+24_a: imus
+25_d: sharp
+27_a: dogfight
+27_d: dhow
+29_d: glee
+30_d: tryst
+32_a: halfa
+33_a: arils
+34_d: ileal
+35_a: mom
+35_d: mule
+36_d: odor
+40_a: dude
+40_d: doghouse
+42_a: copse
+45_a: tanagers
+46_d: nat
+56_d: alma
+57_d: stat
+61_a: built
+64_a: asama
+1_a: dogma
+43_a: solos
+6_a: hard
+38_a: ores
+26_a: rerates
+19_a: gone
+41_a: wye
+39_a: dryly
+42_d: cute
+12_d: donee
+43_d: sashbar
+37_d: mess
+28_d: oary
+54_a: thomas
+31_a: dir
+55_d: mias
+-------------------------------
+-------------------------------
+Current Depth = 2  
+Acc = 0.74               
+Char Acc = 0.82     
+-------------------------------
+------ Current Answers --------
+1_d: dabs
+2_d: oval
+3_d: gila
+4_d: mastiffs
+5_d: anaemia
+6_d: hay
+7_d: aged
+8_d: rigor
+9_d: doggedly
+10_a: dads
+10_d: dogear
+11_d: abort
+13_d: seels
+14_a: avian
+15_a: agio
+16_a: oboe
+17_a: balsa
+18_a: yegg
+20_a: slater
+22_a: doggerel
+23_d: gris
+24_a: imus
+25_d: sharp
+27_a: dogfight
+27_d: dhow
+29_d: glee
+30_d: tryst
+32_a: halfa
+33_a: arils
+34_d: ileal
+35_a: mom
+35_d: mule
+36_d: odor
+40_a: dude
+40_d: doghouse
+42_a: copse
+45_a: tanagers
+46_d: nat
+56_d: alma
+57_d: stat
+61_a: built
+64_a: asama
+1_a: dogma
+43_a: solos
+6_a: hard
+38_a: ores
+26_a: rerates
+19_a: gone
+41_a: wye
+39_a: dryly
+42_d: cute
+12_d: donee
+43_d: sashbar
+37_d: mess
+28_d: oary
+54_a: thomas
+31_a: dir
+55_d: mias
+47_a: apostle
+51_a: lash
+44_a: tue
+67_a: resat
+52_a: depleted
+21_d: rug
+-------------------------------
+-------------------------------
+Current Depth = 3  
+Acc = 0.77               
+Char Acc = 0.86     
+-------------------------------
+------ Current Answers --------
+1_d: dabs
+2_d: oval
+3_d: gila
+4_d: mastiffs
+5_d: anaemia
+6_d: hay
+7_d: aged
+8_d: rigor
+9_d: doggedly
+10_a: dads
+10_d: dogear
+11_d: abort
+13_d: seels
+14_a: avian
+15_a: agio
+16_a: oboe
+17_a: balsa
+18_a: yegg
+20_a: slater
+22_a: doggerel
+23_d: gris
+24_a: imus
+25_d: sharp
+27_a: dogfight
+27_d: dhow
+29_d: glee
+30_d: tryst
+32_a: halfa
+33_a: arils
+34_d: ileal
+35_a: mom
+35_d: mule
+36_d: odor
+40_a: dude
+40_d: doghouse
+42_a: copse
+45_a: tanagers
+46_d: nat
+56_d: alma
+57_d: stat
+61_a: built
+64_a: asama
+1_a: dogma
+43_a: solos
+6_a: hard
+38_a: ores
+26_a: rerates
+19_a: gone
+41_a: wye
+39_a: dryly
+42_d: cute
+12_d: donee
+43_d: sashbar
+37_d: mess
+28_d: oary
+54_a: thomas
+31_a: dir
+55_d: mias
+47_a: apostle
+51_a: lash
+44_a: tue
+67_a: resat
+21_d: rug
+50_d: erode
+47_d: adapt
+53_d: dagr
+-------------------------------
+-------------------------------
+Current Depth = 4  
+Acc = 0.85               
+Char Acc = 0.93     
+-------------------------------
+------ Current Answers --------
+1_d: dabs
+2_d: oval
+3_d: gila
+4_d: mastiffs
+5_d: anaemia
+6_d: hay
+7_d: aged
+8_d: rigor
+9_d: doggedly
+10_a: dads
+10_d: dogear
+11_d: abort
+13_d: seels
+14_a: avian
+15_a: agio
+16_a: oboe
+17_a: balsa
+18_a: yegg
+20_a: slater
+22_a: doggerel
+23_d: gris
+24_a: imus
+25_d: sharp
+27_a: dogfight
+27_d: dhow
+29_d: glee
+30_d: tryst
+32_a: halfa
+33_a: arils
+34_d: ileal
+35_a: mom
+35_d: mule
+36_d: odor
+40_a: dude
+40_d: doghouse
+42_a: copse
+45_a: tanagers
+46_d: nat
+56_d: alma
+57_d: stat
+61_a: built
+64_a: asama
+1_a: dogma
+43_a: solos
+6_a: hard
+38_a: ores
+26_a: rerates
+19_a: gone
+41_a: wye
+39_a: dryly
+42_d: cute
+12_d: donee
+43_d: sashbar
+37_d: mess
+28_d: oary
+54_a: thomas
+31_a: dir
+55_d: mias
+47_a: apostle
+51_a: lash
+44_a: tue
+67_a: resat
+21_d: rug
+50_d: erode
+47_d: adapt
+53_d: dagr
+66_a: nero
+65_a: tusk
+59_a: loan
+48_d: poilu
+63_a: edge
+62_a: plea
+58_a: aile
+49_d: ogles
+-------------------------------
+-------------------------------
+Current Depth = 5  
+Acc = 0.85               
+Char Acc = 0.93     
+-------------------------------
+------ Current Answers --------
+1_d: dabs
+2_d: oval
+3_d: gila
+4_d: mastiffs
+5_d: anaemia
+6_d: hay
+7_d: aged
+8_d: rigor
+9_d: doggedly
+10_a: dads
+10_d: dogear
+11_d: abort
+13_d: seels
+14_a: avian
+15_a: agio
+16_a: oboe
+17_a: balsa
+18_a: yegg
+20_a: slater
+22_a: doggerel
+23_d: gris
+24_a: imus
+25_d: sharp
+27_a: dogfight
+27_d: dhow
+29_d: glee
+30_d: tryst
+32_a: halfa
+33_a: arils
+34_d: ileal
+35_a: mom
+35_d: mule
+36_d: odor
+40_a: dude
+40_d: doghouse
+42_a: copse
+45_a: tanagers
+46_d: nat
+56_d: alma
+57_d: stat
+61_a: built
+64_a: asama
+1_a: dogma
+43_a: solos
+6_a: hard
+38_a: ores
+26_a: rerates
+19_a: gone
+41_a: wye
+39_a: dryly
+42_d: cute
+12_d: donee
+43_d: sashbar
+37_d: mess
+28_d: oary
+54_a: thomas
+31_a: dir
+55_d: mias
+47_a: apostle
+51_a: lash
+44_a: tue
+67_a: resat
+21_d: rug
+50_d: erode
+47_d: adapt
+53_d: dagr
+66_a: nero
+65_a: tusk
+59_a: loan
+48_d: poilu
+63_a: edge
+62_a: plea
+58_a: aile
+49_d: ogles
+-------------------------------

@@ -1,0 +1,437 @@
+-------------------------------
+Current Depth = 0  
+Acc = 0.59               
+Char Acc = 0.79     
+-------------------------------
+------ Current Answers --------
+6_d: relevant
+7_a: deepend
+7_d: datary
+9_d: elm
+10_d: pope
+11_d: evet
+12_d: nera
+15_a: allover
+19_a: edam
+20_d: dole
+21_a: etat
+23_a: savored
+24_d: atone
+25_d: depress
+26_a: italy
+27_a: elbow
+28_d: lear
+30_d: odin
+33_d: olor
+35_d: emit
+36_d: saton
+37_a: aliment
+38_a: laramie
+38_d: lemonade
+40_a: veterans
+40_d: vair
+43_a: nations
+44_d: adage
+45_a: wed
+45_d: wiser
+47_d: deny
+48_a: anoa
+51_d: aira
+52_a: darn
+53_a: mine
+53_d: mini
+54_a: marital
+55_d: tat
+56_a: artisan
+57_d: rex
+58_d: tap
+59_a: average
+61_a: related
+62_a: expire
+-------------------------------
+-------------------------------
+Current Depth = 1  
+Acc = 0.86               
+Char Acc = 0.94     
+-------------------------------
+------ Current Answers --------
+6_d: relevant
+7_a: deepend
+7_d: datary
+9_d: elm
+10_d: pope
+11_d: evet
+12_d: nera
+15_a: allover
+19_a: edam
+20_d: dole
+21_a: etat
+23_a: savored
+24_d: atone
+25_d: depress
+26_a: italy
+27_a: elbow
+28_d: lear
+30_d: odin
+33_d: olor
+35_d: emit
+36_d: saton
+37_a: aliment
+38_a: laramie
+38_d: lemonade
+40_a: veterans
+40_d: vair
+43_a: nations
+44_d: adage
+45_a: wed
+45_d: wiser
+47_d: deny
+48_a: anoa
+51_d: aira
+52_a: darn
+53_a: mine
+53_d: mini
+54_a: marital
+55_d: tat
+56_a: artisan
+57_d: rex
+58_d: tap
+59_a: average
+61_a: related
+62_a: expire
+17_a: tempera
+16_a: eternal
+23_d: sidemen
+50_d: orel
+46_d: enare
+49_d: nave
+60_a: deanery
+32_a: foredone
+41_a: grate
+14_a: mediate
+1_a: pester
+34_d: rita
+13_d: drat
+48_d: amar
+29_d: bema
+42_a: samos
+8_d: eleme
+42_d: staled
+36_a: speedy
+31_d: wyes
+39_a: notime
+-------------------------------
+-------------------------------
+Current Depth = 2  
+Acc = 0.91               
+Char Acc = 0.95     
+-------------------------------
+------ Current Answers --------
+6_d: relevant
+7_a: deepend
+7_d: datary
+9_d: elm
+10_d: pope
+11_d: evet
+12_d: nera
+15_a: allover
+19_a: edam
+20_d: dole
+21_a: etat
+23_a: savored
+24_d: atone
+25_d: depress
+26_a: italy
+27_a: elbow
+28_d: lear
+30_d: odin
+33_d: olor
+35_d: emit
+36_d: saton
+37_a: aliment
+38_a: laramie
+38_d: lemonade
+40_a: veterans
+40_d: vair
+43_a: nations
+44_d: adage
+45_a: wed
+45_d: wiser
+47_d: deny
+48_a: anoa
+51_d: aira
+52_a: darn
+53_a: mine
+53_d: mini
+54_a: marital
+55_d: tat
+56_a: artisan
+57_d: rex
+58_d: tap
+59_a: average
+61_a: related
+62_a: expire
+17_a: tempera
+16_a: eternal
+23_d: sidemen
+50_d: orel
+46_d: enare
+49_d: nave
+60_a: deanery
+32_a: foredone
+41_a: grate
+14_a: mediate
+1_a: pester
+34_d: rita
+13_d: drat
+48_d: amar
+29_d: bema
+42_a: samos
+8_d: eleme
+42_d: staled
+36_a: speedy
+31_d: wyes
+39_a: notime
+32_d: fang
+14_d: memo
+4_d: tan
+5_d: eta
+-------------------------------
+-------------------------------
+Current Depth = 3  
+Acc = 0.93               
+Char Acc = 0.98     
+-------------------------------
+------ Current Answers --------
+6_d: relevant
+7_a: deepend
+7_d: datary
+9_d: elm
+10_d: pope
+11_d: evet
+12_d: nera
+15_a: allover
+19_a: edam
+20_d: dole
+21_a: etat
+23_a: savored
+24_d: atone
+25_d: depress
+26_a: italy
+27_a: elbow
+28_d: lear
+30_d: odin
+33_d: olor
+35_d: emit
+36_d: saton
+37_a: aliment
+38_a: laramie
+38_d: lemonade
+40_a: veterans
+40_d: vair
+43_a: nations
+44_d: adage
+45_a: wed
+45_d: wiser
+47_d: deny
+48_a: anoa
+51_d: aira
+52_a: darn
+53_a: mine
+53_d: mini
+54_a: marital
+55_d: tat
+56_a: artisan
+57_d: rex
+58_d: tap
+59_a: average
+61_a: related
+62_a: expire
+17_a: tempera
+16_a: eternal
+23_d: sidemen
+50_d: orel
+46_d: enare
+49_d: nave
+60_a: deanery
+32_a: foredone
+41_a: grate
+14_a: mediate
+1_a: pester
+34_d: rita
+13_d: drat
+48_d: amar
+29_d: bema
+42_a: samos
+8_d: eleme
+42_d: staled
+36_a: speedy
+31_d: wyes
+39_a: notime
+32_d: fang
+14_d: memo
+4_d: tan
+5_d: eta
+18_a: melt
+22_a: ole
+-------------------------------
+-------------------------------
+Current Depth = 4  
+Acc = 0.96               
+Char Acc = 0.99     
+-------------------------------
+------ Current Answers --------
+6_d: relevant
+7_a: deepend
+7_d: datary
+9_d: elm
+10_d: pope
+11_d: evet
+12_d: nera
+15_a: allover
+19_a: edam
+20_d: dole
+21_a: etat
+23_a: savored
+24_d: atone
+25_d: depress
+26_a: italy
+27_a: elbow
+28_d: lear
+30_d: odin
+33_d: olor
+35_d: emit
+36_d: saton
+37_a: aliment
+38_a: laramie
+38_d: lemonade
+40_a: veterans
+40_d: vair
+43_a: nations
+44_d: adage
+45_a: wed
+45_d: wiser
+47_d: deny
+48_a: anoa
+51_d: aira
+52_a: darn
+53_a: mine
+53_d: mini
+54_a: marital
+55_d: tat
+56_a: artisan
+57_d: rex
+58_d: tap
+59_a: average
+61_a: related
+62_a: expire
+17_a: tempera
+16_a: eternal
+23_d: sidemen
+50_d: orel
+46_d: enare
+49_d: nave
+60_a: deanery
+32_a: foredone
+41_a: grate
+14_a: mediate
+34_d: rita
+13_d: drat
+48_d: amar
+29_d: bema
+42_a: samos
+8_d: eleme
+42_d: staled
+36_a: speedy
+31_d: wyes
+39_a: notime
+32_d: fang
+14_d: memo
+4_d: tan
+5_d: eta
+18_a: melt
+22_a: ole
+1_d: betel
+2_d: edele
+3_d: dirt
+-------------------------------
+-------------------------------
+Current Depth = 5  
+Acc = 0.96               
+Char Acc = 0.99     
+-------------------------------
+------ Current Answers --------
+6_d: relevant
+7_a: deepend
+7_d: datary
+9_d: elm
+10_d: pope
+11_d: evet
+12_d: nera
+15_a: allover
+19_a: edam
+20_d: dole
+21_a: etat
+23_a: savored
+24_d: atone
+25_d: depress
+26_a: italy
+27_a: elbow
+28_d: lear
+30_d: odin
+33_d: olor
+35_d: emit
+36_d: saton
+37_a: aliment
+38_a: laramie
+38_d: lemonade
+40_a: veterans
+40_d: vair
+43_a: nations
+44_d: adage
+45_a: wed
+45_d: wiser
+47_d: deny
+48_a: anoa
+51_d: aira
+52_a: darn
+53_a: mine
+53_d: mini
+54_a: marital
+55_d: tat
+56_a: artisan
+57_d: rex
+58_d: tap
+59_a: average
+61_a: related
+62_a: expire
+17_a: tempera
+16_a: eternal
+23_d: sidemen
+50_d: orel
+46_d: enare
+49_d: nave
+60_a: deanery
+32_a: foredone
+41_a: grate
+14_a: mediate
+34_d: rita
+13_d: drat
+48_d: amar
+29_d: bema
+42_a: samos
+8_d: eleme
+42_d: staled
+36_a: speedy
+31_d: wyes
+39_a: notime
+32_d: fang
+14_d: memo
+4_d: tan
+5_d: eta
+18_a: melt
+22_a: ole
+1_d: betel
+2_d: edele
+3_d: dirt
+-------------------------------

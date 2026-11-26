@@ -1,0 +1,500 @@
+-------------------------------
+Current Depth = 0  
+Acc = 0.33               
+Char Acc = 0.43     
+-------------------------------
+------ Current Answers --------
+5_a: cadet
+5_d: casual
+6_d: anals
+7_d: dill
+10_a: chum
+10_d: caesar
+11_d: hers
+12_d: urdu
+13_d: mies
+15_a: anise
+18_a: salsaverde
+22_a: issus
+25_a: mica
+25_d: mufti
+26_d: ille
+28_d: totus
+34_d: shoes
+37_a: chute
+37_d: cafe
+40_a: paoli
+40_d: purse
+43_d: atones
+45_a: tres
+47_a: solos
+47_d: stab
+49_d: long
+58_a: aone
+61_a: begs
+-------------------------------
+-------------------------------
+Current Depth = 1  
+Acc = 0.45               
+Char Acc = 0.52     
+-------------------------------
+------ Current Answers --------
+5_a: cadet
+5_d: casual
+6_d: anals
+7_d: dill
+10_a: chum
+10_d: caesar
+11_d: hers
+12_d: urdu
+13_d: mies
+15_a: anise
+18_a: salsaverde
+22_a: issus
+25_a: mica
+25_d: mufti
+34_d: shoes
+37_a: chute
+37_d: cafe
+40_a: paoli
+40_d: purse
+43_d: atones
+45_a: tres
+47_a: solos
+47_d: stab
+49_d: long
+58_a: aone
+61_a: begs
+8_d: ess
+23_a: auras
+48_d: oboe
+54_a: tbonesteak
+16_a: aeri
+19_d: vichy
+29_d: moulu
+9_d: tea
+21_a: full
+42_a: potaufeu
+34_a: softy
+-------------------------------
+-------------------------------
+Current Depth = 2  
+Acc = 0.54               
+Char Acc = 0.62     
+-------------------------------
+------ Current Answers --------
+5_a: cadet
+5_d: casual
+6_d: anals
+7_d: dill
+10_a: chum
+10_d: caesar
+11_d: hers
+12_d: urdu
+13_d: mies
+15_a: anise
+18_a: salsaverde
+22_a: issus
+25_a: mica
+25_d: mufti
+34_d: shoes
+37_a: chute
+37_d: cafe
+40_a: paoli
+40_d: purse
+43_d: atones
+45_a: tres
+47_a: solos
+47_d: stab
+49_d: long
+58_a: aone
+61_a: begs
+8_d: ess
+23_a: auras
+48_d: oboe
+54_a: tbonesteak
+16_a: aeri
+19_d: vichy
+29_d: moulu
+9_d: tea
+21_a: full
+42_a: potaufeu
+34_a: softy
+50_d: teut
+44_d: sunken
+26_d: iste
+21_d: frow
+46_d: liana
+29_a: mushroom
+55_d: ssa
+56_d: tan
+27_d: recap
+28_d: finio
+-------------------------------
+-------------------------------
+Current Depth = 3  
+Acc = 0.66               
+Char Acc = 0.79     
+-------------------------------
+------ Current Answers --------
+5_a: cadet
+5_d: casual
+6_d: anals
+7_d: dill
+10_a: chum
+10_d: caesar
+11_d: hers
+12_d: urdu
+13_d: mies
+15_a: anise
+18_a: salsaverde
+22_a: issus
+25_a: mica
+25_d: mufti
+34_d: shoes
+37_a: chute
+37_d: cafe
+40_a: paoli
+40_d: purse
+43_d: atones
+45_a: tres
+47_a: solos
+47_d: stab
+49_d: long
+58_a: aone
+61_a: begs
+8_d: ess
+23_a: auras
+48_d: oboe
+54_a: tbonesteak
+16_a: aeri
+19_d: vichy
+29_d: moulu
+9_d: tea
+21_a: full
+42_a: potaufeu
+34_a: softy
+50_d: teut
+44_d: sunken
+26_d: iste
+21_d: frow
+29_a: mushroom
+55_d: ssa
+56_d: tan
+27_d: recap
+39_a: all
+59_a: sauce
+32_d: moral
+46_a: gumbo
+62_a: anton
+31_d: orate
+36_a: coat
+50_a: tuna
+44_a: sorrel
+30_d: oscarofthe
+-------------------------------
+-------------------------------
+Current Depth = 4  
+Acc = 0.76               
+Char Acc = 0.87     
+-------------------------------
+------ Current Answers --------
+5_a: cadet
+5_d: casual
+6_d: anals
+7_d: dill
+10_a: chum
+10_d: caesar
+11_d: hers
+12_d: urdu
+13_d: mies
+15_a: anise
+18_a: salsaverde
+22_a: issus
+25_a: mica
+25_d: mufti
+34_d: shoes
+37_a: chute
+37_d: cafe
+40_a: paoli
+40_d: purse
+43_d: atones
+45_a: tres
+47_a: solos
+47_d: stab
+49_d: long
+58_a: aone
+61_a: begs
+8_d: ess
+23_a: auras
+48_d: oboe
+54_a: tbonesteak
+16_a: aeri
+19_d: vichy
+29_d: moulu
+9_d: tea
+21_a: full
+42_a: potaufeu
+34_a: softy
+50_d: teut
+44_d: sunken
+26_d: iste
+29_a: mushroom
+55_d: ssa
+56_d: tan
+27_d: recap
+39_a: all
+59_a: sauce
+32_d: moral
+46_a: gumbo
+62_a: anton
+31_d: orate
+36_a: coat
+50_a: tuna
+44_a: sorrel
+30_d: oscarofthe
+35_a: sro
+60_a: then
+33_a: edsel
+27_a: repool
+46_d: guaco
+41_d: roma
+38_a: scar
+41_a: riata
+51_a: fam
+57_a: etui
+63_a: memo
+-------------------------------
+-------------------------------
+Current Depth = 5  
+Acc = 0.81               
+Char Acc = 0.88     
+-------------------------------
+------ Current Answers --------
+5_a: cadet
+5_d: casual
+6_d: anals
+7_d: dill
+10_a: chum
+10_d: caesar
+11_d: hers
+12_d: urdu
+13_d: mies
+15_a: anise
+18_a: salsaverde
+22_a: issus
+25_a: mica
+25_d: mufti
+34_d: shoes
+37_a: chute
+37_d: cafe
+40_a: paoli
+40_d: purse
+43_d: atones
+45_a: tres
+47_a: solos
+47_d: stab
+49_d: long
+58_a: aone
+61_a: begs
+8_d: ess
+23_a: auras
+48_d: oboe
+54_a: tbonesteak
+16_a: aeri
+19_d: vichy
+29_d: moulu
+9_d: tea
+21_a: full
+42_a: potaufeu
+34_a: softy
+50_d: teut
+44_d: sunken
+26_d: iste
+29_a: mushroom
+55_d: ssa
+56_d: tan
+27_d: recap
+39_a: all
+59_a: sauce
+32_d: moral
+46_a: gumbo
+62_a: anton
+31_d: orate
+36_a: coat
+50_a: tuna
+44_a: sorrel
+30_d: oscarofthe
+35_a: sro
+60_a: then
+33_a: edsel
+27_a: repool
+46_d: guaco
+41_d: roma
+38_a: scar
+41_a: riata
+51_a: fam
+57_a: etui
+57_d: etc
+21_d: frol
+38_d: sirb
+52_d: auer
+53_d: mint
+28_d: edolo
+-------------------------------
+-------------------------------
+Current Depth = 6  
+Acc = 0.82               
+Char Acc = 0.88     
+-------------------------------
+------ Current Answers --------
+5_a: cadet
+5_d: casual
+6_d: anals
+7_d: dill
+10_a: chum
+10_d: caesar
+11_d: hers
+12_d: urdu
+13_d: mies
+15_a: anise
+18_a: salsaverde
+22_a: issus
+25_a: mica
+25_d: mufti
+34_d: shoes
+37_a: chute
+37_d: cafe
+40_a: paoli
+40_d: purse
+43_d: atones
+45_a: tres
+47_a: solos
+47_d: stab
+49_d: long
+58_a: aone
+61_a: begs
+8_d: ess
+23_a: auras
+48_d: oboe
+54_a: tbonesteak
+16_a: aeri
+19_d: vichy
+29_d: moulu
+9_d: tea
+21_a: full
+42_a: potaufeu
+34_a: softy
+50_d: teut
+44_d: sunken
+26_d: iste
+29_a: mushroom
+55_d: ssa
+56_d: tan
+27_d: recap
+39_a: all
+59_a: sauce
+32_d: moral
+46_a: gumbo
+62_a: anton
+31_d: orate
+36_a: coat
+50_a: tuna
+44_a: sorrel
+30_d: oscarofthe
+35_a: sro
+60_a: then
+33_a: edsel
+27_a: repool
+46_d: guaco
+41_d: roma
+38_a: scar
+41_a: riata
+51_a: fam
+57_a: etui
+57_d: etc
+21_d: frol
+38_d: sirb
+52_d: auer
+53_d: mint
+28_d: edolo
+63_a: cert
+-------------------------------
+-------------------------------
+Current Depth = 7  
+Acc = 0.82               
+Char Acc = 0.88     
+-------------------------------
+------ Current Answers --------
+5_a: cadet
+5_d: casual
+6_d: anals
+7_d: dill
+10_a: chum
+10_d: caesar
+11_d: hers
+12_d: urdu
+13_d: mies
+15_a: anise
+18_a: salsaverde
+22_a: issus
+25_a: mica
+25_d: mufti
+34_d: shoes
+37_a: chute
+37_d: cafe
+40_a: paoli
+40_d: purse
+43_d: atones
+45_a: tres
+47_a: solos
+47_d: stab
+49_d: long
+58_a: aone
+61_a: begs
+8_d: ess
+23_a: auras
+48_d: oboe
+54_a: tbonesteak
+16_a: aeri
+19_d: vichy
+29_d: moulu
+9_d: tea
+21_a: full
+42_a: potaufeu
+34_a: softy
+50_d: teut
+44_d: sunken
+26_d: iste
+29_a: mushroom
+55_d: ssa
+56_d: tan
+27_d: recap
+39_a: all
+59_a: sauce
+32_d: moral
+46_a: gumbo
+62_a: anton
+31_d: orate
+36_a: coat
+50_a: tuna
+44_a: sorrel
+30_d: oscarofthe
+35_a: sro
+60_a: then
+33_a: edsel
+27_a: repool
+46_d: guaco
+41_d: roma
+38_a: scar
+41_a: riata
+51_a: fam
+57_a: etui
+57_d: etc
+21_d: frol
+38_d: sirb
+52_d: auer
+53_d: mint
+28_d: edolo
+63_a: cert
+-------------------------------

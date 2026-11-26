@@ -1,0 +1,653 @@
+-------------------------------
+Current Depth = 0  
+Acc = 0.30               
+Char Acc = 0.41     
+-------------------------------
+------ Current Answers --------
+9_a: stow
+10_d: trap
+11_d: ogle
+12_d: weed
+16_a: urge
+22_a: popped
+23_d: out
+29_a: britches
+30_d: homes
+32_d: sated
+35_a: iola
+38_a: omit
+41_a: suede
+44_a: bussed
+44_d: braces
+46_a: grin
+50_a: grateful
+50_d: gnar
+53_d: lady
+57_a: rama
+59_a: tease
+60_a: sled
+62_a: sorts
+63_a: may
+-------------------------------
+-------------------------------
+Current Depth = 1  
+Acc = 0.42               
+Char Acc = 0.52     
+-------------------------------
+------ Current Answers --------
+9_a: stow
+10_d: trap
+11_d: ogle
+12_d: weed
+16_a: urge
+22_a: popped
+23_d: out
+29_a: britches
+30_d: homes
+32_d: sated
+35_a: iola
+38_a: omit
+41_a: suede
+44_a: bussed
+44_d: braces
+46_a: grin
+50_a: grateful
+50_d: gnar
+53_d: lady
+59_a: tease
+60_a: sled
+62_a: sorts
+63_a: may
+51_d: film
+41_d: suit
+37_d: corrects
+8_d: skeptics
+25_d: tribe
+55_a: cynic
+19_a: pale
+56_d: yeo
+52_d: umea
+29_d: bated
+46_d: grist
+31_d: elide
+-------------------------------
+-------------------------------
+Current Depth = 2  
+Acc = 0.51               
+Char Acc = 0.66     
+-------------------------------
+------ Current Answers --------
+9_a: stow
+10_d: trap
+11_d: ogle
+12_d: weed
+16_a: urge
+22_a: popped
+23_d: out
+29_a: britches
+30_d: homes
+32_d: sated
+35_a: iola
+38_a: omit
+41_a: suede
+44_a: bussed
+44_d: braces
+46_a: grin
+50_a: grateful
+50_d: gnar
+53_d: lady
+59_a: tease
+60_a: sled
+62_a: sorts
+63_a: may
+41_d: suit
+37_d: corrects
+8_d: skeptics
+55_a: cynic
+19_a: pale
+56_d: yeo
+52_d: umea
+29_d: bated
+46_d: grist
+31_d: elide
+42_a: badgered
+34_a: laic
+57_a: yama
+15_a: umiak
+45_a: horn
+37_a: cites
+18_a: sense
+47_a: undone
+40_a: ones
+4_a: ramps
+-------------------------------
+-------------------------------
+Current Depth = 3  
+Acc = 0.70               
+Char Acc = 0.83     
+-------------------------------
+------ Current Answers --------
+9_a: stow
+10_d: trap
+11_d: ogle
+12_d: weed
+16_a: urge
+22_a: popped
+23_d: out
+29_a: britches
+30_d: homes
+32_d: sated
+35_a: iola
+38_a: omit
+41_a: suede
+44_a: bussed
+44_d: braces
+46_a: grin
+50_a: grateful
+50_d: gnar
+53_d: lady
+59_a: tease
+60_a: sled
+62_a: sorts
+63_a: may
+41_d: suit
+37_d: corrects
+8_d: skeptics
+55_a: cynic
+56_d: yeo
+52_d: umea
+29_d: bated
+46_d: grist
+31_d: elide
+34_a: laic
+15_a: umiak
+45_a: horn
+37_a: cites
+18_a: sense
+47_a: undone
+40_a: ones
+4_a: ramps
+47_d: ulna
+9_d: suspiciousness
+4_d: rusted
+6_d: mind
+5_d: ameer
+51_d: film
+34_d: linen
+25_a: etui
+49_d: dart
+43_d: eon
+25_d: eries
+14_d: doubtingthomas
+48_d: noon
+7_d: pas
+28_d: weird
+26_d: cubeb
+-------------------------------
+-------------------------------
+Current Depth = 4  
+Acc = 0.76               
+Char Acc = 0.83     
+-------------------------------
+------ Current Answers --------
+9_a: stow
+10_d: trap
+11_d: ogle
+12_d: weed
+16_a: urge
+22_a: popped
+23_d: out
+29_a: britches
+30_d: homes
+32_d: sated
+35_a: iola
+38_a: omit
+41_a: suede
+44_a: bussed
+44_d: braces
+46_a: grin
+50_a: grateful
+50_d: gnar
+53_d: lady
+59_a: tease
+60_a: sled
+62_a: sorts
+63_a: may
+41_d: suit
+37_d: corrects
+8_d: skeptics
+55_a: cynic
+56_d: yeo
+52_d: umea
+29_d: bated
+46_d: grist
+31_d: elide
+34_a: laic
+15_a: umiak
+45_a: horn
+37_a: cites
+18_a: sense
+47_a: undone
+40_a: ones
+4_a: ramps
+47_d: ulna
+9_d: suspiciousness
+4_d: rusted
+6_d: mind
+5_d: ameer
+51_d: film
+34_d: linen
+25_a: etui
+49_d: dart
+43_d: eon
+25_d: eries
+48_d: noon
+7_d: pas
+28_d: weird
+26_d: cubeb
+61_a: ants
+42_a: badgered
+20_a: flaunted
+13_a: reed
+24_a: beer
+36_a: bein
+57_a: sima
+17_a: mayo
+58_a: nora
+54_a: loam
+19_a: sale
+-------------------------------
+-------------------------------
+Current Depth = 5  
+Acc = 0.79               
+Char Acc = 0.86     
+-------------------------------
+------ Current Answers --------
+9_a: stow
+10_d: trap
+11_d: ogle
+12_d: weed
+16_a: urge
+22_a: popped
+23_d: out
+29_a: britches
+30_d: homes
+32_d: sated
+35_a: iola
+38_a: omit
+41_a: suede
+44_a: bussed
+44_d: braces
+46_a: grin
+50_a: grateful
+50_d: gnar
+53_d: lady
+59_a: tease
+60_a: sled
+62_a: sorts
+63_a: may
+41_d: suit
+37_d: corrects
+8_d: skeptics
+55_a: cynic
+56_d: yeo
+52_d: umea
+29_d: bated
+46_d: grist
+31_d: elide
+34_a: laic
+15_a: umiak
+45_a: horn
+37_a: cites
+18_a: sense
+47_a: undone
+40_a: ones
+4_a: ramps
+47_d: ulna
+9_d: suspiciousness
+4_d: rusted
+6_d: mind
+5_d: ameer
+51_d: film
+34_d: linen
+25_a: etui
+49_d: dart
+43_d: eon
+25_d: eries
+48_d: noon
+7_d: pas
+28_d: weird
+26_d: cubeb
+61_a: ants
+42_a: badgered
+13_a: reed
+24_a: beer
+36_a: bein
+57_a: sima
+58_a: nora
+54_a: loam
+19_a: sale
+2_d: seal
+1_d: eros
+26_a: coward
+3_d: seer
+39_a: earn
+-------------------------------
+-------------------------------
+Current Depth = 6  
+Acc = 0.82               
+Char Acc = 0.89     
+-------------------------------
+------ Current Answers --------
+9_a: stow
+10_d: trap
+11_d: ogle
+12_d: weed
+16_a: urge
+22_a: popped
+23_d: out
+29_a: britches
+30_d: homes
+32_d: sated
+35_a: iola
+38_a: omit
+41_a: suede
+44_a: bussed
+44_d: braces
+46_a: grin
+50_a: grateful
+50_d: gnar
+53_d: lady
+59_a: tease
+60_a: sled
+62_a: sorts
+63_a: may
+41_d: suit
+37_d: corrects
+8_d: skeptics
+55_a: cynic
+56_d: yeo
+52_d: umea
+29_d: bated
+46_d: grist
+31_d: elide
+34_a: laic
+15_a: umiak
+45_a: horn
+37_a: cites
+18_a: sense
+47_a: undone
+40_a: ones
+4_a: ramps
+47_d: ulna
+9_d: suspiciousness
+4_d: rusted
+6_d: mind
+5_d: ameer
+51_d: film
+34_d: linen
+25_a: etui
+49_d: dart
+43_d: eon
+25_d: eries
+48_d: noon
+7_d: pas
+28_d: weird
+26_d: cubeb
+61_a: ants
+42_a: badgered
+13_a: reed
+24_a: beer
+36_a: bein
+57_a: sima
+58_a: nora
+54_a: loam
+19_a: sale
+1_d: eros
+26_a: coward
+3_d: seer
+39_a: earn
+20_a: strutted
+21_d: tern
+17_a: oleo
+1_a: ess
+-------------------------------
+-------------------------------
+Current Depth = 7  
+Acc = 0.83               
+Char Acc = 0.89     
+-------------------------------
+------ Current Answers --------
+9_a: stow
+10_d: trap
+11_d: ogle
+12_d: weed
+16_a: urge
+22_a: popped
+23_d: out
+29_a: britches
+30_d: homes
+32_d: sated
+35_a: iola
+38_a: omit
+41_a: suede
+44_a: bussed
+44_d: braces
+46_a: grin
+50_a: grateful
+50_d: gnar
+53_d: lady
+59_a: tease
+60_a: sled
+62_a: sorts
+63_a: may
+41_d: suit
+37_d: corrects
+8_d: skeptics
+55_a: cynic
+56_d: yeo
+52_d: umea
+29_d: bated
+46_d: grist
+31_d: elide
+34_a: laic
+15_a: umiak
+45_a: horn
+37_a: cites
+18_a: sense
+47_a: undone
+40_a: ones
+4_a: ramps
+47_d: ulna
+9_d: suspiciousness
+4_d: rusted
+6_d: mind
+5_d: ameer
+51_d: film
+34_d: linen
+25_a: etui
+49_d: dart
+43_d: eon
+25_d: eries
+48_d: noon
+7_d: pas
+28_d: weird
+26_d: cubeb
+61_a: ants
+42_a: badgered
+13_a: reed
+24_a: beer
+36_a: bein
+57_a: sima
+58_a: nora
+54_a: loam
+19_a: sale
+1_d: eros
+26_a: coward
+3_d: seer
+39_a: earn
+20_a: strutted
+21_d: tern
+17_a: oleo
+2_d: melt
+-------------------------------
+-------------------------------
+Current Depth = 8  
+Acc = 0.84               
+Char Acc = 0.89     
+-------------------------------
+------ Current Answers --------
+9_a: stow
+10_d: trap
+11_d: ogle
+12_d: weed
+16_a: urge
+22_a: popped
+23_d: out
+29_a: britches
+30_d: homes
+32_d: sated
+35_a: iola
+38_a: omit
+41_a: suede
+44_a: bussed
+44_d: braces
+46_a: grin
+50_a: grateful
+50_d: gnar
+53_d: lady
+59_a: tease
+60_a: sled
+62_a: sorts
+63_a: may
+41_d: suit
+37_d: corrects
+8_d: skeptics
+55_a: cynic
+56_d: yeo
+52_d: umea
+29_d: bated
+46_d: grist
+31_d: elide
+34_a: laic
+15_a: umiak
+45_a: horn
+37_a: cites
+18_a: sense
+47_a: undone
+40_a: ones
+4_a: ramps
+47_d: ulna
+9_d: suspiciousness
+4_d: rusted
+6_d: mind
+5_d: ameer
+51_d: film
+34_d: linen
+25_a: etui
+49_d: dart
+43_d: eon
+25_d: eries
+48_d: noon
+7_d: pas
+28_d: weird
+26_d: cubeb
+61_a: ants
+42_a: badgered
+13_a: reed
+24_a: beer
+36_a: bein
+57_a: sima
+58_a: nora
+54_a: loam
+19_a: sale
+1_d: eros
+26_a: coward
+3_d: seer
+39_a: earn
+20_a: strutted
+21_d: tern
+17_a: oleo
+2_d: melt
+1_a: ems
+-------------------------------
+-------------------------------
+Current Depth = 9  
+Acc = 0.84               
+Char Acc = 0.89     
+-------------------------------
+------ Current Answers --------
+9_a: stow
+10_d: trap
+11_d: ogle
+12_d: weed
+16_a: urge
+22_a: popped
+23_d: out
+29_a: britches
+30_d: homes
+32_d: sated
+35_a: iola
+38_a: omit
+41_a: suede
+44_a: bussed
+44_d: braces
+46_a: grin
+50_a: grateful
+50_d: gnar
+53_d: lady
+59_a: tease
+60_a: sled
+62_a: sorts
+63_a: may
+41_d: suit
+37_d: corrects
+8_d: skeptics
+55_a: cynic
+56_d: yeo
+52_d: umea
+29_d: bated
+46_d: grist
+31_d: elide
+34_a: laic
+15_a: umiak
+45_a: horn
+37_a: cites
+18_a: sense
+47_a: undone
+40_a: ones
+4_a: ramps
+47_d: ulna
+9_d: suspiciousness
+4_d: rusted
+6_d: mind
+5_d: ameer
+51_d: film
+34_d: linen
+25_a: etui
+49_d: dart
+43_d: eon
+25_d: eries
+48_d: noon
+7_d: pas
+28_d: weird
+26_d: cubeb
+61_a: ants
+42_a: badgered
+13_a: reed
+24_a: beer
+36_a: bein
+57_a: sima
+58_a: nora
+54_a: loam
+19_a: sale
+1_d: eros
+26_a: coward
+3_d: seer
+39_a: earn
+20_a: strutted
+21_d: tern
+17_a: oleo
+2_d: melt
+1_a: ems
+-------------------------------

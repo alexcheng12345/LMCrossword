@@ -1,0 +1,294 @@
+-------------------------------
+Current Depth = 0  
+Acc = 0.65               
+Char Acc = 0.73     
+-------------------------------
+------ Current Answers --------
+1_a: mar
+2_d: abit
+3_d: rigoletto
+4_a: sobs
+4_d: serena
+5_d: orc
+6_d: brac
+13_a: obi
+15_d: repo
+17_a: cigarcase
+18_d: avec
+20_a: stove
+22_d: eric
+23_a: lena
+24_d: arc
+25_a: dora
+27_a: cuecard
+27_d: chic
+28_d: ussr
+30_a: ilk
+31_d: kos
+32_a: hst
+34_d: amc
+35_d: talc
+36_d: spacesuit
+37_d: ecru
+38_d: taft
+39_a: isto
+40_d: opt
+41_a: uma
+42_a: spca
+43_a: cropcircle
+45_d: idol
+46_d: era
+48_a: tad
+49_a: crewcut
+50_d: elects
+51_d: wino
+55_a: rods
+56_d: deck
+57_d: salad
+58_a: alie
+61_d: napa
+62_a: ensue
+64_d: eton
+66_a: claycourt
+67_d: yum
+69_a: kaput
+70_a: igo
+72_a: dams
+73_a: ten
+-------------------------------
+-------------------------------
+Current Depth = 1  
+Acc = 0.79               
+Char Acc = 0.84     
+-------------------------------
+------ Current Answers --------
+1_a: mar
+2_d: abit
+3_d: rigoletto
+4_a: sobs
+4_d: serena
+5_d: orc
+6_d: brac
+13_a: obi
+15_d: repo
+17_a: cigarcase
+18_d: avec
+20_a: stove
+22_d: eric
+23_a: lena
+24_d: arc
+25_a: dora
+27_a: cuecard
+27_d: chic
+28_d: ussr
+30_a: ilk
+31_d: kos
+32_a: hst
+34_d: amc
+35_d: talc
+36_d: spacesuit
+37_d: ecru
+38_d: taft
+39_a: isto
+40_d: opt
+41_a: uma
+42_a: spca
+43_a: cropcircle
+45_d: idol
+46_d: era
+48_a: tad
+49_a: crewcut
+50_d: elects
+51_d: wino
+55_a: rods
+56_d: deck
+57_d: salad
+58_a: alie
+61_d: napa
+62_a: ensue
+64_d: eton
+66_a: claycourt
+67_d: yum
+69_a: kaput
+70_a: igo
+72_a: dams
+73_a: ten
+14_a: error
+7_d: sosad
+1_d: mocs
+8_d: catcall
+63_d: urge
+47_a: arf
+21_a: capecoral
+33_a: coatcloset
+44_d: carcare
+59_a: cameclean
+29_d: dour
+-------------------------------
+-------------------------------
+Current Depth = 2  
+Acc = 0.96               
+Char Acc = 1.00     
+-------------------------------
+------ Current Answers --------
+1_a: mar
+2_d: abit
+3_d: rigoletto
+4_a: sobs
+4_d: serena
+5_d: orc
+6_d: brac
+13_a: obi
+15_d: repo
+17_a: cigarcase
+18_d: avec
+20_a: stove
+22_d: eric
+23_a: lena
+24_d: arc
+25_a: dora
+27_a: cuecard
+27_d: chic
+28_d: ussr
+30_a: ilk
+31_d: kos
+32_a: hst
+34_d: amc
+35_d: talc
+36_d: spacesuit
+37_d: ecru
+38_d: taft
+39_a: isto
+40_d: opt
+41_a: uma
+42_a: spca
+43_a: cropcircle
+45_d: idol
+46_d: era
+48_a: tad
+49_a: crewcut
+50_d: elects
+51_d: wino
+55_a: rods
+56_d: deck
+57_d: salad
+58_a: alie
+61_d: napa
+62_a: ensue
+64_d: eton
+66_a: claycourt
+67_d: yum
+69_a: kaput
+70_a: igo
+72_a: dams
+73_a: ten
+14_a: error
+7_d: sosad
+1_d: mocs
+8_d: catcall
+63_d: urge
+47_a: arf
+21_a: capecoral
+33_a: coatcloset
+44_d: carcare
+59_a: cameclean
+29_d: dour
+65_a: osaka
+9_d: ocho
+68_a: other
+60_d: ekes
+54_d: omaha
+8_a: colts
+12_d: stall
+19_a: theta
+52_d: scoot
+10_d: leers
+53_d: haste
+11_d: titan
+71_a: tease
+-------------------------------
+-------------------------------
+Current Depth = 3  
+Acc = 1.00               
+Char Acc = 1.00     
+-------------------------------
+------ Current Answers --------
+1_a: mar
+2_d: abit
+3_d: rigoletto
+4_a: sobs
+4_d: serena
+5_d: orc
+6_d: brac
+13_a: obi
+15_d: repo
+17_a: cigarcase
+18_d: avec
+20_a: stove
+22_d: eric
+23_a: lena
+24_d: arc
+25_a: dora
+27_a: cuecard
+27_d: chic
+28_d: ussr
+30_a: ilk
+31_d: kos
+32_a: hst
+34_d: amc
+35_d: talc
+36_d: spacesuit
+37_d: ecru
+38_d: taft
+39_a: isto
+40_d: opt
+41_a: uma
+42_a: spca
+43_a: cropcircle
+45_d: idol
+46_d: era
+48_a: tad
+49_a: crewcut
+50_d: elects
+51_d: wino
+55_a: rods
+56_d: deck
+57_d: salad
+58_a: alie
+61_d: napa
+62_a: ensue
+64_d: eton
+66_a: claycourt
+67_d: yum
+69_a: kaput
+70_a: igo
+72_a: dams
+73_a: ten
+14_a: error
+7_d: sosad
+1_d: mocs
+8_d: catcall
+63_d: urge
+47_a: arf
+21_a: capecoral
+33_a: coatcloset
+44_d: carcare
+59_a: cameclean
+29_d: dour
+65_a: osaka
+9_d: ocho
+68_a: other
+60_d: ekes
+54_d: omaha
+8_a: colts
+12_d: stall
+19_a: theta
+52_d: scoot
+10_d: leers
+53_d: haste
+11_d: titan
+71_a: tease
+52_a: sho
+26_a: snl
+16_a: aceit
+-------------------------------

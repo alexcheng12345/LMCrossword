@@ -1,0 +1,23 @@
+{
+    "total_turns": 8515,
+    "total_attempts": 9570,
+    "total_retries": 1055,
+    "api_overload_retries": 0,
+    "raw_length_violation_count": 1129,
+    "raw_length_violation_turns": 468,
+    "final_content_turn_count": 8452,
+    "reasoning_only_turn_count": 1118,
+    "empty_response_turn_count": 0,
+    "estimated_cost_usd": 0.0,
+    "average_retries_per_turn": 0.12389900176159718,
+    "average_attempts_per_turn": 1.123899001761597,
+    "turn_efficiency": 0.8897596656217346,
+    "raw_length_violation_rate": 11.797283176593522,
+    "evaluated_crosswords": 84,
+    "ground_truth_clues": 6476,
+    "compared_answers": 6442,
+    "exact_match_count": 6382,
+    "exact_match_accuracy": 99.06861223222602,
+    "length_violation_count": 0,
+    "length_violation_rate": 0.0
+}

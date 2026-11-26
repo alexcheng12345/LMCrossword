@@ -29,6 +29,11 @@ python main.py --model llama --with-retry-request --crosswords 100
 python main.py --model llama --without-retry-request --crosswords 100
 ```
 
+For API runs, HTTP 503 errors containing `system cpu overloaded` are retried
+indefinitely. The wait grows from 5 seconds to a 60-second maximum; press
+Ctrl+C to stop waiting. The `api_overload_retries` metric counts these retries.
+Other API errors are still reported normally.
+
 For local LLaMA runs, `--with-retry-request` retries answers that do not match
 the clue's character length. The retry limit is set by `[validation].max_retries`
 in `config.toml`. `--without-retry-request` disables those extra generation

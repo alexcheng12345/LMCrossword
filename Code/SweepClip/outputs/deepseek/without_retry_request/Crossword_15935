@@ -1,0 +1,351 @@
+-------------------------------
+Current Depth = 0  
+Acc = 0.38               
+Char Acc = 0.47     
+-------------------------------
+------ Current Answers --------
+10_a: firs
+10_d: foreseen
+12_d: revue
+13_d: slept
+16_a: orel
+23_d: partisans
+26_a: asset
+29_a: pre
+29_d: parole
+32_a: atease
+33_d: antipasto
+34_d: sere
+35_d: eris
+38_a: grinner
+40_a: eros
+40_d: emended
+41_a: tri
+44_d: duties
+48_d: sidle
+50_d: lash
+51_a: stack
+55_a: addle
+56_d: eta
+57_a: isle
+60_a: eton
+62_a: hedda
+63_a: soto
+-------------------------------
+-------------------------------
+Current Depth = 1  
+Acc = 0.51               
+Char Acc = 0.55     
+-------------------------------
+------ Current Answers --------
+10_a: firs
+10_d: foreseen
+12_d: revue
+13_d: slept
+16_a: orel
+23_d: partisans
+26_a: asset
+29_a: pre
+29_d: parole
+32_a: atease
+33_d: antipasto
+34_d: sere
+35_d: eris
+38_a: grinner
+40_a: eros
+40_d: emended
+41_a: tri
+44_d: duties
+48_d: sidle
+50_d: lash
+51_a: stack
+55_a: addle
+56_d: eta
+57_a: isle
+60_a: eton
+62_a: hedda
+63_a: soto
+11_d: irids
+59_a: sleet
+43_a: maladies
+53_d: keno
+22_a: steppedup
+48_a: sevenup
+19_a: rive
+49_a: partyline
+38_d: graveled
+52_d: clot
+-------------------------------
+-------------------------------
+Current Depth = 2  
+Acc = 0.64               
+Char Acc = 0.79     
+-------------------------------
+------ Current Answers --------
+10_a: firs
+10_d: foreseen
+12_d: revue
+13_d: slept
+16_a: orel
+23_d: partisans
+26_a: asset
+29_a: pre
+29_d: parole
+32_a: atease
+33_d: antipasto
+34_d: sere
+35_d: eris
+38_a: grinner
+40_a: eros
+40_d: emended
+41_a: tri
+44_d: duties
+48_d: sidle
+50_d: lash
+51_a: stack
+55_a: addle
+56_d: eta
+57_a: isle
+60_a: eton
+62_a: hedda
+63_a: soto
+11_d: irids
+59_a: sleet
+43_a: maladies
+53_d: keno
+22_a: steppedup
+48_a: sevenup
+19_a: rive
+49_a: partyline
+38_d: graveled
+52_d: clot
+7_d: omitted
+46_d: cairo
+21_d: icehockey
+6_d: oilspill
+47_d: order
+9_d: seep
+37_d: faintest
+8_d: tetes
+45_d: spats
+-------------------------------
+-------------------------------
+Current Depth = 3  
+Acc = 0.83               
+Char Acc = 0.92     
+-------------------------------
+------ Current Answers --------
+10_a: firs
+10_d: foreseen
+12_d: revue
+13_d: slept
+16_a: orel
+23_d: partisans
+26_a: asset
+29_a: pre
+29_d: parole
+32_a: atease
+33_d: antipasto
+34_d: sere
+35_d: eris
+38_a: grinner
+40_a: eros
+40_d: emended
+41_a: tri
+44_d: duties
+48_d: sidle
+50_d: lash
+51_a: stack
+55_a: addle
+56_d: eta
+57_a: isle
+60_a: eton
+62_a: hedda
+63_a: soto
+11_d: irids
+59_a: sleet
+43_a: maladies
+53_d: keno
+22_a: steppedup
+48_a: sevenup
+19_a: rive
+49_a: partyline
+38_d: graveled
+52_d: clot
+7_d: omitted
+46_d: cairo
+21_d: icehockey
+6_d: oilspill
+47_d: order
+9_d: seep
+37_d: faintest
+8_d: tetes
+45_d: spats
+31_a: hold
+36_a: trefoil
+24_a: accepts
+58_a: tres
+39_a: seracs
+42_a: ike
+5_a: roots
+27_a: whitelie
+54_a: aide
+20_a: assai
+15_a: aimee
+45_a: scone
+18_a: elite
+61_a: sort
+-------------------------------
+-------------------------------
+Current Depth = 4  
+Acc = 0.93               
+Char Acc = 0.98     
+-------------------------------
+------ Current Answers --------
+10_a: firs
+10_d: foreseen
+12_d: revue
+13_d: slept
+16_a: orel
+23_d: partisans
+26_a: asset
+29_a: pre
+29_d: parole
+32_a: atease
+33_d: antipasto
+34_d: sere
+35_d: eris
+38_a: grinner
+40_a: eros
+40_d: emended
+41_a: tri
+44_d: duties
+48_d: sidle
+50_d: lash
+51_a: stack
+55_a: addle
+56_d: eta
+57_a: isle
+60_a: eton
+62_a: hedda
+63_a: soto
+11_d: irids
+59_a: sleet
+43_a: maladies
+53_d: keno
+22_a: steppedup
+48_a: sevenup
+19_a: rive
+49_a: partyline
+38_d: graveled
+52_d: clot
+7_d: omitted
+46_d: cairo
+21_d: icehockey
+6_d: oilspill
+47_d: order
+9_d: seep
+37_d: faintest
+8_d: tetes
+45_d: spats
+31_a: hold
+36_a: trefoil
+24_a: accepts
+58_a: tres
+39_a: seracs
+42_a: ike
+5_a: roots
+27_a: whitelie
+54_a: aide
+20_a: assai
+15_a: aimee
+45_a: scone
+18_a: elite
+61_a: sort
+28_d: here
+2_d: ives
+27_d: wets
+1_d: kiva
+5_d: rae
+4_d: intact
+25_d: eloise
+-------------------------------
+-------------------------------
+Current Depth = 5  
+Acc = 1.00               
+Char Acc = 1.00     
+-------------------------------
+------ Current Answers --------
+10_a: firs
+10_d: foreseen
+12_d: revue
+13_d: slept
+16_a: orel
+23_d: partisans
+26_a: asset
+29_a: pre
+29_d: parole
+32_a: atease
+33_d: antipasto
+34_d: sere
+35_d: eris
+38_a: grinner
+40_a: eros
+40_d: emended
+41_a: tri
+44_d: duties
+48_d: sidle
+50_d: lash
+51_a: stack
+55_a: addle
+56_d: eta
+57_a: isle
+60_a: eton
+62_a: hedda
+63_a: soto
+11_d: irids
+59_a: sleet
+43_a: maladies
+53_d: keno
+22_a: steppedup
+48_a: sevenup
+19_a: rive
+49_a: partyline
+38_d: graveled
+52_d: clot
+7_d: omitted
+46_d: cairo
+21_d: icehockey
+6_d: oilspill
+47_d: order
+9_d: seep
+37_d: faintest
+8_d: tetes
+45_d: spats
+31_a: hold
+36_a: trefoil
+24_a: accepts
+58_a: tres
+39_a: seracs
+42_a: ike
+5_a: roots
+27_a: whitelie
+54_a: aide
+20_a: assai
+15_a: aimee
+45_a: scone
+18_a: elite
+61_a: sort
+28_d: here
+2_d: ives
+27_d: wets
+1_d: kiva
+5_d: rae
+4_d: intact
+25_d: eloise
+30_a: eel
+14_a: ivan
+3_d: wassailer
+1_a: kiwi
+17_a: vest
+-------------------------------

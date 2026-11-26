@@ -1,0 +1,581 @@
+-------------------------------
+Current Depth = 0  
+Acc = 0.17               
+Char Acc = 0.26     
+-------------------------------
+------ Current Answers --------
+1_a: gabs
+1_d: gnar
+2_d: aides
+5_d: impedes
+17_a: adar
+24_a: skalds
+28_a: sleep
+35_a: aside
+36_d: dot
+37_d: execs
+45_a: stews
+47_d: sofa
+49_a: addons
+55_a: safest
+-------------------------------
+-------------------------------
+Current Depth = 1  
+Acc = 0.35               
+Char Acc = 0.47     
+-------------------------------
+------ Current Answers --------
+1_a: gabs
+1_d: gnar
+2_d: aides
+5_d: impedes
+17_a: adar
+24_a: skalds
+28_a: sleep
+35_a: aside
+36_d: dot
+37_d: execs
+45_a: stews
+47_d: sofa
+55_a: safest
+46_d: wrapsup
+30_d: brownstudy
+21_d: flea
+25_d: spins
+51_a: crown
+56_d: telar
+52_d: wentat
+20_a: recife
+41_a: nox
+4_d: serial
+62_a: panted
+14_a: nile
+15_a: moos
+5_a: ixil
+18_a: pinacolada
+3_d: blacksmith
+-------------------------------
+-------------------------------
+Current Depth = 2  
+Acc = 0.56               
+Char Acc = 0.74     
+-------------------------------
+------ Current Answers --------
+1_a: gabs
+1_d: gnar
+2_d: aides
+5_d: impedes
+17_a: adar
+24_a: skalds
+28_a: sleep
+35_a: aside
+36_d: dot
+37_d: execs
+45_a: stews
+47_d: sofa
+55_a: safest
+46_d: wrapsup
+30_d: brownstudy
+21_d: flea
+25_d: spins
+51_a: crown
+56_d: telar
+52_d: wentat
+20_a: recife
+41_a: nox
+4_d: serial
+62_a: panted
+14_a: nile
+15_a: moos
+3_d: blacksmith
+70_a: adam
+7_d: zond
+11_d: sial
+42_a: tomb
+43_a: dated
+73_a: tyre
+48_a: wee
+49_a: others
+64_a: prostrates
+69_a: lieu
+38_a: rural
+72_a: seep
+33_a: jam
+39_a: unis
+29_a: pebble
+6_d: toi
+19_d: crop
+9_d: quarter
+67_a: tula
+8_d: asked
+-------------------------------
+-------------------------------
+Current Depth = 3  
+Acc = 0.74               
+Char Acc = 0.84     
+-------------------------------
+------ Current Answers --------
+1_a: gabs
+1_d: gnar
+2_d: aides
+5_d: impedes
+17_a: adar
+24_a: skalds
+28_a: sleep
+35_a: aside
+36_d: dot
+37_d: execs
+45_a: stews
+47_d: sofa
+55_a: safest
+46_d: wrapsup
+30_d: brownstudy
+21_d: flea
+25_d: spins
+51_a: crown
+56_d: telar
+52_d: wentat
+20_a: recife
+41_a: nox
+4_d: serial
+62_a: panted
+14_a: nile
+15_a: moos
+3_d: blacksmith
+70_a: adam
+7_d: zond
+42_a: tomb
+43_a: dated
+73_a: tyre
+48_a: wee
+49_a: others
+69_a: lieu
+38_a: rural
+72_a: seep
+33_a: jam
+39_a: unis
+29_a: pebble
+6_d: toi
+9_d: quarter
+67_a: tula
+8_d: asked
+54_d: deals
+16_a: uncle
+22_a: deer
+50_d: star
+57_d: spar
+27_d: abut
+34_d: anat
+66_d: lee
+9_a: quaff
+63_d: dame
+61_d: plie
+31_d: lame
+33_d: judo
+5_a: itza
+23_a: leg
+18_a: pinkcanary
+32_d: elbe
+44_d: drifter
+65_d: set
+40_d: seem
+-------------------------------
+-------------------------------
+Current Depth = 4  
+Acc = 0.82               
+Char Acc = 0.88     
+-------------------------------
+------ Current Answers --------
+1_a: gabs
+1_d: gnar
+2_d: aides
+5_d: impedes
+17_a: adar
+24_a: skalds
+28_a: sleep
+35_a: aside
+36_d: dot
+37_d: execs
+45_a: stews
+47_d: sofa
+55_a: safest
+46_d: wrapsup
+30_d: brownstudy
+21_d: flea
+25_d: spins
+51_a: crown
+56_d: telar
+52_d: wentat
+20_a: recife
+41_a: nox
+4_d: serial
+62_a: panted
+14_a: nile
+15_a: moos
+3_d: blacksmith
+70_a: adam
+7_d: zond
+42_a: tomb
+43_a: dated
+73_a: tyre
+48_a: wee
+49_a: others
+69_a: lieu
+38_a: rural
+72_a: seep
+33_a: jam
+39_a: unis
+29_a: pebble
+6_d: toi
+9_d: quarter
+67_a: tula
+8_d: asked
+54_d: deals
+16_a: uncle
+22_a: deer
+57_d: spar
+27_d: abut
+34_d: anat
+66_d: lee
+9_a: quaff
+63_d: dame
+61_d: plie
+31_d: lame
+33_d: judo
+5_a: itza
+32_d: elbe
+44_d: drifter
+65_d: set
+40_d: seem
+60_a: faep
+10_d: und
+19_d: leap
+11_d: acid
+68_a: allee
+12_d: flee
+26_a: data
+13_d: feyg
+57_a: see
+53_a: mild
+-------------------------------
+-------------------------------
+Current Depth = 5  
+Acc = 0.82               
+Char Acc = 0.88     
+-------------------------------
+------ Current Answers --------
+1_a: gabs
+1_d: gnar
+2_d: aides
+5_d: impedes
+17_a: adar
+24_a: skalds
+28_a: sleep
+35_a: aside
+36_d: dot
+37_d: execs
+45_a: stews
+47_d: sofa
+55_a: safest
+46_d: wrapsup
+30_d: brownstudy
+21_d: flea
+25_d: spins
+51_a: crown
+56_d: telar
+52_d: wentat
+20_a: recife
+41_a: nox
+4_d: serial
+62_a: panted
+14_a: nile
+15_a: moos
+3_d: blacksmith
+70_a: adam
+7_d: zond
+42_a: tomb
+43_a: dated
+73_a: tyre
+48_a: wee
+49_a: others
+69_a: lieu
+38_a: rural
+72_a: seep
+33_a: jam
+39_a: unis
+29_a: pebble
+6_d: toi
+9_d: quarter
+67_a: tula
+8_d: asked
+54_d: deals
+16_a: uncle
+22_a: deer
+57_d: spar
+27_d: abut
+34_d: anat
+66_d: lee
+9_a: quaff
+63_d: dame
+61_d: plie
+31_d: lame
+33_d: judo
+5_a: itza
+32_d: elbe
+44_d: drifter
+65_d: set
+40_d: seem
+60_a: faep
+10_d: und
+19_d: leap
+68_a: allee
+12_d: flee
+26_a: data
+57_a: see
+53_a: mild
+23_a: reg
+18_a: pinkladies
+50_d: slat
+-------------------------------
+-------------------------------
+Current Depth = 6  
+Acc = 0.85               
+Char Acc = 0.89     
+-------------------------------
+------ Current Answers --------
+1_a: gabs
+1_d: gnar
+2_d: aides
+5_d: impedes
+17_a: adar
+24_a: skalds
+28_a: sleep
+35_a: aside
+36_d: dot
+37_d: execs
+45_a: stews
+47_d: sofa
+55_a: safest
+46_d: wrapsup
+30_d: brownstudy
+21_d: flea
+25_d: spins
+51_a: crown
+56_d: telar
+52_d: wentat
+20_a: recife
+41_a: nox
+4_d: serial
+62_a: panted
+14_a: nile
+15_a: moos
+3_d: blacksmith
+70_a: adam
+7_d: zond
+42_a: tomb
+43_a: dated
+73_a: tyre
+48_a: wee
+49_a: others
+69_a: lieu
+38_a: rural
+72_a: seep
+33_a: jam
+39_a: unis
+29_a: pebble
+6_d: toi
+9_d: quarter
+67_a: tula
+8_d: asked
+54_d: deals
+16_a: uncle
+22_a: deer
+57_d: spar
+27_d: abut
+34_d: anat
+66_d: lee
+9_a: quaff
+63_d: dame
+61_d: plie
+31_d: lame
+33_d: judo
+5_a: itza
+32_d: elbe
+44_d: drifter
+40_d: seem
+60_a: faep
+10_d: und
+19_d: leap
+68_a: allee
+12_d: flee
+26_a: data
+57_a: see
+53_a: mild
+18_a: pinkladies
+50_d: slat
+11_d: acid
+13_d: fest
+71_a: rigor
+-------------------------------
+-------------------------------
+Current Depth = 7  
+Acc = 0.86               
+Char Acc = 0.89     
+-------------------------------
+------ Current Answers --------
+1_a: gabs
+1_d: gnar
+2_d: aides
+5_d: impedes
+17_a: adar
+24_a: skalds
+28_a: sleep
+35_a: aside
+36_d: dot
+37_d: execs
+45_a: stews
+47_d: sofa
+55_a: safest
+46_d: wrapsup
+30_d: brownstudy
+21_d: flea
+25_d: spins
+51_a: crown
+56_d: telar
+52_d: wentat
+20_a: recife
+41_a: nox
+4_d: serial
+62_a: panted
+14_a: nile
+15_a: moos
+3_d: blacksmith
+70_a: adam
+7_d: zond
+42_a: tomb
+43_a: dated
+73_a: tyre
+48_a: wee
+49_a: others
+69_a: lieu
+38_a: rural
+72_a: seep
+33_a: jam
+39_a: unis
+29_a: pebble
+6_d: toi
+9_d: quarter
+67_a: tula
+8_d: asked
+54_d: deals
+16_a: uncle
+22_a: deer
+57_d: spar
+27_d: abut
+34_d: anat
+66_d: lee
+9_a: quaff
+63_d: dame
+61_d: plie
+31_d: lame
+33_d: judo
+5_a: itza
+32_d: elbe
+44_d: drifter
+40_d: seem
+60_a: faep
+10_d: und
+19_d: leap
+68_a: allee
+12_d: flee
+26_a: data
+57_a: see
+53_a: mild
+18_a: pinkladies
+50_d: slat
+11_d: acid
+13_d: fest
+71_a: rigor
+23_a: det
+-------------------------------
+-------------------------------
+Current Depth = 8  
+Acc = 0.86               
+Char Acc = 0.89     
+-------------------------------
+------ Current Answers --------
+1_a: gabs
+1_d: gnar
+2_d: aides
+5_d: impedes
+17_a: adar
+24_a: skalds
+28_a: sleep
+35_a: aside
+36_d: dot
+37_d: execs
+45_a: stews
+47_d: sofa
+55_a: safest
+46_d: wrapsup
+30_d: brownstudy
+21_d: flea
+25_d: spins
+51_a: crown
+56_d: telar
+52_d: wentat
+20_a: recife
+41_a: nox
+4_d: serial
+62_a: panted
+14_a: nile
+15_a: moos
+3_d: blacksmith
+70_a: adam
+7_d: zond
+42_a: tomb
+43_a: dated
+73_a: tyre
+48_a: wee
+49_a: others
+69_a: lieu
+38_a: rural
+72_a: seep
+33_a: jam
+39_a: unis
+29_a: pebble
+6_d: toi
+9_d: quarter
+67_a: tula
+8_d: asked
+54_d: deals
+16_a: uncle
+22_a: deer
+57_d: spar
+27_d: abut
+34_d: anat
+66_d: lee
+9_a: quaff
+63_d: dame
+61_d: plie
+31_d: lame
+33_d: judo
+5_a: itza
+32_d: elbe
+44_d: drifter
+40_d: seem
+60_a: faep
+10_d: und
+19_d: leap
+68_a: allee
+12_d: flee
+26_a: data
+57_a: see
+53_a: mild
+18_a: pinkladies
+50_d: slat
+11_d: acid
+13_d: fest
+71_a: rigor
+23_a: det
+-------------------------------

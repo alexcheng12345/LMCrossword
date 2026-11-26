@@ -1,9 +1,10 @@
-from openai import OpenAI
+from openai import InternalServerError, OpenAI
 import warnings
 import torch
 import json
 import os
 import re
+import time
 import accelerate
 import transformers
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -100,6 +101,7 @@ class APIModel(LLM):
             "total_turns": 0,
             "total_attempts": 0,
             "total_retries": 0,
+            "api_overload_retries": 0,
         }
         self.length_violation_stats = {
             "raw_length_violation_count": 0,
@@ -178,20 +180,39 @@ class APIModel(LLM):
         required_length = self._required_length(prompt)
         retry_prompt = list(prompt)
         retries = 0
+        had_length_violation = False
         self.retry_stats["total_turns"] += 1
+        overload_delay = 5
 
         while True:
             self.retry_stats["total_attempts"] += 1
-            cmpl = self.client.chat.completions.create(
-                      model = self.model,
-                      messages= retry_prompt,
-                      max_tokens = config.get('api', {}).get(
-                          'max_new',
-                          config['model']['max_new'],
-                      ),
-                      n = config['model']['seq_num'],
-                      temperature = config['model']['temperature'],
-            )
+            try:
+                cmpl = self.client.chat.completions.create(
+                          model = self.model,
+                          messages= retry_prompt,
+                          max_tokens = config.get('api', {}).get(
+                              'max_new',
+                              config['model']['max_new'],
+                          ),
+                          n = config['model']['seq_num'],
+                          temperature = config['model']['temperature'],
+                )
+            except InternalServerError as error:
+                is_cpu_overload = (
+                    getattr(error, "status_code", None) == 503
+                    and "system cpu overloaded" in str(error).lower()
+                )
+                if not is_cpu_overload:
+                    raise
+                print(
+                    "API system CPU overloaded; retrying in "
+                    f"{overload_delay} seconds."
+                )
+                self.retry_stats["api_overload_retries"] += 1
+                time.sleep(overload_delay)
+                overload_delay = min(overload_delay * 2, 60)
+                continue
+
             usage = getattr(cmpl, "usage", None)
             prompt_tokens = getattr(usage, "prompt_tokens", 0) if usage else 0
             completion_tokens = getattr(usage, "completion_tokens", 0) if usage else 0
@@ -238,7 +259,9 @@ class APIModel(LLM):
             )
             if raw_length_violations:
                 self.length_violation_stats["raw_length_violation_count"] += raw_length_violations
-                self.length_violation_stats["raw_length_violation_turns"] += 1
+                if not had_length_violation:
+                    self.length_violation_stats["raw_length_violation_turns"] += 1
+                    had_length_violation = True
 
             if required_length is None or len(results[0]) == required_length:
                 return results

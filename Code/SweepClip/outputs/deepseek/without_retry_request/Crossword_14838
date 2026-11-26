@@ -1,0 +1,816 @@
+-------------------------------
+Current Depth = 0  
+Acc = 0.29               
+Char Acc = 0.42     
+-------------------------------
+------ Current Answers --------
+5_a: maya
+8_d: asked
+9_a: quaff
+9_d: quarter
+10_d: und
+11_d: acid
+15_a: baas
+16_a: uncle
+19_d: leap
+22_a: deer
+23_a: div
+29_a: pebble
+30_d: brownstudy
+31_d: lace
+32_d: elbe
+35_a: aside
+36_d: dot
+37_d: execs
+38_a: rural
+45_a: stews
+47_d: sofa
+48_a: wee
+55_a: safest
+56_d: telar
+62_a: panted
+67_a: tula
+73_a: tyre
+-------------------------------
+-------------------------------
+Current Depth = 1  
+Acc = 0.44               
+Char Acc = 0.51     
+-------------------------------
+------ Current Answers --------
+5_a: maya
+8_d: asked
+9_a: quaff
+9_d: quarter
+10_d: und
+11_d: acid
+15_a: baas
+16_a: uncle
+19_d: leap
+22_a: deer
+29_a: pebble
+30_d: brownstudy
+31_d: lace
+32_d: elbe
+35_a: aside
+36_d: dot
+37_d: execs
+38_a: rural
+45_a: stews
+47_d: sofa
+48_a: wee
+55_a: safest
+56_d: telar
+62_a: panted
+67_a: tula
+73_a: tyre
+51_a: crown
+13_d: fest
+26_a: data
+46_d: wrapsup
+27_d: abut
+63_d: dame
+52_d: wentat
+12_d: flee
+70_a: adam
+41_a: nox
+25_d: spins
+-------------------------------
+-------------------------------
+Current Depth = 2  
+Acc = 0.51               
+Char Acc = 0.61     
+-------------------------------
+------ Current Answers --------
+5_a: maya
+8_d: asked
+9_a: quaff
+9_d: quarter
+10_d: und
+11_d: acid
+15_a: baas
+16_a: uncle
+19_d: leap
+22_a: deer
+29_a: pebble
+30_d: brownstudy
+31_d: lace
+32_d: elbe
+35_a: aside
+36_d: dot
+37_d: execs
+38_a: rural
+45_a: stews
+47_d: sofa
+48_a: wee
+55_a: safest
+56_d: telar
+62_a: panted
+67_a: tula
+73_a: tyre
+51_a: crown
+13_d: fest
+26_a: data
+46_d: wrapsup
+27_d: abut
+63_d: dame
+52_d: wentat
+12_d: flee
+70_a: adam
+41_a: nox
+25_d: spins
+24_a: skalds
+64_a: prostrates
+28_a: sleep
+69_a: lieu
+72_a: seep
+18_a: pinkladies
+23_a: det
+-------------------------------
+-------------------------------
+Current Depth = 3  
+Acc = 0.58               
+Char Acc = 0.69     
+-------------------------------
+------ Current Answers --------
+8_d: asked
+9_a: quaff
+9_d: quarter
+10_d: und
+11_d: acid
+16_a: uncle
+19_d: leap
+29_a: pebble
+30_d: brownstudy
+31_d: lace
+32_d: elbe
+35_a: aside
+36_d: dot
+37_d: execs
+38_a: rural
+45_a: stews
+47_d: sofa
+48_a: wee
+55_a: safest
+56_d: telar
+62_a: panted
+67_a: tula
+73_a: tyre
+51_a: crown
+13_d: fest
+26_a: data
+46_d: wrapsup
+27_d: abut
+63_d: dame
+52_d: wentat
+12_d: flee
+70_a: adam
+41_a: nox
+25_d: spins
+24_a: skalds
+28_a: sleep
+69_a: lieu
+72_a: seep
+18_a: pinkladies
+23_a: det
+61_d: plie
+7_d: luna
+21_d: flea
+6_d: moi
+2_d: hands
+5_d: impedes
+54_d: deals
+66_d: lee
+4_d: serial
+57_d: apus
+-------------------------------
+-------------------------------
+Current Depth = 4  
+Acc = 0.67               
+Char Acc = 0.78     
+-------------------------------
+------ Current Answers --------
+8_d: asked
+9_a: quaff
+9_d: quarter
+10_d: und
+11_d: acid
+16_a: uncle
+19_d: leap
+29_a: pebble
+30_d: brownstudy
+31_d: lace
+32_d: elbe
+35_a: aside
+36_d: dot
+37_d: execs
+38_a: rural
+45_a: stews
+47_d: sofa
+48_a: wee
+55_a: safest
+56_d: telar
+62_a: panted
+67_a: tula
+73_a: tyre
+51_a: crown
+13_d: fest
+26_a: data
+46_d: wrapsup
+27_d: abut
+63_d: dame
+52_d: wentat
+12_d: flee
+70_a: adam
+41_a: nox
+25_d: spins
+24_a: skalds
+28_a: sleep
+69_a: lieu
+72_a: seep
+18_a: pinkladies
+23_a: det
+61_d: plie
+21_d: flea
+6_d: moi
+5_d: impedes
+54_d: deals
+66_d: lee
+4_d: serial
+60_a: veep
+22_a: deer
+15_a: moos
+53_a: mild
+20_a: recife
+3_d: blacksmith
+17_a: adar
+-------------------------------
+-------------------------------
+Current Depth = 5  
+Acc = 0.78               
+Char Acc = 0.92     
+-------------------------------
+------ Current Answers --------
+8_d: asked
+9_a: quaff
+9_d: quarter
+10_d: und
+11_d: acid
+16_a: uncle
+19_d: leap
+29_a: pebble
+30_d: brownstudy
+31_d: lace
+32_d: elbe
+35_a: aside
+36_d: dot
+37_d: execs
+38_a: rural
+45_a: stews
+47_d: sofa
+48_a: wee
+55_a: safest
+56_d: telar
+62_a: panted
+67_a: tula
+73_a: tyre
+51_a: crown
+13_d: fest
+26_a: data
+46_d: wrapsup
+27_d: abut
+63_d: dame
+52_d: wentat
+12_d: flee
+70_a: adam
+41_a: nox
+25_d: spins
+24_a: skalds
+28_a: sleep
+69_a: lieu
+72_a: seep
+18_a: pinkladies
+23_a: det
+61_d: plie
+21_d: flea
+6_d: moi
+5_d: impedes
+54_d: deals
+66_d: lee
+4_d: serial
+60_a: veep
+22_a: deer
+15_a: moos
+53_a: mild
+20_a: recife
+3_d: blacksmith
+17_a: adar
+7_d: zond
+43_a: dated
+2_d: aides
+39_a: unis
+64_a: whitewalls
+49_a: others
+14_a: nile
+1_a: gabs
+33_a: jam
+-------------------------------
+-------------------------------
+Current Depth = 6  
+Acc = 0.91               
+Char Acc = 0.98     
+-------------------------------
+------ Current Answers --------
+8_d: asked
+9_a: quaff
+9_d: quarter
+10_d: und
+11_d: acid
+16_a: uncle
+19_d: leap
+29_a: pebble
+30_d: brownstudy
+32_d: elbe
+35_a: aside
+36_d: dot
+37_d: execs
+38_a: rural
+45_a: stews
+47_d: sofa
+48_a: wee
+55_a: safest
+56_d: telar
+62_a: panted
+67_a: tula
+73_a: tyre
+51_a: crown
+13_d: fest
+26_a: data
+46_d: wrapsup
+27_d: abut
+63_d: dame
+52_d: wentat
+12_d: flee
+70_a: adam
+41_a: nox
+25_d: spins
+24_a: skalds
+28_a: sleep
+69_a: lieu
+72_a: seep
+18_a: pinkladies
+23_a: det
+61_d: plie
+21_d: flea
+6_d: moi
+5_d: impedes
+54_d: deals
+66_d: lee
+4_d: serial
+60_a: veep
+22_a: deer
+15_a: moos
+53_a: mild
+20_a: recife
+3_d: blacksmith
+17_a: adar
+7_d: zond
+43_a: dated
+2_d: aides
+39_a: unis
+64_a: whitewalls
+49_a: others
+14_a: nile
+1_a: gabs
+33_a: jam
+58_d: when
+34_d: anat
+33_d: judo
+44_d: drivein
+65_d: tar
+1_d: gnar
+40_d: seem
+42_a: tomb
+59_d: nine
+57_d: owls
+50_d: slew
+-------------------------------
+-------------------------------
+Current Depth = 7  
+Acc = 0.95               
+Char Acc = 0.99     
+-------------------------------
+------ Current Answers --------
+8_d: asked
+9_a: quaff
+9_d: quarter
+10_d: und
+11_d: acid
+16_a: uncle
+19_d: leap
+29_a: pebble
+30_d: brownstudy
+32_d: elbe
+35_a: aside
+36_d: dot
+37_d: execs
+38_a: rural
+45_a: stews
+47_d: sofa
+48_a: wee
+55_a: safest
+56_d: telar
+62_a: panted
+67_a: tula
+73_a: tyre
+51_a: crown
+13_d: fest
+26_a: data
+46_d: wrapsup
+27_d: abut
+63_d: dame
+52_d: wentat
+12_d: flee
+70_a: adam
+41_a: nox
+25_d: spins
+24_a: skalds
+28_a: sleep
+69_a: lieu
+72_a: seep
+18_a: pinkladies
+23_a: det
+61_d: plie
+21_d: flea
+6_d: moi
+5_d: impedes
+54_d: deals
+66_d: lee
+4_d: serial
+60_a: veep
+22_a: deer
+15_a: moos
+53_a: mild
+20_a: recife
+3_d: blacksmith
+17_a: adar
+7_d: zond
+43_a: dated
+2_d: aides
+39_a: unis
+64_a: whitewalls
+49_a: others
+14_a: nile
+1_a: gabs
+33_a: jam
+34_d: anat
+33_d: judo
+44_d: drivein
+65_d: tar
+1_d: gnar
+40_d: seem
+42_a: tomb
+59_d: nine
+57_d: owls
+50_d: slew
+71_a: stern
+68_a: lenai
+57_a: own
+31_d: lame
+-------------------------------
+-------------------------------
+Current Depth = 8  
+Acc = 0.96               
+Char Acc = 0.99     
+-------------------------------
+------ Current Answers --------
+8_d: asked
+9_a: quaff
+9_d: quarter
+10_d: und
+11_d: acid
+16_a: uncle
+19_d: leap
+29_a: pebble
+30_d: brownstudy
+32_d: elbe
+35_a: aside
+36_d: dot
+37_d: execs
+38_a: rural
+45_a: stews
+47_d: sofa
+48_a: wee
+55_a: safest
+56_d: telar
+62_a: panted
+67_a: tula
+73_a: tyre
+51_a: crown
+13_d: fest
+26_a: data
+46_d: wrapsup
+27_d: abut
+63_d: dame
+52_d: wentat
+12_d: flee
+70_a: adam
+41_a: nox
+25_d: spins
+24_a: skalds
+28_a: sleep
+69_a: lieu
+72_a: seep
+18_a: pinkladies
+23_a: det
+61_d: plie
+21_d: flea
+6_d: moi
+5_d: impedes
+54_d: deals
+66_d: lee
+4_d: serial
+60_a: veep
+22_a: deer
+15_a: moos
+53_a: mild
+20_a: recife
+3_d: blacksmith
+17_a: adar
+7_d: zond
+43_a: dated
+2_d: aides
+39_a: unis
+64_a: whitewalls
+49_a: others
+14_a: nile
+1_a: gabs
+33_a: jam
+34_d: anat
+33_d: judo
+44_d: drivein
+65_d: tar
+1_d: gnar
+40_d: seem
+42_a: tomb
+59_d: nine
+57_d: owls
+50_d: slew
+71_a: stern
+57_a: own
+31_d: lame
+58_d: what
+-------------------------------
+-------------------------------
+Current Depth = 9  
+Acc = 0.97               
+Char Acc = 0.99     
+-------------------------------
+------ Current Answers --------
+8_d: asked
+9_a: quaff
+9_d: quarter
+10_d: und
+11_d: acid
+16_a: uncle
+19_d: leap
+29_a: pebble
+30_d: brownstudy
+32_d: elbe
+35_a: aside
+36_d: dot
+37_d: execs
+38_a: rural
+45_a: stews
+47_d: sofa
+48_a: wee
+55_a: safest
+56_d: telar
+62_a: panted
+67_a: tula
+73_a: tyre
+51_a: crown
+13_d: fest
+26_a: data
+46_d: wrapsup
+27_d: abut
+63_d: dame
+52_d: wentat
+12_d: flee
+70_a: adam
+41_a: nox
+25_d: spins
+24_a: skalds
+28_a: sleep
+69_a: lieu
+72_a: seep
+18_a: pinkladies
+23_a: det
+61_d: plie
+21_d: flea
+6_d: moi
+5_d: impedes
+54_d: deals
+66_d: lee
+4_d: serial
+60_a: veep
+22_a: deer
+15_a: moos
+53_a: mild
+20_a: recife
+3_d: blacksmith
+17_a: adar
+7_d: zond
+43_a: dated
+2_d: aides
+39_a: unis
+64_a: whitewalls
+49_a: others
+14_a: nile
+1_a: gabs
+33_a: jam
+34_d: anat
+33_d: judo
+44_d: drivein
+65_d: tar
+1_d: gnar
+40_d: seem
+42_a: tomb
+59_d: nine
+57_d: owls
+50_d: slew
+71_a: stern
+57_a: own
+31_d: lame
+58_d: what
+68_a: lanai
+-------------------------------
+-------------------------------
+Current Depth = 10  
+Acc = 0.99               
+Char Acc = 1.00     
+-------------------------------
+------ Current Answers --------
+8_d: asked
+9_a: quaff
+9_d: quarter
+10_d: und
+11_d: acid
+16_a: uncle
+19_d: leap
+29_a: pebble
+30_d: brownstudy
+32_d: elbe
+35_a: aside
+36_d: dot
+37_d: execs
+38_a: rural
+45_a: stews
+47_d: sofa
+48_a: wee
+55_a: safest
+56_d: telar
+62_a: panted
+67_a: tula
+73_a: tyre
+51_a: crown
+13_d: fest
+26_a: data
+46_d: wrapsup
+27_d: abut
+63_d: dame
+52_d: wentat
+12_d: flee
+70_a: adam
+41_a: nox
+25_d: spins
+24_a: skalds
+28_a: sleep
+69_a: lieu
+72_a: seep
+18_a: pinkladies
+23_a: det
+61_d: plie
+21_d: flea
+5_d: impedes
+54_d: deals
+66_d: lee
+4_d: serial
+60_a: veep
+22_a: deer
+15_a: moos
+53_a: mild
+20_a: recife
+3_d: blacksmith
+17_a: adar
+7_d: zond
+43_a: dated
+2_d: aides
+39_a: unis
+64_a: whitewalls
+49_a: others
+14_a: nile
+1_a: gabs
+33_a: jam
+34_d: anat
+33_d: judo
+44_d: drivein
+65_d: tar
+1_d: gnar
+40_d: seem
+42_a: tomb
+59_d: nine
+57_d: owls
+50_d: slew
+71_a: stern
+57_a: own
+31_d: lame
+58_d: what
+68_a: lanai
+5_a: itza
+-------------------------------
+-------------------------------
+Current Depth = 11  
+Acc = 1.00               
+Char Acc = 1.00     
+-------------------------------
+------ Current Answers --------
+8_d: asked
+9_a: quaff
+9_d: quarter
+10_d: und
+11_d: acid
+16_a: uncle
+19_d: leap
+29_a: pebble
+30_d: brownstudy
+32_d: elbe
+35_a: aside
+36_d: dot
+37_d: execs
+38_a: rural
+45_a: stews
+47_d: sofa
+48_a: wee
+55_a: safest
+56_d: telar
+62_a: panted
+67_a: tula
+73_a: tyre
+51_a: crown
+13_d: fest
+26_a: data
+46_d: wrapsup
+27_d: abut
+63_d: dame
+52_d: wentat
+12_d: flee
+70_a: adam
+41_a: nox
+25_d: spins
+24_a: skalds
+28_a: sleep
+69_a: lieu
+72_a: seep
+18_a: pinkladies
+23_a: det
+61_d: plie
+21_d: flea
+5_d: impedes
+54_d: deals
+66_d: lee
+4_d: serial
+60_a: veep
+22_a: deer
+15_a: moos
+53_a: mild
+20_a: recife
+3_d: blacksmith
+17_a: adar
+7_d: zond
+43_a: dated
+2_d: aides
+39_a: unis
+64_a: whitewalls
+49_a: others
+14_a: nile
+1_a: gabs
+33_a: jam
+34_d: anat
+33_d: judo
+44_d: drivein
+65_d: tar
+1_d: gnar
+40_d: seem
+42_a: tomb
+59_d: nine
+57_d: owls
+50_d: slew
+71_a: stern
+57_a: own
+31_d: lame
+58_d: what
+68_a: lanai
+5_a: itza
+6_d: toi
+-------------------------------

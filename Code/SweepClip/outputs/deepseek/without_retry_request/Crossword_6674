@@ -1,0 +1,435 @@
+-------------------------------
+Current Depth = 0  
+Acc = 0.63               
+Char Acc = 0.72     
+-------------------------------
+------ Current Answers --------
+6_a: cobra
+6_d: cabin
+8_d: beaks
+9_d: ran
+10_d: assert
+11_a: www
+11_d: wagontrain
+13_d: wages
+15_a: areas
+16_a: aha
+18_d: spa
+19_a: gig
+21_a: pick
+22_a: erose
+23_d: raid
+25_d: west
+26_d: fasts
+27_d: slop
+28_d: lava
+29_d: ikidyounot
+30_a: atit
+32_d: capes
+33_d: api
+34_d: kit
+35_d: ent
+36_a: drab
+37_d: ante
+38_d: boss
+39_a: ovi
+40_a: tapinto
+43_a: pads
+44_d: sort
+46_d: rascals
+47_a: yore
+49_a: lanes
+50_d: maine
+51_d: oboes
+56_a: abuts
+58_a: cats
+59_d: awes
+60_d: tnut
+61_d: ssts
+62_a: ion
+65_d: rap
+66_a: neo
+68_a: aleut
+69_a: est
+71_a: pssts
+-------------------------------
+-------------------------------
+Current Depth = 1  
+Acc = 0.76               
+Char Acc = 0.81     
+-------------------------------
+------ Current Answers --------
+6_a: cobra
+6_d: cabin
+8_d: beaks
+9_d: ran
+10_d: assert
+11_a: www
+11_d: wagontrain
+13_d: wages
+15_a: areas
+16_a: aha
+18_d: spa
+19_a: gig
+21_a: pick
+22_a: erose
+23_d: raid
+25_d: west
+26_d: fasts
+27_d: slop
+28_d: lava
+29_d: ikidyounot
+30_a: atit
+32_d: capes
+33_d: api
+34_d: kit
+35_d: ent
+36_a: drab
+37_d: ante
+38_d: boss
+39_a: ovi
+40_a: tapinto
+43_a: pads
+44_d: sort
+46_d: rascals
+47_a: yore
+49_a: lanes
+50_d: maine
+51_d: oboes
+56_a: abuts
+58_a: cats
+59_d: awes
+60_d: tnut
+61_d: ssts
+62_a: ion
+65_d: rap
+66_a: neo
+68_a: aleut
+69_a: est
+71_a: pssts
+17_a: sheensbeans
+24_a: swanksfranks
+27_a: slime
+48_d: reship
+7_d: oreck
+12_d: whisk
+45_a: pittsgrits
+31_a: lakescakes
+41_d: ogle
+42_a: ano
+-------------------------------
+-------------------------------
+Current Depth = 2  
+Acc = 0.84               
+Char Acc = 0.93     
+-------------------------------
+------ Current Answers --------
+6_a: cobra
+6_d: cabin
+8_d: beaks
+9_d: ran
+10_d: assert
+11_a: www
+11_d: wagontrain
+13_d: wages
+15_a: areas
+16_a: aha
+18_d: spa
+19_a: gig
+21_a: pick
+22_a: erose
+23_d: raid
+25_d: west
+26_d: fasts
+27_d: slop
+28_d: lava
+29_d: ikidyounot
+30_a: atit
+32_d: capes
+33_d: api
+34_d: kit
+35_d: ent
+36_a: drab
+37_d: ante
+38_d: boss
+39_a: ovi
+40_a: tapinto
+43_a: pads
+44_d: sort
+46_d: rascals
+47_a: yore
+49_a: lanes
+50_d: maine
+51_d: oboes
+56_a: abuts
+58_a: cats
+59_d: awes
+60_d: tnut
+61_d: ssts
+62_a: ion
+65_d: rap
+66_a: neo
+68_a: aleut
+69_a: est
+71_a: pssts
+17_a: sheensbeans
+24_a: swanksfranks
+27_a: slime
+48_d: reship
+7_d: oreck
+12_d: whisk
+45_a: pittsgrits
+31_a: lakescakes
+41_d: ogle
+42_a: ano
+70_a: pinon
+1_d: gosh
+4_d: blessme
+50_a: moorescrepes
+63_a: honeyprawns
+2_d: agha
+3_d: bier
+67_a: inigo
+5_d: yen
+-------------------------------
+-------------------------------
+Current Depth = 3  
+Acc = 0.92               
+Char Acc = 0.97     
+-------------------------------
+------ Current Answers --------
+6_a: cobra
+6_d: cabin
+8_d: beaks
+9_d: ran
+10_d: assert
+11_a: www
+11_d: wagontrain
+13_d: wages
+15_a: areas
+16_a: aha
+18_d: spa
+19_a: gig
+21_a: pick
+22_a: erose
+23_d: raid
+25_d: west
+26_d: fasts
+27_d: slop
+28_d: lava
+29_d: ikidyounot
+30_a: atit
+32_d: capes
+33_d: api
+34_d: kit
+35_d: ent
+36_a: drab
+37_d: ante
+38_d: boss
+39_a: ovi
+40_a: tapinto
+43_a: pads
+44_d: sort
+46_d: rascals
+47_a: yore
+49_a: lanes
+50_d: maine
+51_d: oboes
+56_a: abuts
+58_a: cats
+59_d: awes
+60_d: tnut
+61_d: ssts
+62_a: ion
+65_d: rap
+66_a: neo
+68_a: aleut
+69_a: est
+71_a: pssts
+17_a: sheensbeans
+24_a: swanksfranks
+27_a: slime
+48_d: reship
+7_d: oreck
+12_d: whisk
+45_a: pittsgrits
+31_a: lakescakes
+41_d: ogle
+42_a: ano
+70_a: pinon
+4_d: blessme
+2_d: agha
+3_d: bier
+67_a: inigo
+5_d: yen
+1_a: gabby
+54_d: orson
+64_d: ani
+53_d: mango
+14_a: agile
+20_a: pars
+-------------------------------
+-------------------------------
+Current Depth = 4  
+Acc = 0.97               
+Char Acc = 1.00     
+-------------------------------
+------ Current Answers --------
+6_a: cobra
+6_d: cabin
+8_d: beaks
+9_d: ran
+10_d: assert
+11_a: www
+11_d: wagontrain
+13_d: wages
+15_a: areas
+16_a: aha
+18_d: spa
+19_a: gig
+21_a: pick
+22_a: erose
+23_d: raid
+25_d: west
+26_d: fasts
+27_d: slop
+28_d: lava
+29_d: ikidyounot
+30_a: atit
+32_d: capes
+33_d: api
+34_d: kit
+35_d: ent
+36_a: drab
+37_d: ante
+38_d: boss
+39_a: ovi
+40_a: tapinto
+43_a: pads
+44_d: sort
+46_d: rascals
+47_a: yore
+49_a: lanes
+50_d: maine
+51_d: oboes
+56_a: abuts
+58_a: cats
+59_d: awes
+60_d: tnut
+61_d: ssts
+62_a: ion
+65_d: rap
+66_a: neo
+68_a: aleut
+69_a: est
+71_a: pssts
+17_a: sheensbeans
+24_a: swanksfranks
+27_a: slime
+48_d: reship
+7_d: oreck
+12_d: whisk
+45_a: pittsgrits
+31_a: lakescakes
+41_d: ogle
+42_a: ano
+70_a: pinon
+4_d: blessme
+2_d: agha
+3_d: bier
+67_a: inigo
+5_d: yen
+1_a: gabby
+54_d: orson
+64_d: ani
+53_d: mango
+14_a: agile
+20_a: pars
+1_d: gasp
+50_a: mooressmores
+63_a: hawnsprawns
+57_a: aare
+-------------------------------
+-------------------------------
+Current Depth = 5  
+Acc = 1.00               
+Char Acc = 1.00     
+-------------------------------
+------ Current Answers --------
+6_a: cobra
+6_d: cabin
+8_d: beaks
+9_d: ran
+10_d: assert
+11_a: www
+11_d: wagontrain
+13_d: wages
+15_a: areas
+16_a: aha
+18_d: spa
+19_a: gig
+21_a: pick
+22_a: erose
+23_d: raid
+25_d: west
+26_d: fasts
+27_d: slop
+28_d: lava
+29_d: ikidyounot
+30_a: atit
+32_d: capes
+33_d: api
+34_d: kit
+35_d: ent
+36_a: drab
+37_d: ante
+38_d: boss
+39_a: ovi
+40_a: tapinto
+43_a: pads
+44_d: sort
+46_d: rascals
+47_a: yore
+49_a: lanes
+50_d: maine
+51_d: oboes
+56_a: abuts
+58_a: cats
+59_d: awes
+60_d: tnut
+61_d: ssts
+62_a: ion
+65_d: rap
+66_a: neo
+68_a: aleut
+69_a: est
+71_a: pssts
+17_a: sheensbeans
+24_a: swanksfranks
+27_a: slime
+48_d: reship
+7_d: oreck
+12_d: whisk
+45_a: pittsgrits
+31_a: lakescakes
+41_d: ogle
+42_a: ano
+70_a: pinon
+4_d: blessme
+2_d: agha
+3_d: bier
+67_a: inigo
+5_d: yen
+1_a: gabby
+54_d: orson
+64_d: ani
+53_d: mango
+14_a: agile
+20_a: pars
+1_d: gasp
+50_a: mooressmores
+63_a: hawnsprawns
+57_a: aare
+52_d: sawin
+55_d: rep
+-------------------------------

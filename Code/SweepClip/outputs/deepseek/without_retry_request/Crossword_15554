@@ -1,0 +1,527 @@
+-------------------------------
+Current Depth = 0  
+Acc = 0.37               
+Char Acc = 0.45     
+-------------------------------
+------ Current Answers --------
+11_a: abc
+11_d: asta
+12_d: bloc
+13_d: communistchina
+19_a: tome
+22_a: acme
+27_a: upi
+28_d: iowa
+32_a: canyon
+32_d: cases
+38_a: ali
+39_a: wad
+40_d: dos
+43_a: sos
+44_a: atom
+45_d: medical
+48_a: ent
+49_a: user
+53_d: tints
+54_d: opens
+55_a: dig
+56_d: geese
+61_a: ice
+63_d: clu
+64_d: him
+65_d: ess
+66_d: car
+68_a: salsa
+70_a: umass
+71_a: slier
+-------------------------------
+-------------------------------
+Current Depth = 1  
+Acc = 0.47               
+Char Acc = 0.58     
+-------------------------------
+------ Current Answers --------
+11_a: abc
+11_d: asta
+12_d: bloc
+13_d: communistchina
+19_a: tome
+22_a: acme
+27_a: upi
+28_d: iowa
+32_a: canyon
+32_d: cases
+38_a: ali
+39_a: wad
+40_d: dos
+43_a: sos
+44_a: atom
+45_d: medical
+48_a: ent
+49_a: user
+54_d: opens
+55_a: dig
+56_d: geese
+61_a: ice
+63_d: clu
+64_d: him
+65_d: ess
+66_d: car
+68_a: salsa
+70_a: umass
+34_d: natures
+33_d: alone
+16_a: slowboattochina
+52_a: sector
+50_d: richly
+63_a: chinesecheckers
+17_d: weepy
+67_a: linen
+-------------------------------
+-------------------------------
+Current Depth = 2  
+Acc = 0.67               
+Char Acc = 0.81     
+-------------------------------
+------ Current Answers --------
+11_a: abc
+11_d: asta
+12_d: bloc
+13_d: communistchina
+19_a: tome
+22_a: acme
+27_a: upi
+28_d: iowa
+32_a: canyon
+32_d: cases
+38_a: ali
+39_a: wad
+40_d: dos
+43_a: sos
+44_a: atom
+45_d: medical
+48_a: ent
+49_a: user
+54_d: opens
+55_a: dig
+56_d: geese
+61_a: ice
+63_d: clu
+64_d: him
+65_d: ess
+66_d: car
+68_a: salsa
+70_a: umass
+34_d: natures
+33_d: alone
+16_a: slowboattochina
+52_a: sector
+50_d: richly
+63_a: chinesecheckers
+17_d: weepy
+67_a: linen
+60_a: hope
+10_d: sra
+1_d: sib
+58_d: rare
+18_d: opening
+59_d: apse
+9_d: eon
+47_d: check
+2_d: troop
+7_d: aphid
+6_d: pecan
+53_d: tones
+71_a: slyer
+3_d: rearer
+4_d: entered
+5_d: pet
+-------------------------------
+-------------------------------
+Current Depth = 3  
+Acc = 0.82               
+Char Acc = 0.86     
+-------------------------------
+------ Current Answers --------
+11_a: abc
+11_d: asta
+12_d: bloc
+13_d: communistchina
+19_a: tome
+22_a: acme
+27_a: upi
+28_d: iowa
+32_a: canyon
+32_d: cases
+38_a: ali
+39_a: wad
+40_d: dos
+43_a: sos
+44_a: atom
+45_d: medical
+48_a: ent
+49_a: user
+54_d: opens
+55_a: dig
+56_d: geese
+61_a: ice
+63_d: clu
+64_d: him
+65_d: ess
+66_d: car
+68_a: salsa
+70_a: umass
+34_d: natures
+33_d: alone
+16_a: slowboattochina
+52_a: sector
+50_d: richly
+63_a: chinesecheckers
+17_d: weepy
+67_a: linen
+60_a: hope
+10_d: sra
+1_d: sib
+58_d: rare
+18_d: opening
+59_d: apse
+9_d: eon
+47_d: check
+2_d: troop
+7_d: aphid
+6_d: pecan
+53_d: tones
+71_a: slyer
+3_d: rearer
+4_d: entered
+5_d: pet
+1_a: strep
+62_a: clap
+69_a: see
+23_a: per
+51_a: khz
+15_a: ephor
+6_a: paces
+14_a: irene
+57_a: ezra
+20_a: ore
+35_a: dais
+-------------------------------
+-------------------------------
+Current Depth = 4  
+Acc = 0.86               
+Char Acc = 0.92     
+-------------------------------
+------ Current Answers --------
+11_a: abc
+11_d: asta
+12_d: bloc
+13_d: communistchina
+19_a: tome
+22_a: acme
+27_a: upi
+28_d: iowa
+32_a: canyon
+32_d: cases
+38_a: ali
+39_a: wad
+40_d: dos
+43_a: sos
+44_a: atom
+45_d: medical
+48_a: ent
+49_a: user
+54_d: opens
+55_a: dig
+56_d: geese
+61_a: ice
+63_d: clu
+64_d: him
+65_d: ess
+66_d: car
+68_a: salsa
+70_a: umass
+34_d: natures
+33_d: alone
+16_a: slowboattochina
+52_a: sector
+50_d: richly
+63_a: chinesecheckers
+17_d: weepy
+67_a: linen
+60_a: hope
+10_d: sra
+1_d: sib
+58_d: rare
+18_d: opening
+59_d: apse
+9_d: eon
+47_d: check
+2_d: troop
+7_d: aphid
+6_d: pecan
+53_d: tones
+71_a: slyer
+3_d: rearer
+4_d: entered
+5_d: pet
+1_a: strep
+62_a: clap
+69_a: see
+23_a: per
+51_a: khz
+15_a: ephor
+6_a: paces
+14_a: irene
+57_a: ezra
+20_a: ore
+35_a: dais
+36_d: sask
+29_a: reen
+8_d: chinesepuzzles
+30_d: ear
+-------------------------------
+-------------------------------
+Current Depth = 5  
+Acc = 0.93               
+Char Acc = 0.99     
+-------------------------------
+------ Current Answers --------
+11_a: abc
+11_d: asta
+12_d: bloc
+13_d: communistchina
+19_a: tome
+22_a: acme
+27_a: upi
+28_d: iowa
+32_a: canyon
+32_d: cases
+38_a: ali
+39_a: wad
+40_d: dos
+43_a: sos
+44_a: atom
+45_d: medical
+48_a: ent
+49_a: user
+54_d: opens
+55_a: dig
+56_d: geese
+61_a: ice
+63_d: clu
+64_d: him
+65_d: ess
+66_d: car
+68_a: salsa
+70_a: umass
+34_d: natures
+33_d: alone
+16_a: slowboattochina
+52_a: sector
+50_d: richly
+63_a: chinesecheckers
+17_d: weepy
+67_a: linen
+60_a: hope
+10_d: sra
+1_d: sib
+58_d: rare
+59_d: apse
+9_d: eon
+47_d: check
+2_d: troop
+7_d: aphid
+6_d: pecan
+53_d: tones
+71_a: slyer
+3_d: rearer
+4_d: entered
+5_d: pet
+1_a: strep
+62_a: clap
+69_a: see
+23_a: per
+51_a: khz
+15_a: ephor
+6_a: paces
+14_a: irene
+57_a: ezra
+20_a: ore
+35_a: dais
+36_d: sask
+29_a: reen
+8_d: chinesepuzzles
+30_d: ear
+24_a: indent
+41_a: rca
+46_a: escudo
+21_a: pain
+37_a: ein
+31_a: sao
+42_a: pat
+-------------------------------
+-------------------------------
+Current Depth = 6  
+Acc = 0.96               
+Char Acc = 0.99     
+-------------------------------
+------ Current Answers --------
+11_a: abc
+11_d: asta
+12_d: bloc
+13_d: communistchina
+19_a: tome
+22_a: acme
+27_a: upi
+28_d: iowa
+32_a: canyon
+32_d: cases
+38_a: ali
+39_a: wad
+40_d: dos
+43_a: sos
+44_a: atom
+45_d: medical
+48_a: ent
+49_a: user
+54_d: opens
+55_a: dig
+56_d: geese
+61_a: ice
+63_d: clu
+64_d: him
+65_d: ess
+66_d: car
+68_a: salsa
+70_a: umass
+34_d: natures
+33_d: alone
+16_a: slowboattochina
+52_a: sector
+50_d: richly
+63_a: chinesecheckers
+17_d: weepy
+67_a: linen
+60_a: hope
+10_d: sra
+1_d: sib
+58_d: rare
+59_d: apse
+9_d: eon
+47_d: check
+2_d: troop
+7_d: aphid
+6_d: pecan
+53_d: tones
+71_a: slyer
+3_d: rearer
+4_d: entered
+5_d: pet
+1_a: strep
+62_a: clap
+69_a: see
+23_a: per
+51_a: khz
+15_a: ephor
+6_a: paces
+14_a: irene
+57_a: ezra
+20_a: ore
+35_a: dais
+36_d: sask
+29_a: reen
+8_d: chinesepuzzles
+30_d: ear
+24_a: indent
+41_a: rca
+46_a: escudo
+21_a: pain
+37_a: ein
+31_a: sao
+42_a: pat
+26_d: tonto
+25_d: naiad
+-------------------------------
+-------------------------------
+Current Depth = 7  
+Acc = 0.96               
+Char Acc = 0.99     
+-------------------------------
+------ Current Answers --------
+11_a: abc
+11_d: asta
+12_d: bloc
+13_d: communistchina
+19_a: tome
+22_a: acme
+27_a: upi
+28_d: iowa
+32_a: canyon
+32_d: cases
+38_a: ali
+39_a: wad
+40_d: dos
+43_a: sos
+44_a: atom
+45_d: medical
+48_a: ent
+49_a: user
+54_d: opens
+55_a: dig
+56_d: geese
+61_a: ice
+63_d: clu
+64_d: him
+65_d: ess
+66_d: car
+68_a: salsa
+70_a: umass
+34_d: natures
+33_d: alone
+16_a: slowboattochina
+52_a: sector
+50_d: richly
+63_a: chinesecheckers
+17_d: weepy
+67_a: linen
+60_a: hope
+10_d: sra
+1_d: sib
+58_d: rare
+59_d: apse
+9_d: eon
+47_d: check
+2_d: troop
+7_d: aphid
+6_d: pecan
+53_d: tones
+71_a: slyer
+3_d: rearer
+4_d: entered
+5_d: pet
+1_a: strep
+62_a: clap
+69_a: see
+23_a: per
+51_a: khz
+15_a: ephor
+6_a: paces
+14_a: irene
+57_a: ezra
+20_a: ore
+35_a: dais
+36_d: sask
+29_a: reen
+8_d: chinesepuzzles
+30_d: ear
+24_a: indent
+41_a: rca
+46_a: escudo
+21_a: pain
+37_a: ein
+31_a: sao
+42_a: pat
+26_d: tonto
+25_d: naiad
+-------------------------------

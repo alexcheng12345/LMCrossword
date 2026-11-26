@@ -1,0 +1,600 @@
+-------------------------------
+Current Depth = 0  
+Acc = 0.37               
+Char Acc = 0.49     
+-------------------------------
+------ Current Answers --------
+6_a: jazz
+9_d: zest
+10_a: ball
+10_d: bonmot
+11_d: aleppo
+15_a: aloe
+16_a: olio
+19_d: eel
+22_a: temple
+26_a: fief
+27_d: friz
+29_a: scroungers
+32_d: seeping
+33_a: toss
+35_a: diet
+36_d: tare
+39_a: zealous
+41_d: once
+42_d: utah
+43_d: sots
+51_a: requiescat
+55_a: gunn
+56_a: ehs
+59_a: augur
+61_d: read
+65_d: are
+66_d: mop
+67_d: set
+70_a: faroe
+73_a: adept
+-------------------------------
+-------------------------------
+Current Depth = 1  
+Acc = 0.53               
+Char Acc = 0.61     
+-------------------------------
+------ Current Answers --------
+6_a: jazz
+9_d: zest
+10_a: ball
+10_d: bonmot
+11_d: aleppo
+15_a: aloe
+16_a: olio
+19_d: eel
+22_a: temple
+26_a: fief
+27_d: friz
+32_d: seeping
+33_a: toss
+35_a: diet
+36_d: tare
+39_a: zealous
+41_d: once
+42_d: utah
+43_d: sots
+51_a: requiescat
+55_a: gunn
+56_a: ehs
+59_a: augur
+61_d: read
+65_d: are
+66_d: mop
+67_d: set
+70_a: faroe
+73_a: adept
+6_d: jackie
+28_a: loper
+45_d: equator
+13_d: losers
+52_d: unused
+12_d: lisles
+38_d: greg
+8_d: zoo
+7_d: allseed
+40_d: los
+46_a: pronto
+60_d: urfa
+31_d: uria
+-------------------------------
+-------------------------------
+Current Depth = 2  
+Acc = 0.59               
+Char Acc = 0.67     
+-------------------------------
+------ Current Answers --------
+6_a: jazz
+9_d: zest
+10_a: ball
+10_d: bonmot
+11_d: aleppo
+15_a: aloe
+16_a: olio
+19_d: eel
+22_a: temple
+26_a: fief
+27_d: friz
+32_d: seeping
+33_a: toss
+35_a: diet
+36_d: tare
+39_a: zealous
+41_d: once
+42_d: utah
+43_d: sots
+51_a: requiescat
+55_a: gunn
+56_a: ehs
+59_a: augur
+61_d: read
+65_d: are
+66_d: mop
+67_d: set
+70_a: faroe
+73_a: adept
+6_d: jackie
+28_a: loper
+45_d: equator
+13_d: losers
+52_d: unused
+12_d: lisles
+38_d: greg
+8_d: zoo
+7_d: allseed
+40_d: los
+46_a: pronto
+60_d: urfa
+31_d: uria
+62_a: organists
+37_a: tiering
+64_a: reams
+69_a: shoe
+72_a: herd
+18_a: closeness
+-------------------------------
+-------------------------------
+Current Depth = 3  
+Acc = 0.69               
+Char Acc = 0.80     
+-------------------------------
+------ Current Answers --------
+6_a: jazz
+9_d: zest
+10_a: ball
+10_d: bonmot
+11_d: aleppo
+15_a: aloe
+16_a: olio
+19_d: eel
+22_a: temple
+26_a: fief
+27_d: friz
+32_d: seeping
+33_a: toss
+35_a: diet
+36_d: tare
+39_a: zealous
+41_d: once
+42_d: utah
+43_d: sots
+51_a: requiescat
+55_a: gunn
+56_a: ehs
+59_a: augur
+61_d: read
+65_d: are
+66_d: mop
+67_d: set
+70_a: faroe
+73_a: adept
+6_d: jackie
+28_a: loper
+45_d: equator
+13_d: losers
+52_d: unused
+12_d: lisles
+38_d: greg
+8_d: zoo
+7_d: allseed
+40_d: los
+46_a: pronto
+60_d: urfa
+31_d: uria
+62_a: organists
+37_a: tiering
+64_a: reams
+69_a: shoe
+72_a: herd
+18_a: closeness
+49_d: lodger
+58_d: dish
+21_d: oftener
+47_d: school
+63_d: she
+48_d: thermo
+54_d: den
+20_a: hooks
+25_d: done
+50_d: ideals
+-------------------------------
+-------------------------------
+Current Depth = 4  
+Acc = 0.74               
+Char Acc = 0.85     
+-------------------------------
+------ Current Answers --------
+6_a: jazz
+9_d: zest
+10_a: ball
+10_d: bonmot
+11_d: aleppo
+15_a: aloe
+16_a: olio
+19_d: eel
+22_a: temple
+26_a: fief
+27_d: friz
+32_d: seeping
+33_a: toss
+35_a: diet
+36_d: tare
+39_a: zealous
+41_d: once
+42_d: utah
+43_d: sots
+51_a: requiescat
+55_a: gunn
+56_a: ehs
+59_a: augur
+61_d: read
+65_d: are
+66_d: mop
+67_d: set
+70_a: faroe
+73_a: adept
+6_d: jackie
+28_a: loper
+45_d: equator
+13_d: losers
+52_d: unused
+12_d: lisles
+38_d: greg
+8_d: zoo
+7_d: allseed
+40_d: los
+46_a: pronto
+60_d: urfa
+31_d: uria
+62_a: organists
+37_a: tiering
+64_a: reams
+69_a: shoe
+72_a: herd
+18_a: closeness
+49_d: lodger
+58_d: dish
+21_d: oftener
+47_d: school
+63_d: she
+48_d: thermo
+54_d: den
+20_a: hooks
+25_d: done
+71_a: lors
+68_a: omen
+57_a: hedged
+44_a: aere
+5_d: unto
+53_a: chord
+4_d: mesh
+-------------------------------
+-------------------------------
+Current Depth = 5  
+Acc = 0.81               
+Char Acc = 0.93     
+-------------------------------
+------ Current Answers --------
+6_a: jazz
+9_d: zest
+10_a: ball
+10_d: bonmot
+11_d: aleppo
+15_a: aloe
+16_a: olio
+19_d: eel
+22_a: temple
+26_a: fief
+27_d: friz
+32_d: seeping
+33_a: toss
+35_a: diet
+36_d: tare
+39_a: zealous
+41_d: once
+42_d: utah
+43_d: sots
+51_a: requiescat
+55_a: gunn
+56_a: ehs
+59_a: augur
+61_d: read
+65_d: are
+66_d: mop
+67_d: set
+70_a: faroe
+73_a: adept
+6_d: jackie
+28_a: loper
+45_d: equator
+13_d: losers
+52_d: unused
+12_d: lisles
+38_d: greg
+8_d: zoo
+7_d: allseed
+40_d: los
+46_a: pronto
+60_d: urfa
+31_d: uria
+62_a: organists
+64_a: reams
+69_a: shoe
+72_a: herd
+18_a: closeness
+49_d: lodger
+58_d: dish
+21_d: oftener
+47_d: school
+63_d: she
+48_d: thermo
+54_d: den
+20_a: hooks
+25_d: done
+71_a: lors
+68_a: omen
+57_a: hedged
+44_a: aere
+53_a: chord
+4_d: mesh
+23_d: spar
+47_a: stlo
+14_a: allen
+1_a: miami
+17_a: yeast
+50_d: organs
+-------------------------------
+-------------------------------
+Current Depth = 6  
+Acc = 0.90               
+Char Acc = 0.97     
+-------------------------------
+------ Current Answers --------
+6_a: jazz
+9_d: zest
+10_a: ball
+10_d: bonmot
+11_d: aleppo
+15_a: aloe
+16_a: olio
+19_d: eel
+22_a: temple
+26_a: fief
+27_d: friz
+32_d: seeping
+33_a: toss
+35_a: diet
+36_d: tare
+39_a: zealous
+41_d: once
+42_d: utah
+43_d: sots
+51_a: requiescat
+55_a: gunn
+56_a: ehs
+59_a: augur
+61_d: read
+65_d: are
+66_d: mop
+67_d: set
+70_a: faroe
+73_a: adept
+6_d: jackie
+28_a: loper
+45_d: equator
+13_d: losers
+52_d: unused
+12_d: lisles
+38_d: greg
+8_d: zoo
+7_d: allseed
+40_d: los
+46_a: pronto
+60_d: urfa
+62_a: organists
+64_a: reams
+69_a: shoe
+72_a: herd
+18_a: closeness
+49_d: lodger
+58_d: dish
+21_d: oftener
+47_d: school
+63_d: she
+48_d: thermo
+54_d: den
+20_a: hooks
+71_a: lors
+68_a: omen
+57_a: hedged
+44_a: aere
+53_a: chord
+4_d: mesh
+23_d: spar
+47_a: stlo
+14_a: allen
+1_a: miami
+17_a: yeast
+50_d: organs
+2_d: ile
+1_d: may
+5_d: into
+29_a: profiteers
+3_d: ala
+23_a: saw
+34_a: aerobe
+-------------------------------
+-------------------------------
+Current Depth = 7  
+Acc = 0.95               
+Char Acc = 0.99     
+-------------------------------
+------ Current Answers --------
+6_a: jazz
+9_d: zest
+10_a: ball
+10_d: bonmot
+11_d: aleppo
+15_a: aloe
+16_a: olio
+19_d: eel
+22_a: temple
+26_a: fief
+27_d: friz
+32_d: seeping
+33_a: toss
+35_a: diet
+36_d: tare
+39_a: zealous
+41_d: once
+42_d: utah
+43_d: sots
+51_a: requiescat
+55_a: gunn
+56_a: ehs
+59_a: augur
+61_d: read
+65_d: are
+66_d: mop
+67_d: set
+70_a: faroe
+73_a: adept
+6_d: jackie
+28_a: loper
+45_d: equator
+13_d: losers
+52_d: unused
+12_d: lisles
+38_d: greg
+8_d: zoo
+7_d: allseed
+40_d: los
+46_a: pronto
+60_d: urfa
+62_a: organists
+64_a: reams
+69_a: shoe
+72_a: herd
+18_a: closeness
+49_d: lodger
+58_d: dish
+21_d: oftener
+47_d: school
+63_d: she
+48_d: thermo
+54_d: den
+20_a: hooks
+71_a: lors
+68_a: omen
+57_a: hedged
+53_a: chord
+4_d: mesh
+23_d: spar
+47_a: stlo
+14_a: allen
+1_a: miami
+17_a: yeast
+50_d: organs
+2_d: ile
+1_d: may
+5_d: into
+29_a: profiteers
+3_d: ala
+23_a: saw
+34_a: aerobe
+30_d: fog
+24_d: area
+25_d: worn
+31_d: ibis
+-------------------------------
+-------------------------------
+Current Depth = 8  
+Acc = 0.97               
+Char Acc = 0.99     
+-------------------------------
+------ Current Answers --------
+6_a: jazz
+9_d: zest
+10_a: ball
+10_d: bonmot
+11_d: aleppo
+15_a: aloe
+16_a: olio
+19_d: eel
+22_a: temple
+26_a: fief
+27_d: friz
+32_d: seeping
+33_a: toss
+35_a: diet
+36_d: tare
+39_a: zealous
+41_d: once
+42_d: utah
+43_d: sots
+51_a: requiescat
+55_a: gunn
+56_a: ehs
+59_a: augur
+61_d: read
+65_d: are
+66_d: mop
+67_d: set
+70_a: faroe
+73_a: adept
+6_d: jackie
+28_a: loper
+45_d: equator
+13_d: losers
+52_d: unused
+12_d: lisles
+38_d: greg
+8_d: zoo
+7_d: allseed
+40_d: los
+46_a: pronto
+60_d: urfa
+62_a: organists
+64_a: reams
+69_a: shoe
+72_a: herd
+18_a: closeness
+49_d: lodger
+58_d: dish
+21_d: oftener
+47_d: school
+63_d: she
+48_d: thermo
+54_d: den
+20_a: hooks
+71_a: lors
+68_a: omen
+57_a: hedged
+53_a: chord
+4_d: mesh
+23_d: spar
+47_a: stlo
+14_a: allen
+1_a: miami
+17_a: yeast
+50_d: organs
+2_d: ile
+1_d: may
+5_d: into
+29_a: profiteers
+3_d: ala
+23_a: saw
+34_a: aerobe
+30_d: fog
+24_d: area
+25_d: worn
+31_d: ibis
+44_a: sere
+37_a: ranging
+-------------------------------

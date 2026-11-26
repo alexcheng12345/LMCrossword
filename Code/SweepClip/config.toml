@@ -49,7 +49,7 @@ deepseek_input = 0
 deepseek_output = 0
 
 [validation]
-max_retries = 3
+max_retries = 5
 
 [llama3]
 path = "unset"

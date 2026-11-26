@@ -1,0 +1,352 @@
+-------------------------------
+Current Depth = 0  
+Acc = 0.46               
+Char Acc = 0.65     
+-------------------------------
+------ Current Answers --------
+1_a: mesh
+4_d: has
+13_a: aqua
+16_a: eats
+18_a: hup
+19_d: sped
+22_d: oles
+23_a: brae
+23_d: briny
+24_d: rime
+25_a: stile
+26_a: grinder
+27_d: equitation
+29_a: arced
+30_a: clime
+30_d: canny
+31_a: qed
+32_d: daly
+33_a: bays
+34_d: maul
+35_a: suva
+35_d: spud
+36_a: kat
+37_a: sandy
+38_a: spiel
+38_d: sunk
+39_a: neptune
+42_a: eely
+43_a: pandas
+44_d: ades
+46_d: equi
+47_d: curt
+48_d: vine
+49_a: tip
+50_d: peas
+52_d: ate
+53_d: row
+54_d: goo
+56_a: oola
+57_a: hits
+58_a: ewer
+-------------------------------
+-------------------------------
+Current Depth = 1  
+Acc = 0.72               
+Char Acc = 0.83     
+-------------------------------
+------ Current Answers --------
+1_a: mesh
+4_d: has
+13_a: aqua
+19_d: sped
+22_d: oles
+23_a: brae
+23_d: briny
+24_d: rime
+25_a: stile
+26_a: grinder
+27_d: equitation
+29_a: arced
+30_a: clime
+30_d: canny
+31_a: qed
+32_d: daly
+34_d: maul
+35_a: suva
+35_d: spud
+36_a: kat
+37_a: sandy
+38_a: spiel
+39_a: neptune
+42_a: eely
+43_a: pandas
+44_d: ades
+46_d: equi
+47_d: curt
+48_d: vine
+49_a: tip
+50_d: peas
+52_d: ate
+53_d: row
+54_d: goo
+56_a: oola
+57_a: hits
+58_a: ewer
+25_d: sark
+37_d: steams
+34_a: maine
+26_d: glide
+55_a: turnstones
+19_a: slat
+9_d: scared
+41_a: autry
+43_d: piner
+45_d: math
+1_d: mash
+51_a: aquamarine
+45_a: mecca
+15_d: ethane
+21_a: sloped
+40_d: pecans
+28_d: reversible
+54_a: gibe
+2_d: equestrian
+3_d: supplicate
+59_a: ones
+-------------------------------
+-------------------------------
+Current Depth = 2  
+Acc = 0.86               
+Char Acc = 0.97     
+-------------------------------
+------ Current Answers --------
+1_a: mesh
+4_d: has
+13_a: aqua
+19_d: sped
+22_d: oles
+23_a: brae
+23_d: briny
+24_d: rime
+25_a: stile
+26_a: grinder
+27_d: equitation
+29_a: arced
+30_a: clime
+30_d: canny
+31_a: qed
+32_d: daly
+34_d: maul
+35_a: suva
+35_d: spud
+36_a: kat
+37_a: sandy
+38_a: spiel
+39_a: neptune
+42_a: eely
+43_a: pandas
+44_d: ades
+46_d: equi
+47_d: curt
+48_d: vine
+49_a: tip
+50_d: peas
+52_d: ate
+53_d: row
+54_d: goo
+56_a: oola
+57_a: hits
+58_a: ewer
+25_d: sark
+37_d: steams
+34_a: maine
+26_d: glide
+55_a: turnstones
+19_a: slat
+9_d: scared
+41_a: autry
+43_d: piner
+45_d: math
+1_d: mash
+51_a: aquamarine
+45_a: mecca
+21_a: sloped
+40_d: pecans
+28_d: reversible
+54_a: gibe
+2_d: equestrian
+3_d: supplicate
+59_a: ones
+9_a: spur
+18_a: hep
+14_a: equivocate
+6_d: oust
+14_d: erle
+16_a: sups
+20_a: tress
+33_a: rias
+5_d: squad
+17_a: rusticated
+48_a: vide
+-------------------------------
+-------------------------------
+Current Depth = 3  
+Acc = 0.95               
+Char Acc = 0.98     
+-------------------------------
+------ Current Answers --------
+1_a: mesh
+4_d: has
+13_a: aqua
+19_d: sped
+22_d: oles
+23_a: brae
+23_d: briny
+24_d: rime
+25_a: stile
+26_a: grinder
+27_d: equitation
+29_a: arced
+30_a: clime
+30_d: canny
+31_a: qed
+32_d: daly
+34_d: maul
+35_a: suva
+35_d: spud
+36_a: kat
+37_a: sandy
+38_a: spiel
+39_a: neptune
+42_a: eely
+43_a: pandas
+44_d: ades
+46_d: equi
+47_d: curt
+48_d: vine
+49_a: tip
+50_d: peas
+52_d: ate
+53_d: row
+54_d: goo
+56_a: oola
+57_a: hits
+58_a: ewer
+25_d: sark
+37_d: steams
+34_a: maine
+26_d: glide
+55_a: turnstones
+19_a: slat
+9_d: scared
+41_a: autry
+43_d: piner
+45_d: math
+1_d: mash
+51_a: aquamarine
+45_a: mecca
+21_a: sloped
+40_d: pecans
+28_d: reversible
+54_a: gibe
+2_d: equestrian
+3_d: supplicate
+59_a: ones
+9_a: spur
+18_a: hep
+14_a: equivocate
+6_d: oust
+14_d: erle
+16_a: sups
+20_a: tress
+33_a: rias
+5_d: squad
+17_a: rusticated
+48_a: vide
+12_d: reds
+8_d: dvi
+10_d: pate
+15_d: octane
+5_a: sold
+7_d: lit
+11_d: utes
+-------------------------------
+-------------------------------
+Current Depth = 4  
+Acc = 0.95               
+Char Acc = 0.98     
+-------------------------------
+------ Current Answers --------
+1_a: mesh
+4_d: has
+13_a: aqua
+19_d: sped
+22_d: oles
+23_a: brae
+23_d: briny
+24_d: rime
+25_a: stile
+26_a: grinder
+27_d: equitation
+29_a: arced
+30_a: clime
+30_d: canny
+31_a: qed
+32_d: daly
+34_d: maul
+35_a: suva
+35_d: spud
+36_a: kat
+37_a: sandy
+38_a: spiel
+39_a: neptune
+42_a: eely
+43_a: pandas
+44_d: ades
+46_d: equi
+47_d: curt
+48_d: vine
+49_a: tip
+50_d: peas
+52_d: ate
+53_d: row
+54_d: goo
+56_a: oola
+57_a: hits
+58_a: ewer
+25_d: sark
+37_d: steams
+34_a: maine
+26_d: glide
+55_a: turnstones
+19_a: slat
+9_d: scared
+41_a: autry
+43_d: piner
+45_d: math
+1_d: mash
+51_a: aquamarine
+45_a: mecca
+21_a: sloped
+40_d: pecans
+28_d: reversible
+54_a: gibe
+2_d: equestrian
+3_d: supplicate
+59_a: ones
+9_a: spur
+18_a: hep
+14_a: equivocate
+6_d: oust
+14_d: erle
+16_a: sups
+20_a: tress
+33_a: rias
+5_d: squad
+17_a: rusticated
+48_a: vide
+12_d: reds
+8_d: dvi
+10_d: pate
+15_d: octane
+5_a: sold
+7_d: lit
+11_d: utes
+-------------------------------

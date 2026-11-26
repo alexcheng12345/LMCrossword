@@ -1,0 +1,507 @@
+-------------------------------
+Current Depth = 0  
+Acc = 0.46               
+Char Acc = 0.60     
+-------------------------------
+------ Current Answers --------
+23_d: cur
+25_a: saul
+26_d: comer
+29_d: relive
+30_d: apace
+31_d: nurse
+35_a: epee
+36_a: yurt
+37_a: moab
+38_d: blessing
+39_a: cree
+40_a: erse
+41_a: lice
+42_a: basic
+42_d: battery
+43_a: retrieves
+45_a: arete
+46_a: pose
+47_a: sts
+47_d: sir
+48_a: melons
+50_d: lave
+51_a: spit
+51_d: stoa
+52_d: penn
+53_a: ina
+53_d: item
+54_d: neve
+55_d: aden
+56_a: opal
+57_a: interested
+58_d: nor
+59_d: see
+60_a: jive
+61_a: noon
+63_a: ades
+64_a: gran
+65_a: yemen
+-------------------------------
+-------------------------------
+Current Depth = 1  
+Acc = 0.64               
+Char Acc = 0.76     
+-------------------------------
+------ Current Answers --------
+23_d: cur
+25_a: saul
+26_d: comer
+29_d: relive
+30_d: apace
+31_d: nurse
+35_a: epee
+36_a: yurt
+37_a: moab
+38_d: blessing
+39_a: cree
+40_a: erse
+41_a: lice
+42_d: battery
+43_a: retrieves
+45_a: arete
+46_a: pose
+47_a: sts
+47_d: sir
+48_a: melons
+50_d: lave
+51_a: spit
+51_d: stoa
+52_d: penn
+53_a: ina
+53_d: item
+54_d: neve
+55_d: aden
+56_a: opal
+57_a: interested
+58_d: nor
+59_d: see
+60_a: jive
+61_a: noon
+64_a: gran
+65_a: yemen
+9_d: streaked
+33_d: stele
+34_a: odors
+29_a: rackrents
+32_d: treit
+62_a: reeve
+27_d: adore
+49_d: epic
+25_d: scenes
+24_d: barberpoles
+26_a: cabal
+10_d: trolleycars
+44_d: ion
+22_a: eclair
+28_d: boast
+-------------------------------
+-------------------------------
+Current Depth = 2  
+Acc = 0.78               
+Char Acc = 0.91     
+-------------------------------
+------ Current Answers --------
+23_d: cur
+25_a: saul
+26_d: comer
+29_d: relive
+30_d: apace
+31_d: nurse
+35_a: epee
+36_a: yurt
+37_a: moab
+38_d: blessing
+39_a: cree
+40_a: erse
+41_a: lice
+42_d: battery
+43_a: retrieves
+45_a: arete
+46_a: pose
+47_a: sts
+47_d: sir
+48_a: melons
+50_d: lave
+51_a: spit
+51_d: stoa
+52_d: penn
+53_a: ina
+53_d: item
+54_d: neve
+55_d: aden
+56_a: opal
+57_a: interested
+58_d: nor
+59_d: see
+60_a: jive
+61_a: noon
+64_a: gran
+65_a: yemen
+9_d: streaked
+34_a: odors
+29_a: rackrents
+32_d: treit
+62_a: reeve
+27_d: adore
+49_d: epic
+25_d: scenes
+24_d: barberpoles
+26_a: cabal
+10_d: trolleycars
+44_d: ion
+22_a: eclair
+28_d: boast
+42_a: basic
+5_d: schools
+13_d: thar
+24_a: bob
+15_a: part
+63_a: ices
+48_d: moji
+17_a: manchester
+12_d: atli
+38_a: bland
+19_a: olla
+11_d: hula
+6_a: amos
+-------------------------------
+-------------------------------
+Current Depth = 3  
+Acc = 0.94               
+Char Acc = 0.99     
+-------------------------------
+------ Current Answers --------
+23_d: cur
+25_a: saul
+26_d: comer
+29_d: relive
+30_d: apace
+31_d: nurse
+35_a: epee
+36_a: yurt
+37_a: moab
+38_d: blessing
+39_a: cree
+40_a: erse
+41_a: lice
+42_d: battery
+43_a: retrieves
+45_a: arete
+46_a: pose
+47_a: sts
+47_d: sir
+48_a: melons
+50_d: lave
+51_a: spit
+51_d: stoa
+52_d: penn
+53_a: ina
+53_d: item
+54_d: neve
+55_d: aden
+56_a: opal
+57_a: interested
+58_d: nor
+59_d: see
+60_a: jive
+61_a: noon
+64_a: gran
+65_a: yemen
+9_d: streaked
+34_a: odors
+29_a: rackrents
+32_d: treit
+62_a: reeve
+27_d: adore
+49_d: epic
+25_d: scenes
+24_d: barberpoles
+26_a: cabal
+10_d: trolleycars
+44_d: ion
+22_a: eclair
+28_d: boast
+5_d: schools
+13_d: thar
+24_a: bob
+15_a: part
+63_a: ices
+48_d: moji
+17_a: manchester
+12_d: atli
+38_a: bland
+19_a: olla
+11_d: hula
+6_a: amos
+14_a: isaac
+4_d: sac
+33_d: stele
+6_d: apso
+2_d: esau
+7_d: mate
+1_d: jima
+8_d: ore
+10_a: that
+21_a: oboe
+18_d: ebb
+3_d: sang
+16_a: ruth
+-------------------------------
+-------------------------------
+Current Depth = 4  
+Acc = 0.95               
+Char Acc = 0.99     
+-------------------------------
+------ Current Answers --------
+23_d: cur
+25_a: saul
+26_d: comer
+29_d: relive
+30_d: apace
+31_d: nurse
+35_a: epee
+36_a: yurt
+37_a: moab
+38_d: blessing
+39_a: cree
+40_a: erse
+41_a: lice
+42_d: battery
+43_a: retrieves
+45_a: arete
+46_a: pose
+47_a: sts
+47_d: sir
+48_a: melons
+50_d: lave
+51_a: spit
+51_d: stoa
+52_d: penn
+53_a: ina
+53_d: item
+54_d: neve
+55_d: aden
+56_a: opal
+57_a: interested
+58_d: nor
+59_d: see
+60_a: jive
+61_a: noon
+64_a: gran
+65_a: yemen
+9_d: streaked
+34_a: odors
+29_a: rackrents
+32_d: treit
+62_a: reeve
+27_d: adore
+49_d: epic
+25_d: scenes
+24_d: barberpoles
+26_a: cabal
+10_d: trolleycars
+44_d: ion
+22_a: eclair
+28_d: boast
+5_d: schools
+13_d: thar
+24_a: bob
+15_a: part
+63_a: ices
+48_d: moji
+17_a: manchester
+12_d: atli
+38_a: bland
+19_a: olla
+11_d: hula
+6_a: amos
+14_a: isaac
+6_d: apso
+2_d: esau
+7_d: mate
+1_d: jima
+8_d: ore
+10_a: that
+21_a: oboe
+18_d: ebb
+3_d: sang
+16_a: ruth
+42_a: basic
+20_a: aug
+1_a: jests
+-------------------------------
+-------------------------------
+Current Depth = 5  
+Acc = 0.97               
+Char Acc = 0.99     
+-------------------------------
+------ Current Answers --------
+23_d: cur
+25_a: saul
+26_d: comer
+29_d: relive
+30_d: apace
+31_d: nurse
+35_a: epee
+36_a: yurt
+37_a: moab
+38_d: blessing
+39_a: cree
+40_a: erse
+41_a: lice
+42_d: battery
+43_a: retrieves
+45_a: arete
+46_a: pose
+47_a: sts
+47_d: sir
+48_a: melons
+50_d: lave
+51_a: spit
+51_d: stoa
+52_d: penn
+53_a: ina
+53_d: item
+54_d: neve
+55_d: aden
+56_a: opal
+57_a: interested
+58_d: nor
+59_d: see
+60_a: jive
+61_a: noon
+64_a: gran
+65_a: yemen
+9_d: streaked
+34_a: odors
+29_a: rackrents
+32_d: treit
+62_a: reeve
+27_d: adore
+49_d: epic
+25_d: scenes
+24_d: barberpoles
+26_a: cabal
+10_d: trolleycars
+44_d: ion
+22_a: eclair
+28_d: boast
+5_d: schools
+13_d: thar
+24_a: bob
+15_a: part
+63_a: ices
+48_d: moji
+17_a: manchester
+12_d: atli
+38_a: bland
+19_a: olla
+11_d: hula
+6_a: amos
+14_a: isaac
+6_d: apso
+2_d: esau
+7_d: mate
+1_d: jima
+8_d: ore
+10_a: that
+21_a: oboe
+18_d: ebb
+3_d: sang
+16_a: ruth
+20_a: aug
+1_a: jests
+4_d: tac
+33_d: stele
+-------------------------------
+-------------------------------
+Current Depth = 6  
+Acc = 0.97               
+Char Acc = 0.99     
+-------------------------------
+------ Current Answers --------
+23_d: cur
+25_a: saul
+26_d: comer
+29_d: relive
+30_d: apace
+31_d: nurse
+35_a: epee
+36_a: yurt
+37_a: moab
+38_d: blessing
+39_a: cree
+40_a: erse
+41_a: lice
+42_d: battery
+43_a: retrieves
+45_a: arete
+46_a: pose
+47_a: sts
+47_d: sir
+48_a: melons
+50_d: lave
+51_a: spit
+51_d: stoa
+52_d: penn
+53_a: ina
+53_d: item
+54_d: neve
+55_d: aden
+56_a: opal
+57_a: interested
+58_d: nor
+59_d: see
+60_a: jive
+61_a: noon
+64_a: gran
+65_a: yemen
+9_d: streaked
+34_a: odors
+29_a: rackrents
+32_d: treit
+62_a: reeve
+27_d: adore
+49_d: epic
+25_d: scenes
+24_d: barberpoles
+26_a: cabal
+10_d: trolleycars
+44_d: ion
+22_a: eclair
+28_d: boast
+5_d: schools
+13_d: thar
+24_a: bob
+15_a: part
+63_a: ices
+48_d: moji
+17_a: manchester
+12_d: atli
+38_a: bland
+19_a: olla
+11_d: hula
+6_a: amos
+14_a: isaac
+6_d: apso
+2_d: esau
+7_d: mate
+1_d: jima
+8_d: ore
+10_a: that
+21_a: oboe
+18_d: ebb
+3_d: sang
+16_a: ruth
+20_a: aug
+1_a: jests
+4_d: tac
+33_d: stele
+42_a: basil
+-------------------------------

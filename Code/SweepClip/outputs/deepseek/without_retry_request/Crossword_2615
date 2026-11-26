@@ -1,0 +1,555 @@
+-------------------------------
+Current Depth = 0  
+Acc = 0.45               
+Char Acc = 0.61     
+-------------------------------
+------ Current Answers --------
+1_d: dada
+2_d: erin
+3_d: celt
+4_d: kali
+5_d: spooky
+6_d: tarns
+8_d: ria
+10_a: poco
+11_d: omani
+14_a: area
+15_a: patio
+16_a: omar
+18_a: oread
+19_a: sara
+20_a: antigone
+21_d: goth
+22_d: punt
+23_a: oks
+24_a: reunion
+24_d: reave
+25_d: ease
+26_a: chatty
+27_d: hara
+29_d: talc
+30_a: dean
+30_d: dhole
+31_a: rajah
+32_d: buddy
+38_d: grit
+41_d: emir
+45_a: charity
+45_d: crate
+46_d: huron
+47_d: amino
+48_d: roles
+50_a: rumor
+56_a: aril
+60_a: tone
+63_a: enos
+-------------------------------
+-------------------------------
+Current Depth = 1  
+Acc = 0.61               
+Char Acc = 0.70     
+-------------------------------
+------ Current Answers --------
+1_d: dada
+2_d: erin
+3_d: celt
+4_d: kali
+5_d: spooky
+6_d: tarns
+8_d: ria
+10_a: poco
+11_d: omani
+14_a: area
+15_a: patio
+16_a: omar
+18_a: oread
+19_a: sara
+20_a: antigone
+21_d: goth
+22_d: punt
+23_a: oks
+24_d: reave
+25_d: ease
+26_a: chatty
+27_d: hara
+29_d: talc
+30_a: dean
+30_d: dhole
+31_a: rajah
+38_d: grit
+45_a: charity
+45_d: crate
+46_d: huron
+47_d: amino
+48_d: roles
+50_a: rumor
+56_a: aril
+60_a: tone
+63_a: enos
+7_d: atee
+38_a: grove
+10_d: posen
+28_d: ajar
+32_a: chastened
+5_a: stars
+37_a: aral
+22_a: penal
+40_a: barcarole
+26_d: crab
+1_a: deck
+12_d: carat
+17_a: dill
+-------------------------------
+-------------------------------
+Current Depth = 2  
+Acc = 0.74               
+Char Acc = 0.78     
+-------------------------------
+------ Current Answers --------
+1_d: dada
+2_d: erin
+3_d: celt
+4_d: kali
+5_d: spooky
+6_d: tarns
+8_d: ria
+10_a: poco
+11_d: omani
+14_a: area
+15_a: patio
+16_a: omar
+18_a: oread
+19_a: sara
+20_a: antigone
+21_d: goth
+22_d: punt
+23_a: oks
+24_d: reave
+25_d: ease
+26_a: chatty
+27_d: hara
+29_d: talc
+30_a: dean
+30_d: dhole
+31_a: rajah
+38_d: grit
+45_a: charity
+45_d: crate
+46_d: huron
+47_d: amino
+48_d: roles
+50_a: rumor
+56_a: aril
+60_a: tone
+63_a: enos
+7_d: atee
+38_a: grove
+10_d: posen
+28_d: ajar
+32_a: chastened
+5_a: stars
+37_a: aral
+22_a: penal
+40_a: barcarole
+26_d: crab
+1_a: deck
+12_d: carat
+17_a: dill
+34_d: numa
+43_a: mine
+13_d: orale
+33_d: egis
+32_d: crony
+24_a: reunite
+41_d: amir
+9_d: sod
+35_d: eral
+36_d: dust
+-------------------------------
+-------------------------------
+Current Depth = 3  
+Acc = 0.78               
+Char Acc = 0.79     
+-------------------------------
+------ Current Answers --------
+1_d: dada
+2_d: erin
+3_d: celt
+4_d: kali
+5_d: spooky
+6_d: tarns
+8_d: ria
+10_a: poco
+11_d: omani
+14_a: area
+15_a: patio
+16_a: omar
+18_a: oread
+19_a: sara
+20_a: antigone
+21_d: goth
+22_d: punt
+23_a: oks
+24_d: reave
+25_d: ease
+26_a: chatty
+27_d: hara
+29_d: talc
+30_a: dean
+30_d: dhole
+31_a: rajah
+38_d: grit
+45_a: charity
+45_d: crate
+46_d: huron
+47_d: amino
+48_d: roles
+50_a: rumor
+56_a: aril
+60_a: tone
+63_a: enos
+7_d: atee
+38_a: grove
+10_d: posen
+28_d: ajar
+32_a: chastened
+5_a: stars
+37_a: aral
+22_a: penal
+40_a: barcarole
+26_d: crab
+1_a: deck
+12_d: carat
+17_a: dill
+34_d: numa
+43_a: mine
+13_d: orale
+33_d: egis
+32_d: crony
+24_a: reunite
+41_d: amir
+9_d: sod
+35_d: eral
+36_d: dust
+39_a: guru
+44_a: basalt
+42_a: pimas
+-------------------------------
+-------------------------------
+Current Depth = 4  
+Acc = 0.80               
+Char Acc = 0.83     
+-------------------------------
+------ Current Answers --------
+1_d: dada
+2_d: erin
+3_d: celt
+4_d: kali
+5_d: spooky
+6_d: tarns
+8_d: ria
+10_a: poco
+11_d: omani
+14_a: area
+15_a: patio
+16_a: omar
+18_a: oread
+19_a: sara
+20_a: antigone
+21_d: goth
+22_d: punt
+23_a: oks
+24_d: reave
+25_d: ease
+26_a: chatty
+27_d: hara
+29_d: talc
+30_a: dean
+30_d: dhole
+31_a: rajah
+38_d: grit
+45_a: charity
+45_d: crate
+46_d: huron
+47_d: amino
+48_d: roles
+50_a: rumor
+56_a: aril
+60_a: tone
+63_a: enos
+7_d: atee
+38_a: grove
+10_d: posen
+28_d: ajar
+32_a: chastened
+5_a: stars
+37_a: aral
+22_a: penal
+40_a: barcarole
+26_d: crab
+1_a: deck
+12_d: carat
+17_a: dill
+34_d: numa
+43_a: mine
+13_d: orale
+33_d: egis
+32_d: crony
+24_a: reunite
+41_d: amir
+9_d: sod
+35_d: eral
+36_d: dust
+39_a: guru
+44_a: basalt
+42_a: pimas
+42_d: paid
+44_d: bertha
+-------------------------------
+-------------------------------
+Current Depth = 5  
+Acc = 0.86               
+Char Acc = 0.94     
+-------------------------------
+------ Current Answers --------
+1_d: dada
+2_d: erin
+3_d: celt
+4_d: kali
+5_d: spooky
+6_d: tarns
+8_d: ria
+10_a: poco
+11_d: omani
+14_a: area
+15_a: patio
+16_a: omar
+18_a: oread
+19_a: sara
+20_a: antigone
+21_d: goth
+22_d: punt
+23_a: oks
+24_d: reave
+25_d: ease
+26_a: chatty
+27_d: hara
+29_d: talc
+30_a: dean
+30_d: dhole
+31_a: rajah
+38_d: grit
+45_a: charity
+45_d: crate
+46_d: huron
+47_d: amino
+48_d: roles
+50_a: rumor
+56_a: aril
+60_a: tone
+63_a: enos
+7_d: atee
+38_a: grove
+10_d: posen
+28_d: ajar
+32_a: chastened
+5_a: stars
+37_a: aral
+22_a: penal
+40_a: barcarole
+26_d: crab
+1_a: deck
+12_d: carat
+17_a: dill
+34_d: numa
+43_a: mine
+13_d: orale
+33_d: egis
+32_d: crony
+24_a: reunite
+41_d: amir
+9_d: sod
+35_d: eral
+36_d: dust
+39_a: guru
+44_a: basalt
+42_a: pimas
+42_d: paid
+44_d: bertha
+51_a: hardware
+57_a: thant
+64_a: atsea
+49_a: lei
+61_a: ranch
+-------------------------------
+-------------------------------
+Current Depth = 6  
+Acc = 0.96               
+Char Acc = 1.00     
+-------------------------------
+------ Current Answers --------
+1_d: dada
+2_d: erin
+3_d: celt
+4_d: kali
+5_d: spooky
+6_d: tarns
+8_d: ria
+10_a: poco
+11_d: omani
+14_a: area
+15_a: patio
+16_a: omar
+18_a: oread
+19_a: sara
+20_a: antigone
+21_d: goth
+22_d: punt
+23_a: oks
+24_d: reave
+25_d: ease
+26_a: chatty
+27_d: hara
+29_d: talc
+30_a: dean
+30_d: dhole
+31_a: rajah
+38_d: grit
+45_a: charity
+45_d: crate
+46_d: huron
+47_d: amino
+48_d: roles
+50_a: rumor
+56_a: aril
+60_a: tone
+63_a: enos
+7_d: atee
+38_a: grove
+10_d: posen
+28_d: ajar
+32_a: chastened
+5_a: stars
+37_a: aral
+22_a: penal
+40_a: barcarole
+26_d: crab
+1_a: deck
+12_d: carat
+17_a: dill
+34_d: numa
+43_a: mine
+13_d: orale
+33_d: egis
+32_d: crony
+24_a: reunite
+41_d: amir
+9_d: sod
+35_d: eral
+36_d: dust
+39_a: guru
+44_a: basalt
+42_a: pimas
+42_d: paid
+44_d: bertha
+51_a: hardware
+57_a: thant
+64_a: atsea
+49_a: lei
+61_a: ranch
+49_d: lance
+58_d: hat
+53_d: amor
+54_d: rosa
+52_d: wadi
+55_d: esse
+51_d: hans
+57_d: tra
+-------------------------------
+-------------------------------
+Current Depth = 7  
+Acc = 1.00               
+Char Acc = 1.00     
+-------------------------------
+------ Current Answers --------
+1_d: dada
+2_d: erin
+3_d: celt
+4_d: kali
+5_d: spooky
+6_d: tarns
+8_d: ria
+10_a: poco
+11_d: omani
+14_a: area
+15_a: patio
+16_a: omar
+18_a: oread
+19_a: sara
+20_a: antigone
+21_d: goth
+22_d: punt
+23_a: oks
+24_d: reave
+25_d: ease
+26_a: chatty
+27_d: hara
+29_d: talc
+30_a: dean
+30_d: dhole
+31_a: rajah
+38_d: grit
+45_a: charity
+45_d: crate
+46_d: huron
+47_d: amino
+48_d: roles
+50_a: rumor
+56_a: aril
+60_a: tone
+63_a: enos
+7_d: atee
+38_a: grove
+10_d: posen
+28_d: ajar
+32_a: chastened
+5_a: stars
+37_a: aral
+22_a: penal
+40_a: barcarole
+26_d: crab
+1_a: deck
+12_d: carat
+17_a: dill
+34_d: numa
+43_a: mine
+13_d: orale
+33_d: egis
+32_d: crony
+24_a: reunite
+41_d: amir
+9_d: sod
+35_d: eral
+36_d: dust
+39_a: guru
+44_a: basalt
+42_a: pimas
+42_d: paid
+44_d: bertha
+51_a: hardware
+57_a: thant
+64_a: atsea
+49_a: lei
+61_a: ranch
+49_d: lance
+58_d: hat
+53_d: amor
+54_d: rosa
+52_d: wadi
+55_d: esse
+51_d: hans
+57_d: tra
+59_a: amos
+62_a: doss
+65_a: irae
+-------------------------------
