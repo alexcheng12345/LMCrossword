@@ -1,0 +1,335 @@
+-------------------------------
+Current Depth = 0  
+Acc = 0.45               
+Char Acc = 0.64     
+-------------------------------
+------ Current Answers --------
+1_a: pest
+1_d: pods
+3_d: stepmother
+4_d: teapot
+5_a: ball
+5_d: bases
+6_d: arts
+8_d: lapses
+9_d: artesian
+10_d: moor
+11_d: odor
+12_d: rely
+16_a: rode
+17_a: drear
+18_a: stepstool
+19_d: shape
+21_d: sleep
+23_a: molls
+24_a: seas
+24_d: sepoy
+25_a: tootle
+26_d: outre
+27_d: drees
+31_a: hut
+33_d: taken
+34_a: eater
+36_d: stripped
+39_a: nero
+40_a: frets
+45_a: terraces
+49_a: ivan
+51_d: etas
+52_d: atop
+53_d: menu
+63_a: spud
+-------------------------------
+-------------------------------
+Current Depth = 1  
+Acc = 0.73               
+Char Acc = 0.83     
+-------------------------------
+------ Current Answers --------
+1_a: pest
+1_d: pods
+3_d: stepmother
+4_d: teapot
+5_a: ball
+5_d: bases
+6_d: arts
+8_d: lapses
+9_d: artesian
+10_d: moor
+11_d: odor
+12_d: rely
+16_a: rode
+17_a: drear
+18_a: stepstool
+19_d: shape
+21_d: sleep
+23_a: molls
+24_a: seas
+24_d: sepoy
+25_a: tootle
+26_d: outre
+31_a: hut
+33_d: taken
+34_a: eater
+36_d: stripped
+39_a: nero
+40_a: frets
+45_a: terraces
+49_a: ivan
+52_d: atop
+53_d: menu
+63_a: spud
+60_a: ione
+28_d: stepsaside
+30_d: drops
+46_d: carded
+7_d: lie
+32_a: setup
+42_a: keyed
+22_a: sherry
+37_a: paeon
+25_d: theft
+51_a: pamper
+29_d: eerie
+9_a: amor
+20_a: supposes
+2_d: ecru
+14_d: trolls
+41_d: saves
+13_a: octet
+57_a: stepsdown
+35_a: eths
+15_a: aria
+27_a: despised
+-------------------------------
+-------------------------------
+Current Depth = 2  
+Acc = 0.88               
+Char Acc = 0.96     
+-------------------------------
+------ Current Answers --------
+1_a: pest
+1_d: pods
+3_d: stepmother
+4_d: teapot
+5_a: ball
+5_d: bases
+6_d: arts
+8_d: lapses
+9_d: artesian
+10_d: moor
+11_d: odor
+12_d: rely
+16_a: rode
+17_a: drear
+18_a: stepstool
+19_d: shape
+21_d: sleep
+23_a: molls
+24_a: seas
+24_d: sepoy
+25_a: tootle
+26_d: outre
+31_a: hut
+33_d: taken
+34_a: eater
+36_d: stripped
+39_a: nero
+40_a: frets
+45_a: terraces
+49_a: ivan
+52_d: atop
+53_d: menu
+63_a: spud
+60_a: ione
+28_d: stepsaside
+30_d: drops
+46_d: carded
+7_d: lie
+32_a: setup
+42_a: keyed
+22_a: sherry
+25_d: theft
+51_a: pamper
+29_d: eerie
+9_a: amor
+20_a: supposes
+2_d: ecru
+14_d: trolls
+41_d: saves
+13_a: octet
+57_a: stepsdown
+35_a: eths
+15_a: aria
+27_a: despised
+61_a: enid
+54_d: swim
+50_a: burma
+47_a: dosses
+65_a: sent
+62_a: hadon
+50_d: bunds
+51_d: psis
+44_a: pip
+54_a: supposed
+58_d: ona
+59_a: alibi
+27_d: dures
+64_a: dams
+-------------------------------
+-------------------------------
+Current Depth = 3  
+Acc = 0.92               
+Char Acc = 0.96     
+-------------------------------
+------ Current Answers --------
+1_a: pest
+1_d: pods
+3_d: stepmother
+4_d: teapot
+5_a: ball
+5_d: bases
+6_d: arts
+8_d: lapses
+9_d: artesian
+10_d: moor
+11_d: odor
+12_d: rely
+16_a: rode
+17_a: drear
+18_a: stepstool
+19_d: shape
+21_d: sleep
+23_a: molls
+24_a: seas
+24_d: sepoy
+25_a: tootle
+26_d: outre
+31_a: hut
+33_d: taken
+34_a: eater
+36_d: stripped
+39_a: nero
+40_a: frets
+45_a: terraces
+49_a: ivan
+52_d: atop
+53_d: menu
+63_a: spud
+60_a: ione
+28_d: stepsaside
+30_d: drops
+46_d: carded
+7_d: lie
+32_a: setup
+42_a: keyed
+22_a: sherry
+25_d: theft
+51_a: pamper
+29_d: eerie
+9_a: amor
+20_a: supposes
+2_d: ecru
+14_d: trolls
+41_d: saves
+13_a: octet
+57_a: stepsdown
+35_a: eths
+15_a: aria
+27_a: despised
+61_a: enid
+54_d: swim
+50_a: burma
+47_a: dosses
+65_a: sent
+62_a: hadon
+50_d: bunds
+51_d: psis
+44_a: pip
+54_a: supposed
+58_d: ona
+59_a: alibi
+27_d: dures
+64_a: dams
+56_d: dint
+55_d: ebon
+37_a: parol
+-------------------------------
+-------------------------------
+Current Depth = 4  
+Acc = 0.92               
+Char Acc = 0.96     
+-------------------------------
+------ Current Answers --------
+1_a: pest
+1_d: pods
+3_d: stepmother
+4_d: teapot
+5_a: ball
+5_d: bases
+6_d: arts
+8_d: lapses
+9_d: artesian
+10_d: moor
+11_d: odor
+12_d: rely
+16_a: rode
+17_a: drear
+18_a: stepstool
+19_d: shape
+21_d: sleep
+23_a: molls
+24_a: seas
+24_d: sepoy
+25_a: tootle
+26_d: outre
+31_a: hut
+33_d: taken
+34_a: eater
+36_d: stripped
+39_a: nero
+40_a: frets
+45_a: terraces
+49_a: ivan
+52_d: atop
+53_d: menu
+63_a: spud
+60_a: ione
+28_d: stepsaside
+30_d: drops
+46_d: carded
+7_d: lie
+32_a: setup
+42_a: keyed
+22_a: sherry
+25_d: theft
+51_a: pamper
+29_d: eerie
+9_a: amor
+20_a: supposes
+2_d: ecru
+14_d: trolls
+41_d: saves
+13_a: octet
+57_a: stepsdown
+35_a: eths
+15_a: aria
+27_a: despised
+61_a: enid
+54_d: swim
+50_a: burma
+47_a: dosses
+65_a: sent
+62_a: hadon
+50_d: bunds
+51_d: psis
+44_a: pip
+54_a: supposed
+58_d: ona
+59_a: alibi
+27_d: dures
+64_a: dams
+56_d: dint
+55_d: ebon
+37_a: parol
+-------------------------------
